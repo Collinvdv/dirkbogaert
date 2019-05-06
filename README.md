@@ -11,4 +11,3 @@ When you're done, you can delete the content in this README and update the file 
 - composer install
 - npm install
 - check in .env with correct credentials 
-- git remote add combell shoponcestorytellingbe@ssh040.webhosting.be:auto.git
