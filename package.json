@@ -1,28 +1,28 @@
 {
-  "name": "intuo-website-2019",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "dev": "NODE_ENV=development webpack --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
-    "watch": "NODE_ENV=development webpack --watch --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
-    "hot": "NODE_ENV=development webpack-dev-server --inline --hot --config=node_modules/laravel-mix/setup/webpack.config.js",
-    "production": "NODE_ENV=production webpack --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+ssh://git@bitbucket.org/leapforward/intuo-website-2019.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "homepage": "https://bitbucket.org/leapforward/intuo-website-2019#readme",
-  "devDependencies": {
-    "@stakahashi/laravel-mix-stylelint": "^1.0.1",
-    "laravel-mix": "^4.0.14",
-    "resolve-url-loader": "2.3.1",
-    "sass": "^1.17.2",
-    "sass-loader": "7.*",
-    "vue-template-compiler": "^2.6.8"
-  }
+	"name": "bogaert",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"dev": "NODE_ENV=development webpack --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+		"watch": "NODE_ENV=development webpack --watch --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+		"hot": "NODE_ENV=development webpack-dev-server --inline --hot --config=node_modules/laravel-mix/setup/webpack.config.js",
+		"production": "NODE_ENV=production webpack --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/Collinvdv/dirkbogaert.git"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"homepage": "https://bitbucket.org/leapforward/intuo-website-2019#readme",
+	"devDependencies": {
+		"@stakahashi/laravel-mix-stylelint": "^1.0.1",
+		"laravel-mix": "^4.0.14",
+		"resolve-url-loader": "2.3.1",
+		"sass": "^1.17.2",
+		"sass-loader": "7.*",
+		"vue-template-compiler": "^2.6.8"
+	}
 }
