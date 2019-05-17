@@ -1,0 +1,30 @@
+{# ========================================================================== #}
+{# :: Component #}
+{# ========================================================================== #}
+{% macro default(classes, data) %}
+
+	<article class="c-article">
+		<a href="/" class="c-article__link"></a>
+
+		<div class="c-article__image-container">
+			<img src="{{data.image}}" alt="{{data.title}}" class="c-article__image" title="{{data.title}}" />
+		</div>
+
+		<button class="c-article__button">
+			{% include "resources/icons/arrow-right.svg" %}
+		</button>
+
+		<div class="c-article__info">
+			<header class="c-article__header">
+				<h3 class="c-article__title">{{data.title}}</h3>
+				<span class="c-article__type">{{data.type}}</span>
+			</header>
+
+			<div class="c-article__content">
+				<p>{{data.text}}</p>
+			</div>
+		</div>
+
+	</article>
+
+{% endmacro %}

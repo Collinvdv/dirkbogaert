@@ -1,0 +1,15 @@
+{% macro default(classes, data) %}
+
+	<div class="c-language {{classes}}">
+		<button class="c-language__active">{{data.activeLanguage}}</button>
+
+		<ul class="c-language__list">
+			{% for item in data.languages %}
+				<li class="c-language__item">
+					<a href="/" class="c-language__link">{{item}}</a>
+				</li>
+			{% endif %}
+		</ul>
+	</div>
+
+{% endmacro %}

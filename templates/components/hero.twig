@@ -1,0 +1,36 @@
+{# ========================================================================== #}
+{# :: Imports #}
+{# ========================================================================== #}
+{% import "templates/components/button.twig" as button %}
+
+{# ========================================================================== #}
+{# :: Component #}
+{# ========================================================================== #}
+{% macro default(classes, data) %}
+
+	<div class="c-hero {{classes}}" style="background-image: url('{{data.image}}');">
+
+		<div class="c-hero__content">
+			<h1 class="c-hero__title">{{data.title}}</h1>
+
+			<p class="c-hero__text">{{data.text}}</p>
+
+			{{button.default("", {
+				text: "Bekijk de catalogus"
+			})}}
+		</div>
+
+		<div class="c-hero__info">
+			<ul class="c-hero__list">
+				{% for item in data.items %}
+					<li class="c-hero__item">
+						<h3 class="c-hero__item-title">{{item.title}}</h3>
+
+						<p class="c-hero__item-text">{{item.text}}</p>
+					</li>
+				{% enfor %}
+			</ul>
+		</div>
+	</div>
+
+{% endmacro %}
