@@ -1,7 +1,7 @@
 {# ========================================================================== #}
 {# :: Imports #}
 {# ========================================================================== #}
-{% import "templates/components/language.twig" as language %}
+{# {% import "/templates/components/icon.twig" as icon %} #}
 
 {# ========================================================================== #}
 {# :: Component #}
@@ -9,29 +9,34 @@
 {% macro default(classes, data) %}
 
 	<header class="c-header {{classes}}">
-		<nav class="c-header__nav">
-			<a href="/">
-				<img src="/" alt="logo" class="c-header__logo"  title="logo" />
-			</a>
+		<div class="c-header__part">
+			<nav class="c-header__nav">
+				<a href="/">
+					<img src="/assets/img/logo-thibri.svg" alt="logo" class="c-header__logo"  title="logo" />
+				</a>
 
-			<ul class="c-header__list">
-				{% for item in data.items %}
-					<li class="c-header__list-item">
-						<a href="{{item.url}}">{{item}}</a>
-					</li>
-				{% endfor %}
-			</ul>
-		</nav>
+				<ul class="c-header__list">
+					{% for item in data.items %}
+						<li class="c-header__list-item">
+							<a href="{{item.url}}">{{item.text}}</a>
+						</li>
+					{% endfor %}
+				</ul>
+			</nav>
 
-		<div class="c-header__search">
-			<input type="text" class="c-header__search-input" />
-			{% include "resources/icons/serach.svg" %}
+			<div class="c-header__search">
+				<input type="text" class="c-header__search-input" />
+
+				{% include "/components/icon.twig" with {
+					icon: "search"
+				} only %}
+			</div>
 		</div>
 
-		{{language.default("c-header__language", {
-			active: "NL",
+		{% include "/components/language.twig" with {
+			activeLanguage: "NL",
 			items: ["EN", "FR"]
-		})}}
+		} only %}
 	</header>
 
 {% endmacro %}

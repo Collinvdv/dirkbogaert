@@ -2,8 +2,7 @@
 {# :: Data #}
 {# ========================================================================== #}
 {# set variables #}
-{% set items = items ?? NULL %}
-{% set activeLanguage = activeLanguage ?? NULL %}
+{% set icon = icon ?? NULL %}
 
 {# set classes #}
 {% set classes = "" %}
@@ -11,15 +10,6 @@
 {# ========================================================================== #}
 {# :: Component #}
 {# ========================================================================== #}
-
-<div class="c-language {{classes}}">
-	<button class="c-language__active">{{activeLanguage}}</button>
-
-	<ul class="c-language__list">
-		{% for item in items %}
-			<li class="c-language__item">
-				<a href="/" class="c-language__link">{{item}}</a>
-			</li>
-		{% endfor %}
-	</ul>
+<div class="c-icon {{classes}}">
+	{% include "icons/" ~ icon ~ ".svg" %}
 </div>

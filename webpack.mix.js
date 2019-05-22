@@ -13,5 +13,7 @@ require('@stakahashi/laravel-mix-stylelint');
 
 mix
 	.copy('resources/fonts', 'web/assets/fonts/')
+	.copy('templates/icons', 'web/assets/icons/')
+	.copy('resources/img', 'web/assets/img/')
 	.stylelint()
 	.sass('resources/scss/base.scss', 'web/assets/css/base.css');
