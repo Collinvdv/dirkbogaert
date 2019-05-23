@@ -1,0 +1,71 @@
+// =============================================================================
+// :: Suffixicate-at
+// =============================================================================
+/**
+ * Create a responsive suffix of the class that makes use of the media query
+ * mixin "respond-at", which applies styling above a breakpoint.
+ *
+ * Params:
+ * - $list: a sass list consisting of breakpoints, these should be equal as
+ * defined in the $breakpoints variable. Otherwise the breakpoint will not be
+ * rendered.
+ * - $base: by default this is set to true, if this is set to false it will not
+ * apply the styling within the brackets of this mixin to the base element, only
+ * to the responsive element.
+ */
+@mixin suffixicate-at($list, $base: true) {
+	@if ($base) {
+		@content;
+	}
+
+	@each $breakpoint in $list {
+
+		@if (map-has-key($breakpoints, $breakpoint)) {
+
+			&\@above-#{$breakpoint} {
+				$data: map-get($breakpoints, $breakpoint);
+				$width: map-get($data, width);
+
+				@include respond-at($width) {
+					@content;
+				}
+			}
+		}
+	}
+}
+
+// =============================================================================
+// :: Suffixicate-to
+// =============================================================================
+/**
+ * Create a responsive suffix of the class that makes use of the media query
+ * mixin "respond-to", which applies styling below a breakpoint.
+ *
+ * Params:
+ * - $list: a sass list consisting of breakpoints, these should be equal as
+ * defined in the $breakpoints variable. Otherwise the breakpoint will not be
+ * rendered.
+ * - $base: by default this is set to true, if this is set to false it will not
+ * apply the styling within the brackets of this mixin to the base element, only
+ * to the responsive element.
+ */
+@mixin suffixicate-to($list, $base: true) {
+	@if ($base) {
+		@content;
+	}
+
+	@each $breakpoint in $list {
+
+		@if (map-has-key($breakpoints, $breakpoint)) {
+
+			&\@below-#{$breakpoint} {
+				$data: map-get($breakpoints, $breakpoint);
+				$width: map-get($data, width);
+
+				@include respond-to($width) {
+					@content;
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,19 @@
+// =============================================================================
+// :: Rem
+// =============================================================================
+/**
+ * Convert a pixel value to a rem value, because on the <html> we define that
+ * the font-size is 62.5%, we must divide the value into 10 instead of 16.
+ *
+ * Params:
+ * - $value: the amount of pixels to be converted to rem
+ */
+@function rem($value) {
+	@return #{$value / 10px}rem;
+}
+
+@function px($value) {
+	$integer: ($value / ($value * 0 + 1)) * 10px;
+
+	@return round($integer);
+}

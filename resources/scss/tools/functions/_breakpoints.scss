@@ -1,0 +1,53 @@
+// =============================================================================
+// :: Get-breakpoint
+// =============================================================================
+/**
+ * Retrieve the breakpoint width associated with the defined name for it. These
+ * values can be found in the $breakpoints map defined within the settings
+ * folder.
+ *
+ * Params:
+ * - $name: the name of the breakpoint where to retrieve the data from
+ */
+@function get-breakpoint($name) {
+	$breakpoint: map-get($breakpoints, $name);
+	$width: map-get($breakpoint, width);
+
+	@return $width;
+}
+
+// =============================================================================
+// :: Get-spacing
+// =============================================================================
+/**
+ * Retrieve the breakpoint spacing associated with the defined name for it.
+ * These values can be found in the $breakpoints map defined within the settings
+ * folder.
+ *
+ * Params:
+ * - $name: the name of the breakpoint where to retrieve the data from
+ */
+@function get-spacing($name) {
+	$breakpoint: map-get($breakpoints, $name);
+	$spacing: map-get($breakpoint, spacing);
+
+	@return $spacing;
+}
+
+// =============================================================================
+// :: Get-viewport-spacing
+// =============================================================================
+/**
+ * Retrieve the breakpoint spacing associated with the defined name for it.
+ * These values can be found in the $breakpoints map defined within the settings
+ * folder.
+ *
+ * Params:
+ * - $name: the name of the breakpoint where to retrieve the data from
+ */
+@function get-viewport-spacing($name) {
+	$breakpoint: map-get($breakpoints, $name);
+	$viewport-spacing: map-get($breakpoint, viewport-spacing);
+
+	@return $viewport-spacing;
+}

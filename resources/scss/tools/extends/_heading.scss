@@ -1,0 +1,98 @@
+// =============================================================================
+// :: Heading
+// =============================================================================
+/**
+ * Heading styles defined to give any component the possibility to extend from
+ * a certain style. When an element uses the same styling as a heading, this
+ * does not mean it is a H1-H6.
+ */
+
+// =============================================================================
+// :: H1
+// =============================================================================
+@mixin extend-h1-base() {
+	font-family: $font-family-primary;
+	font-size: $font-size-4x-large;
+	line-height: $line-height-3x-large;
+	font-weight: $font-weight-bold;
+
+	@include respond-at(get-breakpoint("desktop")) {
+		font-size: $font-size-7x-large;
+		line-height: $line-height-5x-large;
+	}
+}
+
+// =============================================================================
+// :: H2
+// =============================================================================
+@mixin extend-h2-base() {
+	font-family: $font-family-primary;
+	font-size: $font-size-3x-large;
+	line-height: $line-height-1x-large;
+	font-weight: $font-weight-bold;
+
+	@include respond-at(get-breakpoint("desktop")) {
+		font-size: $font-size-6x-large;
+		line-height: $line-height-4x-large;
+	}
+}
+
+// =============================================================================
+// :: H3
+// =============================================================================
+@mixin extend-h3-base() {
+	font-family: $font-family-primary;
+	font-size: $font-size-2x-large;
+	line-height: $line-height-1x-small;
+	font-weight: $font-weight-bold;
+
+	@include respond-at(get-breakpoint("desktop")) {
+		font-size: $font-size-5x-large;
+		line-height: $line-height-2x-large;
+	}
+}
+
+// =============================================================================
+// :: H4
+// =============================================================================
+@mixin extend-h4-base() {
+	font-family: $font-family-primary;
+	font-size: $font-size-1x-small;
+	line-height: $line-height-3x-small;
+	font-weight: $font-weight-bold;
+
+	@include respond-at(get-breakpoint("desktop")) {
+		font-size: $font-size-3x-large;
+		line-height: $line-height-2x-large;
+	}
+}
+
+// =============================================================================
+// :: H5
+// =============================================================================
+@mixin extend-h5-base() {
+	font-family: $font-family-primary;
+	font-size: $font-size-4x-small;
+	line-height: $line-height-5x-small;
+	font-weight: $font-weight-bold;
+
+	@include respond-at(get-breakpoint("desktop")) {
+		font-size: $font-size-1x-large;
+		line-height: $line-height-base;
+	}
+}
+
+// =============================================================================
+// :: H6
+// =============================================================================
+@mixin extend-h6-base() {
+	font-family: $font-family-primary;
+	font-size: $font-size-5x-small;
+	line-height: $line-height-6x-small;
+	font-weight: $font-weight-bold;
+
+	@include respond-at(get-breakpoint("desktop")) {
+		font-size: $font-size-3x-small;
+		line-height: $line-height-4x-small;
+	}
+}

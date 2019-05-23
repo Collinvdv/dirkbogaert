@@ -1,0 +1,50 @@
+// =============================================================================
+// :: Breakpoints
+// =============================================================================
+/**
+ * The breakpoints are placed within a map for readability and to generate
+ * certain layouts. This is based on the mobile-first principle.
+ *
+ * IMPORTANT TO KNOW:
+ * make sure that the viewport-spacing multiplied by 2 is not higher than the
+ * spacing of that breakpoint. Otherwise a horizontal scrollbar is rendered.
+ *
+ * Params:
+ * - spacing: the spacing used on the breakpoint width (grid)
+ * - viewport-spacing: the spacing between the viewport and its content
+ * (container)
+ * - width: the width of a breakpoint, this can be manipuled with @media
+ * - grid-suffixicate: generates responsive classes ONLY for the grid (careful
+ * with this, it generates a lot of classes and takes up file size)
+ */
+
+$breakpoints: (
+	"mobile":
+	(
+		width: 480px,
+		spacing: 40px,
+		viewport-spacing: 20px,
+		grid-suffixicate: false
+	),
+	"tablet":
+	(
+		width: 720px,
+		spacing: 25px,
+		viewport-spacing: 24px,
+		grid-suffixicate: true
+	),
+	"desktop":
+	(
+		width: 960px,
+		spacing: 32px,
+		viewport-spacing: 32px,
+		grid-suffixicate: true
+	),
+	"screen":
+	(
+		width: 1140px,
+		spacing: 20px,
+		viewport-spacing: 40px,
+		grid-suffixicate: false
+	)
+);

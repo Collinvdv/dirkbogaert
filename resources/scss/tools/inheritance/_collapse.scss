@@ -1,0 +1,73 @@
+// =============================================================================
+// :: Collapse
+// =============================================================================
+/**
+ * Component used to toggle content when clicking on the header of the
+ * component.
+ */
+
+// =============================================================================
+// :: Root
+// =============================================================================
+@mixin inherit-collapse() {
+	position: relative;
+}
+
+// =============================================================================
+// :: Elements
+// =============================================================================
+@mixin inherit-collapse-header() {
+	position: relative;
+
+	padding-right: 2rem;
+}
+
+@mixin inherit-collapse-trigger() {
+	position: absolute;
+	top: 50%;
+	right: 0;
+	z-index: $z-index-atmosphere;
+
+	display: block;
+
+	background-color: transparent;
+	outline: none;
+	border: none;
+
+	transform: translateY(-50%);
+}
+
+@mixin inherit-collapse-content() {
+	height: 0;
+	overflow: hidden;
+
+	transition: height 0.4s ease-in-out;
+}
+
+@mixin inherit-collapse-compress() {
+	display: none;
+}
+
+// =============================================================================
+// :: States
+// =============================================================================
+@mixin inherit-collapse-trigger-state-open() {
+
+	// Style the icon
+	&::before {
+		transform: rotate(180deg);
+	}
+}
+
+@mixin inherit-collapse-content-state-open() {
+	height: auto;
+}
+
+@mixin inherit-collapse-expand-state-open() {
+	display: none;
+}
+
+@mixin inherit-collapse-compress-state-open() {
+	display: block;
+}
+

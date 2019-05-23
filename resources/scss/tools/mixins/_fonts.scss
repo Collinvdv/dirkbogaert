@@ -1,0 +1,27 @@
+// =============================================================================
+// :: Get-font
+// =============================================================================
+/**
+ * Load a font file. Every version of the font should have the same name.
+ *
+ * Params:
+ * - $name: a name given to the font
+ * - $url: location of the font file
+ * - $weight: the weight (100, 300, 400, ...) the font file is based on
+ * - $style: the style (italic, normal, ...) the font file is based on
+ */
+@mixin get-font($name, $url, $weight: normal, $style: normal) {
+
+	@font-face {
+		font-family: $name;
+		font-weight: $weight;
+		font-style: $style;
+
+		src: url($url +".eot");
+		src:
+			url($url + ".eot?#iefix") format("embedded-opentype"),
+			url($url + ".woff") format("woff"),
+			url($url + ".ttf") format("truetype"),
+			url($url + ".svg#icon") format("svg");
+	}
+}

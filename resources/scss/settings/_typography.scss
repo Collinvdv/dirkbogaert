@@ -1,64 +1,46 @@
-@charset "utf-8";
+// =============================================================================
+// :: Typography
+// =============================================================================
+/**
+ * This file contains all the settings concerning the base typography. These
+ * should NOT be used to define the typography of a standalone component,
+ * but should provide a reusable system.
+ * Opt to stay within the large - base and small values, using 1x, 2x, ... to
+ * indicate a multiplier.
+ */
 
 // =============================================================================
-// :: Vendors
+// :: Load fonts
 // =============================================================================
-
-@import
-	"vendors/_normalize";
-
+// @include get-font("roboto", "../assets/general/fonts/roboto/roboto-regular", 400, normal);
 // =============================================================================
-// :: Tools - mixins
+// :: Font families
 // =============================================================================
-
-@import
-	// mixins
-	"tools/mixins/_breakpoints",
-	"tools/mixins/_fonts",
-	"tools/mixins/_headings",
-	"tools/mixins/_placeholder",
-	"tools/mixins/_responsive",
-	"tools/mixins/_headings",
-	// inheritance
-	"tools/inheritance/_collapse";
+$font-family-primary: ("Arial", sans-serif);
 
 // =============================================================================
-// :: Settings
+// :: Font weights
 // =============================================================================
-@import
-	"settings/_breakpoints",
-	"settings/_colors",
-	"settings/_typography",
-	"settings/_layout",
-	"settings/_z-index";
+/**
+ * Font weight based on:
+ * https://bigelowandholmes.typepad.com/bigelow-holmes/2015/07/
+ */
+$font-weight-extrablack: 900;
+$font-weight-black: 800;
+$font-weight-ultrabold: 700;
+$font-weight-bold: 600;
+$font-weight-dark: 500;
+$font-weight-normal: 400;
+$font-weight-lite: 300;
+$font-weight-thin: 200;
+$font-weight-ultrathin: 100;
 
 // =============================================================================
-// :: Tools - functions
+// :: Font sizes
 // =============================================================================
-@import
-	"tools/functions/_units",
-	"tools/functions/_breakpoints";
+$font-size-base: 1.6rem;
 
 // =============================================================================
-// :: Tools - extends
+// :: Line heights
 // =============================================================================
-
-@import
-	"tools/extends/_heading",
-	"tools/extends/_paragraph";
-
-// =============================================================================
-// :: Utils
-// =============================================================================
-
-@import
-	"utils/_spacing",
-	"utils/_visibility";
-
-// =============================================================================
-// :: Components
-// =============================================================================
-
-@import
-	"components/_header";
-
+$line-height-base: 2.6rem;
