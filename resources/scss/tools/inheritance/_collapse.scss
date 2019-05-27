@@ -52,11 +52,7 @@
 // :: States
 // =============================================================================
 @mixin inherit-collapse-trigger-state-open() {
-
-	// Style the icon
-	&::before {
-		transform: rotate(180deg);
-	}
+	transform: rotate(180deg);
 }
 
 @mixin inherit-collapse-content-state-open() {

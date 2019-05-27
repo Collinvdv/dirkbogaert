@@ -2,16 +2,18 @@
 // :: Header
 // =============================================================================
 .c-header {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-
 	padding: 2rem 0;
 }
 
 // =============================================================================
 // :: Elements
 // =============================================================================
+.c-header__container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
 .c-header__nav {
 	display: flex;
 	align-items: center;
@@ -25,7 +27,21 @@
 	list-style-type: none;
 }
 
+.c-header__list-item {
+	margin-left: 3.5rem;
+}
+
+.c-header__item-link {
+	color: $text-color-base;
+
+	text-decoration: none;
+}
+
 .c-header__part {
 	display: flex;
 	align-items: center;
+}
+
+.c-header__search {
+	margin-left: 3.5rem;
 }

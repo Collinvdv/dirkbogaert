@@ -1,0 +1,36 @@
+// =============================================================================
+// :: Input
+// =============================================================================
+// .c-input {}
+
+// =============================================================================
+// :: Elements
+// =============================================================================
+.c-input__wrapper {
+	position: relative;
+
+	background-color: $background-color-grey;
+	border-radius: 1.5rem;
+}
+
+.c-input__field {
+	padding: 0.5rem 1rem 0.5rem 2.5rem;
+
+	background-color: transparent;
+	border: none;
+
+	&:focus {
+		outline: none;
+	}
+}
+
+.c-input__icon {
+	position: absolute;
+	top: 50%;
+	left: 1rem;
+
+	width: 1.2rem;
+	height: 1.2rem;
+
+	transform: translateY(-50%);
+}

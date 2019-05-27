@@ -12,11 +12,14 @@
 // =============================================================================
 // :: Load fonts
 // =============================================================================
-// @include get-font("roboto", "../assets/general/fonts/roboto/roboto-regular", 400, normal);
+@include get-font("Avenir", "/assets/fonts/avenir/avenir-book", 100, normal);
+@include get-font("Avenir", "/assets/fonts/avenir/avenir-black", 800, normal);
+@include get-font("Avenir", "/assets/fonts/avenir/avenir-medium", 400, normal);
+
 // =============================================================================
 // :: Font families
 // =============================================================================
-$font-family-primary: ("Arial", sans-serif);
+$font-family-primary: ("Avenir", sans-serif);
 
 // =============================================================================
 // :: Font weights
@@ -38,9 +41,11 @@ $font-weight-ultrathin: 100;
 // =============================================================================
 // :: Font sizes
 // =============================================================================
+$font-size-1x-large: 4.8rem;
 $font-size-base: 1.6rem;
 
 // =============================================================================
 // :: Line heights
 // =============================================================================
+$line-height-1x-large: 6.6rem;
 $line-height-base: 2.6rem;

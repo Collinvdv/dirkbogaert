@@ -11,15 +11,27 @@
 {# ========================================================================== #}
 {# :: Component #}
 {# ========================================================================== #}
-
 <div class="c-language {{classes}}">
-	<button class="c-language__active">{{activeLanguage}}</button>
 
-	<ul class="c-language__list">
-		{% for item in items %}
-			<li class="c-language__item">
-				<a href="/" class="c-language__link">{{item}}</a>
-			</li>
-		{% endfor %}
-	</ul>
+	<div class="c-language__header">
+		{% include "/components/icon.twig" with {
+			classes: "c-language__icon",
+			icon: "search"
+		} only %}
+
+		<span class="c-language__text">{{activeLanguage}}</span>
+	</div>
+
+	<div class="c-language__content">
+		<div class="c-language__content__container">
+			<ul class="c-language__list">
+				{% for item in items %}
+					<li class="c-language__item">
+						<a href="/" class="c-language__link">{{item}}</a>
+					</li>
+				{% endfor %}
+			</ul>
+		</div>
+	</div>
+
 </div>

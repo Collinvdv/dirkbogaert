@@ -9,34 +9,39 @@
 {% macro default(classes, data) %}
 
 	<header class="c-header {{classes}}">
-		<div class="c-header__part">
-			<nav class="c-header__nav">
-				<a href="/">
-					<img src="/assets/img/logo-thibri.svg" alt="logo" class="c-header__logo"  title="logo" />
-				</a>
+		<div class="c-header__container l-container">
+			<div class="c-header__part">
+				<nav class="c-header__nav">
+					<a href="/">
+						<img src="/assets/img/logo-thibri.svg" alt="logo" class="c-header__logo"  title="logo" />
+					</a>
 
-				<ul class="c-header__list">
-					{% for item in data.items %}
-						<li class="c-header__list-item">
-							<a href="{{item.url}}">{{item.text}}</a>
-						</li>
-					{% endfor %}
-				</ul>
-			</nav>
+					<ul class="c-header__list">
+						{% for item in data.items %}
+							<li class="c-header__list-item">
+								<a class="c-header__item-link" href="{{item.url}}">{{item.text}}</a>
+							</li>
+						{% endfor %}
+					</ul>
+				</nav>
 
-			<div class="c-header__search">
-				<input type="text" class="c-header__search-input" />
-
-				{% include "/components/icon.twig" with {
-					icon: "search"
-				} only %}
+				<div class="c-header__search">
+					{% include "/components/input.twig" with {
+						classes: "c-header__search",
+						id: "search-header",
+						inputName: "search-header",
+						inputType: "text",
+						inputPlaceholder: "Zoeken",
+						icon: "search"
+					} only %}
+				</div>
 			</div>
-		</div>
 
-		{% include "/components/language.twig" with {
-			activeLanguage: "NL",
-			items: ["EN", "FR"]
-		} only %}
+			{% include "/components/language.twig" with {
+				activeLanguage: "NL",
+				items: ["EN", "FR"]
+			} only %}
+		</div>
 	</header>
 
 {% endmacro %}
