@@ -9,6 +9,8 @@
 {% macro default(classes, data) %}
 
 	<header class="c-header {{classes}}">
+		<div class="c-header__overlay"></div>
+
 		<div class="c-header__container l-container">
 			<div class="c-header__part">
 				<nav class="c-header__nav">
@@ -38,8 +40,14 @@
 			</div>
 
 			{% include "/components/language.twig" with {
+				classes: "c-header__language",
 				activeLanguage: "NL",
 				items: ["EN", "FR"]
+			} only %}
+
+			{% include "/components/icon.twig" with {
+				classes: "c-header__hamburger",
+				icon: "search"
 			} only %}
 		</div>
 	</header>

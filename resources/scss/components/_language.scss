@@ -2,7 +2,11 @@
 // :: LANGUAGE
 // ============================================================================
 .c-language {
-	position: relative;
+	display: flex;
+
+	@include respond-at(get-breakpoint("tablet")) {
+		display: block;
+	}
 
 	&:hover {
 		cursor: pointer;
@@ -43,32 +47,40 @@
 .c-language__header {
 	display: flex;
 
-	padding: 2.5rem 1.5rem 2.5rem 0;
-
 	color: $text-color-base;
-	border-radius: 2rem;
 
 	transition: color 0.2s ease-out;
+
+	@include respond-at(get-breakpoint("tablet")) {
+		padding: 2.5rem 1.5rem 2.5rem 0;
+	}
 }
 
 .c-language__icon {
+	display: none;
 	width: 1.5rem;
 	height: 1.5rem;
 	margin-right: 1rem;
+
+	@include respond-at(get-breakpoint("tablet")) {
+		display: block;
+	}
 }
 
 .c-language__content {
-	position: absolute;
-	top: 1rem;
-	left: -1rem;
-	z-index: $z-index-pit;
-
-	width: 80%;
-
 	margin-left: 0;
-	padding: 5rem 1rem 2rem;
 
 	pointer-events: none;
+
+	@include respond-at(get-breakpoint("tablet")) {
+		position: absolute;
+		top: 1rem;
+		left: -1rem;
+		z-index: $z-index-pit;
+
+		width: 80%;
+		padding: 5rem 1rem 2rem;
+	}
 
 	&::before {
 		content: "";
@@ -94,7 +106,7 @@
 
 .c-language__list {
 	display: flex;
-	flex-direction: column;
+	flex-direction: row;
 	align-items: center;
 	padding-left: 0;
 
@@ -102,10 +114,20 @@
 
 	list-style-type: none;
 
-	li {
-		opacity: 0;
+	@include respond-at(get-breakpoint("tablet")) {
+		flex-direction: column;
+	}
 
-		transform: translateY(1rem);
-		transition: transform 0.06s ease-in-out, opacity 0.06s ease-in-out;
+	li {
+		margin-left: 1rem;
+
+		@include respond-at(get-breakpoint("tablet")) {
+			margin-left: 0;
+
+			opacity: 0;
+
+			transform: translateY(1rem);
+			transition: transform 0.06s ease-in-out, opacity 0.06s ease-in-out;
+		}
 	}
 }
