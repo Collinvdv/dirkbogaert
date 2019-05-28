@@ -17,3 +17,5 @@ mix
 	.copy('resources/img', 'web/assets/img/')
 	.stylelint()
 	.sass('resources/scss/base.scss', 'web/assets/css/base.css');
+	// .eslint()
+	// .js('recources/js/main.js', 'web/assets/js/main.min.js');

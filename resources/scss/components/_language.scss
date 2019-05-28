@@ -7,38 +7,6 @@
 	@include respond-at(get-breakpoint("tablet")) {
 		display: block;
 	}
-
-	&:hover {
-		cursor: pointer;
-
-		.c-language__header {
-			color: $text-color-base;
-		}
-
-		.c-language__content {
-			pointer-events: auto;
-
-			&::before {
-				transform: scaleY(1);
-			}
-		}
-
-		.c-language__list {
-			@for $i from 1 through 10 {
-
-				li:nth-child(#{$i}) {
-					transition: transform 0.3s ease-in-out $i * 0.04s, opacity 0.3s ease-in-out $i * 0.04s;
-				}
-			}
-
-			li {
-				opacity: 1;
-				transform: translateY(0);
-
-				transition: transform 0s ease-in-out, opacity 0s ease-in-out;
-			}
-		}
-	}
 }
 
 // ============================================================================
@@ -128,6 +96,45 @@
 
 			transform: translateY(1rem);
 			transition: transform 0.06s ease-in-out, opacity 0.06s ease-in-out;
+		}
+	}
+}
+
+// ============================================================================
+// :: States
+// ============================================================================
+
+.c-language {
+
+	&.is-open {
+		cursor: pointer;
+
+		.c-language__header {
+			color: $text-color-base;
+		}
+
+		.c-language__content {
+			pointer-events: auto;
+
+			&::before {
+				transform: scaleY(1);
+			}
+		}
+
+		.c-language__list {
+			@for $i from 1 through 10 {
+
+				li:nth-child(#{$i}) {
+					transition: transform 0.3s ease-in-out $i * 0.04s, opacity 0.3s ease-in-out $i * 0.04s;
+				}
+			}
+
+			li {
+				opacity: 1;
+				transform: translateY(0);
+
+				transition: transform 0s ease-in-out, opacity 0s ease-in-out;
+			}
 		}
 	}
 }
