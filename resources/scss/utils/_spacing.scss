@@ -56,30 +56,30 @@ $largeContainer: px($container-width-base)+px(10rem)+(get-viewport-spacing("scre
 // 	}
 // }
 
-// .u-outside-padding-right {
-// 	margin-right: - get-viewport-spacing("mobile") !important;
-// 	padding-right: get-viewport-spacing("mobile") !important;
+.u-outside-padding-right {
+	margin-right: - get-viewport-spacing("mobile") !important;
+	padding-right: get-viewport-spacing("mobile") !important;
 
-// 	@include respond-at(get-breakpoint("tablet")) {
-// 		margin-right: - get-viewport-spacing("tablet") !important;
-// 		padding-right: get-viewport-spacing("tablet") !important;
-// 	}
+	@include respond-at(get-breakpoint("tablet")) {
+		margin-right: - get-viewport-spacing("tablet") !important;
+		padding-right: get-viewport-spacing("tablet") !important;
+	}
 
-// 	@include respond-at(get-breakpoint("desktop")) {
-// 		margin-right: - get-viewport-spacing("desktop") !important;
-// 		padding-right: get-viewport-spacing("desktop") !important;
-// 	}
+	@include respond-at(get-breakpoint("desktop")) {
+		margin-right: - get-viewport-spacing("desktop") !important;
+		padding-right: get-viewport-spacing("desktop") !important;
+	}
 
-// 	@include respond-at(get-breakpoint("screen")) {
-// 		margin-right: - get-viewport-spacing("screen") !important;
-// 		padding-right: get-viewport-spacing("screen") !important;
-// 	}
+	@include respond-at(get-breakpoint("screen")) {
+		margin-right: - get-viewport-spacing("screen") !important;
+		padding-right: get-viewport-spacing("screen") !important;
+	}
 
-// 	@include respond-at($largeContainer) {
-// 		margin-right: - 10rem !important;
-// 		padding-right: 10rem !important;
-// 	}
-// }
+	@include respond-at($largeContainer) {
+		margin-right: - 12rem !important;
+		padding-right: 12rem !important;
+	}
+}
 
 // =============================================================================
 // :: Padding - bottom

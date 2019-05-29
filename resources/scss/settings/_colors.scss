@@ -4,11 +4,18 @@
 $black: hsla(0, 0%, 0%, 1);
 $black-29: hsla(0, 0%, 29%, 1);
 $grey: hsla(0, 0%, 88%, 1);
-$white: hsla(0, 0%, 100%, 100%);
+$white: hsla(0, 0%, 100%, 1);
+$white-40: hsla(0, 0%, 100%, 0.4);
+
+
+$lime: hsla(60, 61%, 50%, 1);
+$green: hsla(60, 41%, 40%, 1);
 
 // =============================================================================
 // :: Internal Colors
 // =============================================================================
+$primary-color: $green;
+$secondary-color: $lime;
 
 // Background colors
 $background-color-black: $black;
@@ -17,3 +24,7 @@ $background-color-white: $white;
 
 // Text colors
 $text-color-base: $black-29;
+$text-color-white: $white;
+
+// border colors
+$border-color-white-40: $white-40;

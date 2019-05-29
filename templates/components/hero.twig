@@ -1,36 +1,42 @@
 {# ========================================================================== #}
 {# :: Imports #}
 {# ========================================================================== #}
-{% import "templates/components/button.twig" as button %}
+{# set variables #}
+{% set image = image ?? NULL %}
+{% set contentTitle = contentTitle ?? NULL %}
+{% set contentText = contentText ?? NULL %}
+{% set buttonText = buttonText ?? NULL %}
+{% set activeLanguage = activeLanguage ?? NULL %}
+{% set items = items ?? NULL %}
+
+{# set classes #}
+{% set classes = classes ?? "" %}
 
 {# ========================================================================== #}
 {# :: Component #}
 {# ========================================================================== #}
-{% macro default(classes, data) %}
-
-	<div class="c-hero {{classes}}" style="background-image: url('{{data.image}}');">
-
+<div class="c-hero {{classes}}" style="background-image: url('{{image}}');">
+	<div class="l-container c-hero__container">
 		<div class="c-hero__content">
-			<h1 class="c-hero__title">{{data.title}}</h1>
+			<h1 class="c-hero__title">{{contentTitle}}</h1>
 
-			<p class="c-hero__text">{{data.text}}</p>
+			<p class="c-hero__text">{{contentText}}</p>
 
-			{{button.default("", {
-				text: "Bekijk de catalogus"
-			})}}
+			{% include "/components/button.twig" with {
+				text: buttonText
+			} only %}
 		</div>
 
-		<div class="c-hero__info">
+		<div class="c-hero__info u-outside-padding-right">
 			<ul class="c-hero__list">
-				{% for item in data.items %}
+				{% for item in items %}
 					<li class="c-hero__item">
 						<h3 class="c-hero__item-title">{{item.title}}</h3>
 
 						<p class="c-hero__item-text">{{item.text}}</p>
 					</li>
-				{% enfor %}
+				{% endfor %}
 			</ul>
 		</div>
 	</div>
-
-{% endmacro %}
+</div>

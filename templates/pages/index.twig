@@ -3,12 +3,33 @@
 {# ========================================================================== #}
 {% extends "_base/layout" %}
 
-{% import "components/header.twig" as header %}
-
 {# ========================================================================== #}
 {# Content #}
 {# ========================================================================== #}
 {% block content %}
+
+	{% include "/components/hero.twig" with {
+		classes: "",
+		image: "/assets/img/hero.jpg",
+		contentTitle: "Thibri plants",
+		contentText: "Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+		sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+		buttonText: "Ontdek de catalogus",
+		items: [
+			{
+				title: "Over ons",
+				text: "Lorem ipsum doler sit amet, consectetur adipiscing"
+			},
+			{
+				title: "Catalogus",
+				text: "Lorem ipsum doler sit amet, consectetur adipiscing"
+			},
+			{
+				title: "Een vraag?",
+				text: "Lorem ipsum doler sit amet, consectetur adipiscing"
+			}
+		]
+	} only %}
 
 {% endblock %}
 
