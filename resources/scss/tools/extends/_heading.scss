@@ -12,6 +12,16 @@
 // =============================================================================
 @mixin extend-h1-base() {
 	font-family: $font-family-primary;
+	font-size: $font-size-3x-large;
+	line-height: $line-height-2x-large;
+	font-weight: $font-weight-black;
+}
+
+// =============================================================================
+// :: H2
+// =============================================================================
+@mixin extend-h2-base() {
+	font-family: $font-family-primary;
 	font-size: $font-size-2x-large;
 	line-height: $line-height-1x-large;
 	font-weight: $font-weight-black;

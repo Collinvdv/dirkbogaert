@@ -1,0 +1,81 @@
+// =============================================================================
+// :: Partner
+// =============================================================================
+.c-partner {
+	position: relative;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 27rem;
+	height: 27rem;
+
+	&::after {
+		content: "";
+
+		position: absolute;
+		top: 0;
+		left: 0;
+
+		display: block;
+		width: 100%;
+		height: 100%;
+
+		border: 0.1rem solid black;
+		border-radius: 100%;
+	}
+}
+
+// =============================================================================
+// :: Elements
+// =============================================================================
+.c-partner__name {
+	@include extend-h2-base();
+}
+
+.c-partner__oval {
+	position: absolute;
+	top: 0;
+	left: 0;
+
+	width: 100%;
+	height: 100%;
+
+	fill: transparent;
+
+	opacity: 0.3;
+
+	animation: rotate 4s linear infinite;
+}
+
+// =============================================================================
+// :: Modifiers
+// =============================================================================
+.c-partner--primary {
+
+	&::after {
+		border-color: $primary-color;
+	}
+
+	.c-partner__oval {
+		stroke: $primary-color;
+	}
+
+	.c-partner__name {
+		color: $primary-color;
+	}
+}
+
+// =============================================================================
+// :: Animation
+// =============================================================================
+@keyframes rotate {
+
+	0% {
+		transform: rotate(0deg);
+	}
+
+	100% {
+		transform: rotate(360deg);
+	}
+}
