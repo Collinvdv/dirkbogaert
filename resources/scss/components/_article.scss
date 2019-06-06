@@ -1,0 +1,92 @@
+// =============================================================================
+// :: Article
+// =============================================================================
+.c-article {
+	position: relative;
+	background-color: $primary-color;
+}
+
+// =============================================================================
+// :: Elements
+// =============================================================================
+.c-article__link {
+	position: absolute;
+	top: 0;
+	left: 0;
+
+	display: block;
+	width: 100%;
+	height: 100%;
+
+	cursor: hover;
+}
+
+.c-article__image-container {
+	position: relative;
+
+	width: 100%;
+	height: 14rem;
+
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.c-article__image {
+	opacity: 0;
+}
+
+.c-article__button {
+	position: absolute;
+	bottom: 0;
+	right: 2rem;
+
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	width: 4rem;
+	height: 4rem;
+
+	border: none;
+	border-radius: $border-radius-large;
+	background-color: $background-color-white;
+
+	transform: translateY(50%);
+}
+
+.c-article__info {
+	padding: 2rem 3rem;
+}
+
+.c-article__title {
+	font-family: $font-family-primary;
+	font-size: $font-size-1x-large;
+	font-weight: $font-weight-black;
+	letter-spacing: $letter-spacing-base;
+
+	color: $text-color-white;
+}
+
+.c-article__type {
+	font-family: $font-family-primary;
+	font-weight: $font-weight-black;
+	font-size: $font-size-2x-small;
+	letter-spacing: $letter-spacing-1x-large;
+	text-transform: uppercase;
+
+	color: $text-color-white;
+
+	opacity: 0.6;
+}
+
+.c-article__content {
+	padding-left: 1rem;
+	border-left: 0.1rem solid $secondary-color;
+}
+
+.c-article__text {
+	font-family: $font-family-primary;
+	font-size: $font-size-1x-small;
+	font-weight: $font-weight-ultrathin;
+
+	color: $text-color-white;
+}

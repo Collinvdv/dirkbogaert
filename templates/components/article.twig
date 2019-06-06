@@ -1,30 +1,42 @@
 {# ========================================================================== #}
+{# :: Imports #}
+{# ========================================================================== #}
+{# set variables #}
+{% set image = image ?? NULL %}
+{% set title = title ?? NULL %}
+{% set type = type ?? NULL %}
+{% set text = text ?? NULL %}
+{% set link = link ?? NULL %}
+
+{# set classes #}
+{% set classes = classes ?? "" %}
+
+{# ========================================================================== #}
 {# :: Component #}
 {# ========================================================================== #}
-{% macro default(classes, data) %}
+<article class="c-article {{classes}}">
+	<a href="{{link}}" class="c-article__link"></a>
 
-	<article class="c-article">
-		<a href="/" class="c-article__link"></a>
-
-		<div class="c-article__image-container">
-			<img src="{{data.image}}" alt="{{data.title}}" class="c-article__image" title="{{data.title}}" />
-		</div>
+	<div class="c-article__image-container" style="background-image: url('{{image}}');">
+		<img src="{{image}}" alt="{{title}}" class="c-article__image" title="{{title}}" />
 
 		<button class="c-article__button">
-			{% include "resources/icons/arrow-right.svg" %}
+			{% include "/components/icon.twig" with {
+				classes: "c-article__icon",
+				icon: "arrow-right"
+			} only %}
 		</button>
+	</div>
 
-		<div class="c-article__info">
-			<header class="c-article__header">
-				<h3 class="c-article__title">{{data.title}}</h3>
-				<span class="c-article__type">{{data.type}}</span>
-			</header>
+	<div class="c-article__info">
+		<header class="c-article__header">
+			<h3 class="c-article__title">{{title}}</h3>
+			<span class="c-article__type">{{type}}</span>
+		</header>
 
-			<div class="c-article__content">
-				<p>{{data.text}}</p>
-			</div>
+		<div class="c-article__content">
+			<p class="c-article__text">{{text}}</p>
 		</div>
+	</div>
 
-	</article>
-
-{% endmacro %}
+</article>

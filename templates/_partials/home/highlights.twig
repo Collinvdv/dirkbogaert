@@ -1,0 +1,47 @@
+{# ========================================================================== #}
+{# Highlights #}
+{# ========================================================================== #}
+<section class="l-section l-section--grey-half">
+	<div class="l-container">
+		<header class="l-section__header">
+			<h2 class="l-section__title">In de kijker</h2>
+		</header>
+		<div class="l-section__content">
+			<div class="l-section__item">
+				<p class="l-section__text">Lorem ipsum dolor sit amet,
+				consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+				labore et dolore magna aliqua.</p>
+			</div>
+			<div class="l-section__item">
+				<div class="l-grid l-grid--with-spacing l-grid--space-between">
+					{% include "/components/article.twig" with {
+						classes: "l-grid__col l-grid__col--3 l-grid__col--offset-1",
+						image: "/assets/img/placeholder.jpg",
+						title: "Placeholder title",
+						type: "placeholder type",
+						text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor ",
+						link: "/"
+					} only %}
+
+					{% include "/components/article.twig" with {
+						classes: "l-grid__col l-grid__col--3",
+						image: "/assets/img/placeholder.jpg",
+						title: "Placeholder title",
+						type: "placeholder type",
+						text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor ",
+						link: "/"
+					} only %}
+
+					{% include "/components/article.twig" with {
+						classes: "l-grid__col l-grid__col--3",
+						image: "/assets/img/placeholder.jpg",
+						title: "Placeholder title",
+						type: "placeholder type",
+						text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor ",
+						link: "/"
+					} only %}
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
