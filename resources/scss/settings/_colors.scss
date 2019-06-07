@@ -11,12 +11,14 @@ $white-40: hsla(0, 0%, 100%, 0.4);
 
 $lime: hsla(60, 61%, 50%, 1);
 $green: hsla(60, 41%, 40%, 1);
+$dark-green: hsla(92, 54%, 45%, 1);
 
 // =============================================================================
 // :: Internal Colors
 // =============================================================================
 $primary-color: $green;
 $secondary-color: $lime;
+$tertiary-color: $dark-green;
 
 // Background colors
 $background-color-black: $black;

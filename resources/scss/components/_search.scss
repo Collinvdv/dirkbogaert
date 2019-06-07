@@ -1,19 +1,19 @@
 // =============================================================================
 // :: Input
 // =============================================================================
-// .c-input {}
+// .c-search {}
 
 // =============================================================================
 // :: Elements
 // =============================================================================
-.c-input__wrapper {
+.c-search__wrapper {
 	position: relative;
 
 	background-color: $background-color-grey;
 	border-radius: 1.5rem;
 }
 
-.c-input__field {
+.c-search__field {
 	padding: 0.5rem 1rem 0.5rem 2.5rem;
 
 	background-color: transparent;
@@ -24,7 +24,7 @@
 	}
 }
 
-.c-input__icon {
+.c-search__icon {
 	position: absolute;
 	top: 50%;
 	left: 1rem;

@@ -1,0 +1,21 @@
+{# ========================================================================== #}
+{# :: Data #}
+{# ========================================================================== #}
+{# set variables #}
+{% set items = items ?? NULL %}
+
+{# set classes #}
+{% set classes = classes ?? "" %}
+
+{# ========================================================================== #}
+{# :: Component #}
+{# ========================================================================== #}
+<div class="c-partners {{classes}}">
+	{% for item in items %}
+		{% include "/components/partner.twig" with {
+			name: item.name,
+			color: item.color,
+			classes: "c-partners__item"
+		} only %}
+	{% endfor %}
+</div>

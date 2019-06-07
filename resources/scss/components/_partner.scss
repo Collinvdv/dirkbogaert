@@ -45,7 +45,7 @@
 
 	opacity: 0.3;
 
-	animation: rotate 4s linear infinite;
+	animation: rotate 10s linear infinite;
 }
 
 // =============================================================================
@@ -63,6 +63,36 @@
 
 	.c-partner__name {
 		color: $primary-color;
+	}
+}
+
+.c-partner--secondary {
+
+	&::after {
+		border-color: $secondary-color;
+	}
+
+	.c-partner__oval {
+		stroke: $secondary-color;
+	}
+
+	.c-partner__name {
+		color: $secondary-color;
+	}
+}
+
+.c-partner--tertiary {
+
+	&::after {
+		border-color: $tertiary-color;
+	}
+
+	.c-partner__oval {
+		stroke: $tertiary-color;
+	}
+
+	.c-partner__name {
+		color: $tertiary-color;
 	}
 }
 

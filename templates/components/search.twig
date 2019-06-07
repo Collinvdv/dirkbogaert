@@ -22,16 +22,16 @@
 {# ========================================================================== #}
 {# :: Component #}
 {# ========================================================================== #}
-<div class="c-input {{classes}}">
+<div class="c-search {{classes}}">
 
-	<label class="c-input__label {{labelClasses}}" for="{{inputName}}">
+	<label class="c-search__label {{labelClasses}}" for="{{inputName}}">
 		{{labelText}}
 	</label>
 
-	<div class="c-input__wrapper">
+	<div class="c-search__wrapper">
 		<input
 			id="{{id}}"
-			class="c-input__field"
+			class="c-search__field"
 			type="{{inputType}}"
 			name="{{inputName}}"
 			placeholder="{{inputPlaceholder}}"
@@ -40,7 +40,7 @@
 
 		{% if icon %}
 			{% include "/components/icon.twig" with {
-				classes: "c-input__icon",
+				classes: "c-search__icon",
 				icon: icon
 			} only %}
 		{% endif %}
