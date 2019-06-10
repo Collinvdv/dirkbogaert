@@ -1,0 +1,30 @@
+// =============================================================================
+// :: Input
+// =============================================================================
+.c-textarea {
+	width: 100%;
+}
+
+// =============================================================================
+// :: Elements
+// =============================================================================
+.c-textarea__label {
+	font-family: $font-family-primary;
+	font-weight: $font-weight-black;
+	font-size: $font-size-1x-large;
+	letter-spacing: $letter-spacing-base;
+
+	color: $text-color-base;
+}
+
+.c-textarea__field {
+	width: 100%;
+	max-width: 100%;
+	min-width: 100%;
+	min-height: calc(4.4rem * 3);
+	padding: 2rem;
+
+	background: $background-color-white;
+	border: $border-base;
+	border-radius: $border-radius-base;
+}

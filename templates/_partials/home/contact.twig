@@ -1,0 +1,41 @@
+{# ========================================================================== #}
+{# Coworking #}
+{# ========================================================================== #}
+{% include "/components/contact.twig" with {
+	title: "Contacteer ons",
+	text: "Geïnteresseerd in een fijne samenwerking met Thibri Plants? <br/>Contacteer ons!",
+	fields: [
+		{
+			id: "contact-name",
+			inputName: "contact-name",
+			inputType: "text",
+			labelText: "Naam"
+		},
+		{
+			id: "contact-email",
+			inputName: "contact-email",
+			inputType: "email",
+			labelText: "E-mailadres"
+		},
+		{
+			id: "contact-message",
+			inputName: "contact-message",
+			inputType: "textarea",
+			labelText: "Bericht"
+		}
+	],
+	cantactInfo: [
+		{
+			icon: "telephone",
+			text: "<a href='tel: 052 42 43 00'>052 42 43 00</a> </br> <a href='tel: 0475 50 64 84'>0475 50 64 84</a>"
+		},
+		{
+			icon: "mail",
+			text: "<a href='mailto:bogaertdirk.ann@skynet.be'>bogaertdirk.ann@skynet.be</a>"
+		},
+		{
+			icon: "location",
+			text: "<address>Naam straat 45</br>1234 Gemeente</address>"
+		}
+	]
+} only %}

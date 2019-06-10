@@ -1,0 +1,48 @@
+{# ========================================================================== #}
+{# :: Data #}
+{# ========================================================================== #}
+{# set variables #}
+{% set id = id ?? NULL %}
+{% set icon = icon ?? NULL %}
+
+{# label #}
+{% set labelClasses = labelClasses ?? NULL %}
+{% set labelText = labelText ?? NULL %}
+
+{# input #}
+{% set inputName = inputName ?? NULL %}
+{% set inputType = inputType ?? NULL %}
+{% set inputPlaceholder = inputPlaceholder ?? NULL %}
+{% set inputValue = inputValue ?? NULL %}
+
+
+{# set classes #}
+{% set classes = "" %}
+
+{# ========================================================================== #}
+{# :: Component #}
+{# ========================================================================== #}
+<div class="c-input {{classes}}">
+
+	<label class="c-input__label {{labelClasses}}" for="{{inputName}}">
+		{{labelText}}
+	</label>
+
+	<div class="c-input__wrapper">
+		<input
+			id="{{id}}"
+			class="c-input__field"
+			type="{{inputType}}"
+			name="{{inputName}}"
+			placeholder="{{inputPlaceholder}}"
+			value="{{inputValue}}"
+		/>
+
+		{% if icon %}
+			{% include "/components/icon.twig" with {
+				classes: "c-input__icon",
+				icon: icon
+			} only %}
+		{% endif %}
+	</div>
+</div>

@@ -1,0 +1,39 @@
+// =============================================================================
+// :: Contact
+// =============================================================================
+.c-contact {
+	background: linear-gradient(to right, $background-color-grey-1x-light 0% 75%, $background-color-white 75% 100%);
+}
+
+// =============================================================================
+// :: Elements
+// =============================================================================
+.c-contact__content {
+	width: calc(75% - 4rem);
+}
+
+.c-contact__form {
+	width: 50rem;
+}
+
+.c-contact__info {
+	background-color: $primary-color;
+	color: $text-color-white;
+}
+
+.c-contact__info-title {
+	color: $text-color-white;
+}
+
+.c-contact__info-list {
+	padding-left: 0;
+	list-style-type: none;
+}
+
+.c-contact__info-item {
+	display: flex;
+}
+
+.c-contact__info-icon {
+	fill: $white;
+}

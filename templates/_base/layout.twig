@@ -15,7 +15,7 @@
 
 	<body id="body">
 
-		{{header.default("", {
+		{% include "/components/header.twig" with {
 			items: [
 				{
 					url: "/",
@@ -30,7 +30,7 @@
 					text: "Contact"
 				}
 			]
-		})}}
+		} only %}
 
 		<main>
 			{% block content %}

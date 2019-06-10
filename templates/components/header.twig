@@ -1,55 +1,53 @@
 {# ========================================================================== #}
-{# :: Imports #}
+{# :: Data #}
 {# ========================================================================== #}
-{# {% import "/templates/components/icon.twig" as icon %} #}
+
+{# set classes #}
+{% set classes = classes ?? "" %}
 
 {# ========================================================================== #}
 {# :: Component #}
 {# ========================================================================== #}
-{% macro default(classes, data) %}
+<header class="c-header {{classes}}">
+	<div class="c-header__overlay"></div>
 
-	<header class="c-header {{classes}}">
-		<div class="c-header__overlay"></div>
+	<div class="c-header__container l-container">
+		<div class="c-header__part">
+			<nav class="c-header__nav">
+				<a href="/">
+					<img src="/assets/img/logo-thibri.svg" alt="logo" class="c-header__logo"  title="logo" />
+				</a>
 
-		<div class="c-header__container l-container">
-			<div class="c-header__part">
-				<nav class="c-header__nav">
-					<a href="/">
-						<img src="/assets/img/logo-thibri.svg" alt="logo" class="c-header__logo"  title="logo" />
-					</a>
+				<ul class="c-header__list">
+					{% for item in items %}
+						<li class="c-header__list-item">
+							<a class="c-header__item-link" href="{{item.url}}">{{item.text}}</a>
+						</li>
+					{% endfor %}
+				</ul>
+			</nav>
 
-					<ul class="c-header__list">
-						{% for item in data.items %}
-							<li class="c-header__list-item">
-								<a class="c-header__item-link" href="{{item.url}}">{{item.text}}</a>
-							</li>
-						{% endfor %}
-					</ul>
-				</nav>
-
-				<div class="c-header__search">
-					{% include "/components/search.twig" with {
-						classes: "c-header__search",
-						id: "search-header",
-						inputName: "search-header",
-						inputType: "text",
-						inputPlaceholder: "Zoeken",
-						icon: "search"
-					} only %}
-				</div>
+			<div class="c-header__search">
+				{% include "/components/search.twig" with {
+					classes: "c-header__search",
+					id: "search-header",
+					inputName: "search-header",
+					inputType: "text",
+					inputPlaceholder: "Zoeken",
+					icon: "search"
+				} only %}
 			</div>
-
-			{% include "/components/language.twig" with {
-				classes: "c-header__language",
-				activeLanguage: "NL",
-				items: ["EN", "FR"]
-			} only %}
-
-			{% include "/components/icon.twig" with {
-				classes: "c-header__hamburger",
-				icon: "search"
-			} only %}
 		</div>
-	</header>
 
-{% endmacro %}
+		{% include "/components/language.twig" with {
+			classes: "c-header__language",
+			activeLanguage: "NL",
+			items: ["EN", "FR"]
+		} only %}
+
+		{% include "/components/icon.twig" with {
+			classes: "c-header__hamburger",
+			icon: "search"
+		} only %}
+	</div>
+</header>

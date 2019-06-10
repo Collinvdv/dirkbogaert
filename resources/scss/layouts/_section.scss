@@ -24,7 +24,7 @@
 // :: Modifiers
 // =============================================================================
 .l-section--grey-half {
-	background: linear-gradient(to right, $bakcground-color-grey-1x-light 0% 50%, $background-color-white 50% 100%);
+	background: linear-gradient(to right, $background-color-grey-1x-light 0% 50%, $background-color-white 50% 100%);
 
 	.l-section__text {
 		max-width: calc(50% - 2rem);
