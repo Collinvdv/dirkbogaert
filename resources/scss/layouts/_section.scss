@@ -24,18 +24,32 @@
 // :: Modifiers
 // =============================================================================
 .l-section--grey-half {
-	background: linear-gradient(to right, $background-color-grey-1x-light 0% 50%, $background-color-white 50% 100%);
+	background: linear-gradient(to right, $background-color-grey-1x-light 0% 85%, $background-color-white 85% 100%);
+
+	@include respond-at("tablet") {
+		background: linear-gradient(to right, $background-color-grey-1x-light 0% 50%, $background-color-white 50% 100%);
+	}
 
 	.l-section__text {
-		max-width: calc(50% - 2rem);
+		max-width: calc(85% - 2rem);
+
+		@include respond-at("tablet") {
+			max-width: calc(50% - 2rem);
+		}
 	}
 }
 
 .l-section__content--split {
-	display: flex;
-	flex-direction: row;
 
 	.l-section__item {
-		width: 50%;
+
+		@include respond-at(get-breakpoint("tablet")) {
+			width: 50%;
+		}
+	}
+
+	@include respond-at(get-breakpoint("tablet")) {
+		display: flex;
+		flex-direction: row;
 	}
 }

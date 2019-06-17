@@ -7,8 +7,17 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	width: 27rem;
-	height: 27rem;
+	width: 24rem;
+	min-width: 24rem;
+	height: 24rem;
+	min-height: 24rem;
+
+	@include respond-at(get-breakpoint("tablet")) {
+		width: 27rem;
+		min-width: 27rem;
+		height: 27rem;
+		min-height: 27rem;
+	}
 
 	&::after {
 		content: "";

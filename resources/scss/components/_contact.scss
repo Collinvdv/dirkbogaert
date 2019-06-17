@@ -4,30 +4,43 @@
 .c-contact {
 	position: relative;
 
-	background: linear-gradient(to right, $background-color-grey-1x-light 0% 75%, $background-color-white 75% 100%);
+	background: $background-color-grey-1x-light;
+
+	@include respond-at(get-breakpoint("tablet")) {
+		background: linear-gradient(to right, $background-color-grey-1x-light 0% 75%, $background-color-white 75% 100%);
+	}
 }
 
 // =============================================================================
 // :: Elements
 // =============================================================================
 .c-contact__content {
-	width: calc(75% - 4rem);
+
+	@include respond-at(get-breakpoint("tablet")) {
+		width: calc(75% - 4rem);
+	}
 }
 
 .c-contact__form {
-	width: 50rem;
+	@include respond-at(get-breakpoint("tablet")) {
+		width: 50rem;
+	}
 }
 
 .c-contact__info {
-	position: absolute;
-	bottom: 4rem;
-	right: 0;
-
-	width: 40%;
 	padding: 5rem;
+	margin-top: 5rem;
 
 	background-color: $primary-color;
 	color: $text-color-white;
+
+	@include respond-at(get-breakpoint("tablet")) {
+		position: absolute;
+		bottom: 4rem;
+		right: 0;
+
+		width: 40%;
+	}
 }
 
 .c-contact__info-title {

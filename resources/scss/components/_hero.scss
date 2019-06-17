@@ -31,8 +31,8 @@
 .c-hero__container {
 	position: relative;
 
-	display: flex;
-	align-items: center;
+	// display: flex;
+	// align-items: center;
 
 	border-left: $border-light;
 }
@@ -41,8 +41,13 @@
 	position: relative;
 
 	max-width: 45rem;
-	margin-bottom: 15rem;
+	margin-top: 7rem;
+	margin-bottom: 10rem;
 	padding-left: 2.5rem;
+
+	@include respond-at(get-breakpoint("tablet")) {
+		margin-bottom: 15rem;
+	}
 
 	&::before {
 		content: "";
@@ -73,20 +78,30 @@
 }
 
 .c-hero__info {
-	position: absolute;
-	bottom: 0;
-	right: 0;
 	padding: 4rem 0 4rem 6rem;
+	width: 100%;
 
 	background-color: $primary-color;
+
+	@include respond-at(get-breakpoint("tablet")) {
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		width: auto;
+	}
 }
 
 .c-hero__list {
 	padding-left: 0;
 
 	display: flex;
+	flex-wrap: wrap;
 
 	list-style-type: none;
+
+	@include respond-at(get-breakpoint("tablet")) {
+		flex-wrap: nowrap;
+	}
 }
 
 .c-hero__item {
@@ -95,7 +110,10 @@
 	color: $text-color-white;
 
 	+ .c-hero__item {
-		margin-left: 4rem;
+
+		@include respond-at(get-breakpoint("tablet")) {
+			margin-left: 4rem;
+		}
 	}
 }
 
