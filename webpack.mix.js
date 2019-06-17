@@ -18,4 +18,4 @@ mix
 	.stylelint()
 	.sass('resources/scss/base.scss', 'web/assets/css/base.css');
 	// .eslint()
-	// .js('recources/js/main.js', 'web/assets/js/main.min.js');
+	// .js('resources/js/main.js', 'web/assets/js/main.min.js');

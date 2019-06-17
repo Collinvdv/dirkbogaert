@@ -2,6 +2,8 @@
 // :: Contact
 // =============================================================================
 .c-contact {
+	position: relative;
+
 	background: linear-gradient(to right, $background-color-grey-1x-light 0% 75%, $background-color-white 75% 100%);
 }
 
@@ -17,6 +19,13 @@
 }
 
 .c-contact__info {
+	position: absolute;
+	bottom: 4rem;
+	right: 0;
+
+	width: 40%;
+	padding: 5rem;
+
 	background-color: $primary-color;
 	color: $text-color-white;
 }
@@ -32,8 +41,23 @@
 
 .c-contact__info-item {
 	display: flex;
+	margin-top: 2rem;
 }
 
 .c-contact__info-icon {
+	margin-right: 2rem;
+
 	fill: $white;
+}
+
+.c-contact__info-text a {
+	color: $text-color-white;
+
+	text-decoration: none;
+
+	transition: text-decoration 0.3s ease-in-out;
+
+	&:hover {
+		text-decoration: underline;
+	}
 }

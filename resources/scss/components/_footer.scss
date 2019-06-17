@@ -1,0 +1,41 @@
+// =============================================================================
+// :: Footer
+// =============================================================================
+.c-footer {
+	padding: 3rem 0;
+	background-color: $background-color-black;
+}
+
+// =============================================================================
+// :: Elements
+// =============================================================================
+.c-footer__nav {
+	display: flex;
+	align-items: center;
+}
+
+.c-footer__list {
+	display: flex;
+	padding-left: 0;
+}
+
+.c-footer__list-item {
+	margin-left: 4rem;
+
+	color: $text-color-white;
+
+	&:hover {
+
+		.c-footer__item-link {
+			color: $secondary-color;
+		}
+	}
+}
+
+.c-footer__item-link {
+	color: $text-color-white;
+
+	text-decoration: none;
+
+	transition: color 0.2s ease-in-out;
+}

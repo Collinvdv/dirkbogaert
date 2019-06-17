@@ -1,15 +1,24 @@
 "use strict";
 
-class Language {
+/**
+ * Imports
+ * =============================================================================
+ */
+import { Collapse } from "../../extends";
 
+/**
+ * Class
+ * =============================================================================
+ */
+class Language extends Collapse {
+
+	/* ====================================================================== *
+	 * Constructor
+	 * ====================================================================== */
 	constructor(el) {
-		this.el = el;
-
-		this.init();
-	}
-
-	init() {
-		console.log(this.el);
+		super(el, {
+			triggerClass: ".c-language__header"
+		});
 	}
 }
 

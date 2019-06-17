@@ -1,0 +1,31 @@
+{# ========================================================================== #}
+{# :: Data #}
+{# ========================================================================== #}
+{# set variables #}
+{% set items = items ?? NULL %}
+
+{# set classes #}
+{% set classes = classes ?? "" %}
+
+{# ========================================================================== #}
+{# :: Component #}
+{# ========================================================================== #}
+<footer class="c-footer {{classes}}">
+	<div class="l-container">
+		<nav class="c-footer__nav">
+			<a href="/" class="c-footer__logo-link">
+				<img src="/assets/img/logo-thibri-white.png" alt="logo" class="c-footer__logo"  title="logo" />
+			</a>
+
+			<ul class="c-footer__list">
+				{% for item in items %}
+					<li class="c-footer__list-item">
+						<a href="{{item.link}}" class="c-footer__item-link">
+							{{item.text}}
+						</a>
+					</li>
+				{% endfor %}
+			</ul>
+		</nav>
+	</div>
+</footer>
