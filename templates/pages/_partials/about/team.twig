@@ -1,0 +1,56 @@
+{# ========================================================================== #}
+{# Coworking #}
+{# ========================================================================== #}
+<section class="l-section l-section--center l-section--grey-vertical-half">
+	<div class="l-container">
+		<header class="l-section__header">
+			<h2 class="l-section__title">Ons team</h2>
+		</header>
+		<div class="l-section__content">
+			<div class="l-section__item l-section__text s-wysiwyg">
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+				sed do eiusmod tempor incididunt ut labore et dolore magna
+				aliqua.</p>
+			</div>
+			<div class="l-section__item">
+				<div class="l-grid l-grid--with-spacing l-grid--space-between">
+					{% include "/components/article.twig" with {
+						classes: "l-grid__col l-grid__col--12 l-grid__col--6@tablet l-grid__col--3@desktop",
+						image: "/assets/img/placeholder.jpg",
+						title: "Placeholder title",
+						type: "placeholder type",
+						text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor ",
+						link: "/"
+					} only %}
+
+					{% include "/components/article.twig" with {
+						classes: "l-grid__col l-grid__col--12 l-grid__col--6@tablet l-grid__col--3@desktop",
+						image: "/assets/img/placeholder.jpg",
+						title: "Placeholder title",
+						type: "placeholder type",
+						text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor ",
+						link: "/"
+					} only %}
+
+					{% include "/components/article.twig" with {
+						classes: "l-grid__col l-grid__col--12 l-grid__col--6@tablet l-grid__col--3@desktop",
+						image: "/assets/img/placeholder.jpg",
+						title: "Placeholder title",
+						type: "placeholder type",
+						text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor ",
+						link: "/"
+					} only %}
+
+					{% include "/components/article.twig" with {
+						classes: "l-grid__col l-grid__col--12 l-grid__col--6@tablet l-grid__col--3@desktop",
+						image: "/assets/img/placeholder.jpg",
+						title: "Placeholder title",
+						type: "placeholder type",
+						text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor ",
+						link: "/"
+					} only %}
+				</div>
+			</div>
+		</div>
+	</div>
+</section>

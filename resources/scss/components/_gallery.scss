@@ -1,0 +1,60 @@
+// =============================================================================
+// :: Gallery
+// =============================================================================
+.c-gallery {
+	position: relative;
+}
+
+// =============================================================================
+// :: Elements
+// =============================================================================
+.c-gallery__item {
+	background-size: cover;
+	background-position: center;
+
+	overflow: hidden;
+}
+
+.c-gallery-item__image {
+	display: none;
+}
+
+.c-photo-grid__container {
+	height: 20rem;
+
+	@include respond-at(get-breakpoint("desktop")) {
+		height: 40rem;
+	}
+}
+
+.c-gallery__item {
+	height: 100%;
+}
+
+.c-photo-grid__subgrid {
+	height: 100%;
+}
+
+.c-photo-grid__container--vertical {
+	display: flex;
+	flex-direction: column;
+
+	height: 30rem;
+
+	@include respond-at(get-breakpoint("tablet")) {
+		height: 20rem;
+	}
+
+	@include respond-at(get-breakpoint("desktop")) {
+		height: 40rem;
+	}
+
+	.c-gallery__item {
+		width: 100%;
+		height: calc(50% - 1rem);
+
+		+ .c-gallery__item {
+			margin-top: 2rem;
+		}
+	}
+}

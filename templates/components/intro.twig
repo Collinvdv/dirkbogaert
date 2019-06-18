@@ -1,0 +1,22 @@
+{# ========================================================================== #}
+{# :: Imports #}
+{# ========================================================================== #}
+{# set variables #}
+{% set contentTitle = contentTitle ?? NULL %}
+{% set contentText = contentText ?? NULL %}
+
+{# set classes #}
+{% set classes = classes ?? "" %}
+
+{# ========================================================================== #}
+{# :: Component #}
+{# ========================================================================== #}
+<div class="c-intro">
+	<div class="l-container c-intro__container">
+		<div class="c-intro__content">
+			<h1 class="c-intro__title">{{contentTitle}}</h1>
+
+			<p class="c-intro__text">{{contentText}}</p>
+		</div>
+	</div>
+</div>

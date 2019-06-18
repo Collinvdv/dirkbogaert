@@ -39,6 +39,23 @@
 	}
 }
 
+.l-section--grey-vertical-half {
+	background: linear-gradient(to bottom, $background-color-grey-1x-light 0% 50%, $background-color-white 50% 100%);
+}
+
+.l-section--center {
+
+	.l-section__text,
+	.l-section__header {
+		text-align: center;
+
+		@include respond-at("tablet") {
+			max-width: calc(50% - 2rem);
+			margin: 0 auto;
+		}
+	}
+}
+
 .l-section__content--split {
 
 	.l-section__item {
