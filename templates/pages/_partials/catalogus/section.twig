@@ -1,0 +1,67 @@
+{# ========================================================================== #}
+{# :: Imports #}
+{# ========================================================================== #}
+{# set variables #}
+{% set contentTitle = contentTitle ?? NULL %}
+{% set contentText = contentText ?? NULL %}
+
+{# set classes #}
+{% set classes = classes ?? "" %}
+
+{# ========================================================================== #}
+{# :: Component #}
+{# ========================================================================== #}
+<div class="l-section {{classes}}">
+	<div class="l-container">
+		<header class="l-section__header">
+			<h2 class="l-section__title">{{contentTitle}}</h2>
+		</header>
+		<div class="l-section__content">
+			<div class="l-section__item">
+				<p class="l-section__text">{{contentText}}</p>
+			</div>
+
+			<div class="l-section__item">
+				<div class="l-grid l-grid--with-spacing l-grid--space-between">
+					{% include "/components/article.twig" with {
+						classes: "l-grid__col l-grid__col--12 l-grid__col--6@tablet l-grid__col--3@desktop",
+						image: "/assets/img/placeholder.jpg",
+						title: "Placeholder title",
+						type: "placeholder type",
+						text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor ",
+						link: "/"
+					} only %}
+
+					{% include "/components/article.twig" with {
+						classes: "l-grid__col l-grid__col--12 l-grid__col--6@tablet l-grid__col--3@desktop",
+						image: "/assets/img/placeholder.jpg",
+						title: "Placeholder title",
+						type: "placeholder type",
+						text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor ",
+						link: "/"
+					} only %}
+
+					{% include "/components/article.twig" with {
+						classes: "l-grid__col l-grid__col--12 l-grid__col--6@tablet l-grid__col--3@desktop",
+						image: "/assets/img/placeholder.jpg",
+						title: "Placeholder title",
+						type: "placeholder type",
+						text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor ",
+						link: "/"
+					} only %}
+
+					{% include "/components/article.twig" with {
+						classes: "l-grid__col l-grid__col--12 l-grid__col--6@tablet l-grid__col--3@desktop",
+						image: "/assets/img/placeholder.jpg",
+						title: "Placeholder title",
+						type: "placeholder type",
+						text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor ",
+						link: "/"
+					} only %}
+				</div>
+			</div>
+
+
+		</div>
+	</div>
+</div>

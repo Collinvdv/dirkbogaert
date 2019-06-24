@@ -16,7 +16,9 @@
 		<div class="c-intro__content">
 			<h1 class="c-intro__title">{{contentTitle}}</h1>
 
-			<p class="c-intro__text">{{contentText}}</p>
+			<div class="c-intro__text s-wysiwyg">
+				{{contentText | raw}}
+			</div>
 		</div>
 	</div>
 </div>

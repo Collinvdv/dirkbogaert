@@ -2,8 +2,8 @@
 // :: Section
 // =============================================================================
 .l-section {
-	padding-top: 7rem;
-	padding-bottom: 5rem;
+	padding-top: 8rem;
+	padding-bottom: 8rem;
 }
 
 // =============================================================================
@@ -18,6 +18,10 @@
 	+ .l-section__item {
 		margin-top: 7rem;
 	}
+}
+
+.l-section__text {
+	max-width: calc(50% - 2rem);
 }
 
 // =============================================================================
@@ -54,6 +58,10 @@
 			margin: 0 auto;
 		}
 	}
+}
+
+.l-section--grey {
+	background-color: $background-color-grey-1x-light;
 }
 
 .l-section__content--split {
