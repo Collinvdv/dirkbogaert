@@ -13,12 +13,13 @@
 	position: absolute;
 	top: 0;
 	left: 0;
+	z-index: $z-index-floor;
 
 	display: block;
 	width: 100%;
 	height: 100%;
 
-	cursor: hover;
+	cursor: pointer;
 }
 
 .c-article__image-container {

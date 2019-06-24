@@ -3,6 +3,7 @@
 // =============================================================================
 $black: hsla(0, 0%, 0%, 1);
 $black-29: hsla(0, 0%, 29%, 1);
+$black-70: hsla(0, 0%, 70%, 1);
 $grey: hsla(0, 0%, 88%, 1);
 $grey-97: hsla(0, 0%, 97%, 1);
 $white: hsla(0, 0%, 100%, 1);
@@ -29,6 +30,8 @@ $background-color-white: $white;
 // Text colors
 $text-color-base: $black-29;
 $text-color-white: $white;
+$text-color-light-grey: $black-70;
+
 
 // border colors
 $border-color-white-40: $white-40;

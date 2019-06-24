@@ -1,7 +1,8 @@
 {# ========================================================================== #}
-{# :: Data #}
+{# :: Imports #}
 {# ========================================================================== #}
 {# set variables #}
+{% set headers = headers ?? NULL %}
 {% set items = items ?? NULL %}
 
 {# set classes #}
@@ -10,17 +11,22 @@
 {# ========================================================================== #}
 {# :: Component #}
 {# ========================================================================== #}
-<ul class="c-breadcrumbs l-container">
-	{% for item in items %}
-		<li class="c-breadcrumbs__item {% if loop.last %} is-active {% endif %}">
-			<a href="{{item.link}}" class="c-breadcrumbs__link">{{item.text}}</a>
+<table class="c-table {{classes}}">
+	<thead>
+		<tr>
+			{% for item in headers %}
+				<th>{{item}}</th>
+			{% endfor %}
+		</tr>
+	</thead>
 
-			{% if not loop.last %}
-				{% include "/components/icon.twig" with {
-					classes: "c-breadcrumbs__arrow",
-					icon: "arrow-right-s"
-				} only %}
-			{% endif %}
-		</li>
-	{% endfor %}
-</ul>
+	<tbody>
+		{% for item in items %}
+			<tr>
+				{% for data in item %}
+					<td>{{data}}</td>
+				{% endfor %}
+			</tr>
+		{% endfor %}
+	</tbody>
+</table>

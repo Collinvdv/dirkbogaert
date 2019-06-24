@@ -1,0 +1,26 @@
+{# ========================================================================== #}
+{# Inheritance #}
+{# ========================================================================== #}
+{% extends "_base/layout" %}
+
+{# ========================================================================== #}
+{# Content #}
+{# ========================================================================== #}
+{% block content %}
+	{% include "/pages/_partials/detail/breadcrumbs.twig" %}
+
+	{% include "/pages/_partials/detail/content.twig" with {
+		classes: "",
+		image: "/assets/img/placeholder.jpg",
+		contentTitle: "Naam plant",
+		contentText: "Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+		sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+	}  only %}
+
+	{% include "/pages/_partials/detail/variants.twig" with {
+		classes: "l-section--grey",
+		contentTitle: "Andere varianten",
+		contentText: "Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+		sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+	}  only %}
+{% endblock %}

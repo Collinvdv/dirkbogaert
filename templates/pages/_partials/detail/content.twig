@@ -1,0 +1,47 @@
+{# ========================================================================== #}
+{# :: Imports #}
+{# ========================================================================== #}
+{# set variables #}
+{% set contentTitle = contentTitle ?? NULL %}
+{% set contentText = contentText ?? NULL %}
+{% set image = image ?? NULL %}
+
+{# set classes #}
+{% set classes = classes ?? "" %}
+
+{# ========================================================================== #}
+{# :: Component #}
+{# ========================================================================== #}
+
+<div class="l-section">
+	<div class="l-container">
+		<div class="l-grid l-grid--with-spacing">
+			{# image #}
+			<div class="l-grid__col l-grid__col--3">
+				<img class="c-image" src="{{image}}" />
+			</div>
+
+			{# content #}
+			<div class="l-grid__col l-grid__col--8 l-grid__col--offset-1">
+				<header class="l-section__header">
+					<h2 class="l-section__title">{{contentTitle}}</h2>
+				</header>
+
+				<p class="l-section__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+				do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+				Ut enim ad minim veniam, quis nostrud exercitation ullamco
+				laboris nisi ut aliquip ex ea commodo consequat. </p>
+
+				{% include "/components/table.twig" with {
+					classes: "",
+					headers: ["Aantal", "Soort", "Potmaat", "Maat"],
+					items: [
+						["3", "Lorem ipsum", "10cm", "10cm"],
+						["3", "Lorem ipsum", "10cm", "10cm"],
+						["3", "Lorem ipsum", "10cm", "10cm"]
+					]
+				} only %}
+			</div>
+		</div>
+	</div>
+</div>

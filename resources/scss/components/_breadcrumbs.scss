@@ -1,0 +1,39 @@
+// =============================================================================
+// :: Breadcrumbs
+// =============================================================================
+.c-breadcrumbs {
+	display: flex;
+
+	padding-left: 0;
+
+	list-style-type: none;
+}
+
+.c-breadcrumbs__item {
+	display: flex;
+	align-items: center;
+
+	font-family: $font-family-primary;
+	font-size: $font-size-base;
+	line-height: $line-height-base;
+
+	&:hover,
+	&.is-active {
+
+		.c-breadcrumbs__link {
+			color: $text-color-base;
+		}
+	}
+}
+
+.c-breadcrumbs__link {
+	color: $text-color-light-grey;
+
+	text-decoration: none;
+
+	transition: color 0.3s ease-in-out;
+}
+
+.c-breadcrumbs__arrow {
+	fill: $text-color-light-grey;
+}
