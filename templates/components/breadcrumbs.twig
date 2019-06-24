@@ -1,0 +1,19 @@
+{# ========================================================================== #}
+{# :: Data #}
+{# ========================================================================== #}
+{# set variables #}
+{% set items = items ?? NULL %}
+
+{# set classes #}
+{% set classes = classes ?? "" %}
+
+{# ========================================================================== #}
+{# :: Component #}
+{# ========================================================================== #}
+<ul class="c-breadcrumbs">
+	{% for item in items %}
+		<li class="c-breadcrumbs__item {{'is-active' if loop.last}}">
+			<a href="{{item.link}}" class="c-breadcrumbs__link">{{item.text}}</a>
+		</li>
+	{% endfor %}
+</ul>

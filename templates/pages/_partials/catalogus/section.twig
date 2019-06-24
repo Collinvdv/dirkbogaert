@@ -4,6 +4,7 @@
 {# set variables #}
 {% set contentTitle = contentTitle ?? NULL %}
 {% set contentText = contentText ?? NULL %}
+{% set id = id ?? NULL %}
 
 {# set classes #}
 {% set classes = classes ?? "" %}
@@ -11,7 +12,7 @@
 {# ========================================================================== #}
 {# :: Component #}
 {# ========================================================================== #}
-<div class="l-section {{classes}}">
+<div class="l-section {{classes}}" id="{{id}}">
 	<div class="l-container">
 		<header class="l-section__header">
 			<h2 class="l-section__title">{{contentTitle}}</h2>
