@@ -7,33 +7,32 @@
 	}
 %}
 
-
 {% if entry.aboutPhoto1.one() %}
-	{% set photo1 = entry.aboutPhoto1.getUrl(transform) %}
+	{% set photo1 = entry.aboutPhoto1.one().getUrl(transform) %}
 {%  else %}
 	{% set photo1 = '' %}
 {% endif %}
 
 {% if entry.aboutPhoto2.one() %}
-	{% set photo2 = entry.aboutPhoto2.getUrl(transform) %}
+	{% set photo2 = entry.aboutPhoto2.one().getUrl(transform) %}
 {%  else %}
 	{% set photo2 = '' %}
 {% endif %}
 
 {% if entry.aboutPhoto3.one() %}
-	{% set photo3= entry.aboutPhoto3.getUrl(transform) %}
+	{% set photo3= entry.aboutPhoto3.one().getUrl(transform) %}
 {%  else %}
 	{% set photo3 = '' %}
 {% endif %}
 
 {% if entry.aboutPhoto4.one() %}
-	{% set photo4 = entry.aboutPhoto4.getUrl(transform) %}
+	{% set photo4 = entry.aboutPhoto4.one().getUrl(transform) %}
 {%  else %}
 	{% set photo4 = '' %}
 {% endif %}
 
 {% if entry.aboutPhoto5.one() %}
-	{% set photo5 = entry.aboutPhoto5.getUrl(transform) %}
+	{% set photo5 = entry.aboutPhoto5.one().getUrl(transform) %}
 {%  else %}
 	{% set photo5 = '' %}
 {% endif %}
