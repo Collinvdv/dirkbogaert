@@ -1,12 +1,12 @@
 {# Create a category query with the 'group' parameter #}
-{% set plantensoort = craft.categories().group('plantensoort').all() %}
+{% set plantensoorten = craft.categories().group('plantensoort').all() %}
 
 {# Display the navigation #}
 {% set plantensoort %}
 	<ul>
-		{% nav category in plantensoort %}
+		{% nav plantsoort in plantensoorten %}
 		<li>
-			<a href="#{{ category.url }}">{{ category.title }}</a>
+			<a href="#{{ plantsoort.slug }}">{{ plantsoort.title }}</a>
 		</li>
 		{% endnav %}
 	</ul>

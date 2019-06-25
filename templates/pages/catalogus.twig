@@ -9,28 +9,20 @@
 {% block content %}
 	{% include "/pages/_partials/catalogus/intro.twig" %}
 
-	{% include "/pages/_partials/catalogus/section.twig" with {
-		id: "haag-conifieren",
-		classes: "l-section--grey",
-		contentTitle: "Haag conifieren",
-		contentText: "Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-		sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-	}  only %}
+	{% set plantensoorten = craft.categories().group('plantensoort').all() %}
+	{% for plantensoort in plantensoorten %}
+		{% if loop.index is even %}
+			{% set plantClass = "" %}
+		{%  else %}
+			{% set plantClass = "l-section--grey" %}
+		{% endif %}
 
-	{% include "/pages/_partials/catalogus/section.twig" with {
-		id: "rots-conifieren",
-		contentTitle: "Rots conifieren",
-		contentText: "Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-		sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-	}  only %}
-
-	{% include "/pages/_partials/catalogus/section.twig" with {
-		id: "sier-struiken",
-		classes: "l-section--grey",
-		contentTitle: "Sier struiken",
-		contentText: "Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-		sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-	}  only %}
-
+		{% include "/pages/_partials/catalogus/section.twig" with {
+			id: plantensoort.slug,
+			classes: plantClass,
+			contentTitle: plantensoort.title,
+			contentText: plantensoort.commonIntroduction
+		}  only %}
+	{% endfor %}
 
 {% endblock %}
