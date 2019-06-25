@@ -18,7 +18,6 @@
 	"license": "ISC",
 	"homepage": "https://bitbucket.org/leapforward/intuo-website-2019#readme",
 	"devDependencies": {
-		"@stakahashi/laravel-mix-stylelint": "^1.0.1",
 		"laravel-mix": "^4.0.14",
 		"resolve-url-loader": "2.3.1",
 		"sass": "^1.17.2",
