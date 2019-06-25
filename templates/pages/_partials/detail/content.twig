@@ -34,7 +34,7 @@
 
 				{% include "/components/table.twig" with {
 					classes: "",
-					title: "Soorten",
+					title: globalDetail.globalDetailSoorten,
 					headers: ["Aantal", "Soort", "Potmaat", "Maat"],
 					items: [
 						["3", "Lorem ipsum", "10cm", "10cm"],
@@ -43,11 +43,11 @@
 					]
 				} only %}
 
-				<h3>Geïntereseerd in deze plant?</h3>
-				<p>Aarzel niet om ons te contacteren of eens langs te komen!</p>
+				<h3>{{ globalDetail.globalDetailInterested }}</h3>
+				<p>{{ globalDetail.globalDetailInterestedDescription }}</p>
 
 				{% include "/components/button.twig" with {
-					text: "Neem contact op"
+					text: globalDetail.globalDetailCta
 				} only %}
 			</div>
 		</div>
