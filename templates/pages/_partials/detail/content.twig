@@ -17,12 +17,12 @@
 	<div class="l-container">
 		<div class="l-grid l-grid--with-spacing">
 			{# image #}
-			<div class="l-grid__col l-grid__col--3">
+			<div class="l-grid__col l-grid__col-12 l-grid__col--5@tablet l-grid__col--3@desktop">
 				<img class="c-image" src="{{image}}" />
 			</div>
 
 			{# content #}
-			<div class="l-grid__col l-grid__col--8 l-grid__col--offset-1">
+			<div class="l-grid__col l-grid__col--12 l-grid__col--7@tablet l-grid__col--8@desktop l-grid__col--offset-1@desktop s-wysiwyg">
 				<header class="l-section__header">
 					<h2 class="l-section__title">{{contentTitle}}</h2>
 				</header>
@@ -41,6 +41,13 @@
 						["3", "Lorem ipsum", "10cm", "10cm"],
 						["3", "Lorem ipsum", "10cm", "10cm"]
 					]
+				} only %}
+
+				<h3>Geïntereseerd in deze plant?</h3>
+				<p>Aarzel niet om ons te contacteren of eens langs te komen!</p>
+
+				{% include "/components/button.twig" with {
+					text: "Neem contact op"
 				} only %}
 			</div>
 		</div>
