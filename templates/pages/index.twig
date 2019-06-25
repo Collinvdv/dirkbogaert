@@ -13,11 +13,11 @@
 
 {% set pageCatalogus = craft.entries ({section: 'pageCatalogus',limit: 1}).one() %}
 {% set pageAbout = craft.entries ({section: 'pageAbout',limit: 1}).one() %}
-	{% set transform = {
+{% set transform = {
 		mode: 'fit',
 		width: 1280,
 		height: 1280,
-		quality: 100,
+		quality: 90,
 		position: 'center-center'
 	}
 %}

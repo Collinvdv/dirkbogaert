@@ -1,23 +1,65 @@
+{% set transform = {
+	mode: 'fit',
+		width: 750,
+		height: 750,
+		quality: 90,
+		position: 'center-center'
+	}
+%}
+
+
+{% if entry.aboutPhoto1.one() %}
+	{% set photo1 = entry.aboutPhoto1.getUrl(transform) %}
+{%  else %}
+	{% set photo1 = '' %}
+{% endif %}
+
+{% if entry.aboutPhoto2.one() %}
+	{% set photo2 = entry.aboutPhoto2.getUrl(transform) %}
+{%  else %}
+	{% set photo2 = '' %}
+{% endif %}
+
+{% if entry.aboutPhoto3.one() %}
+	{% set photo3= entry.aboutPhoto3.getUrl(transform) %}
+{%  else %}
+	{% set photo3 = '' %}
+{% endif %}
+
+{% if entry.aboutPhoto4.one() %}
+	{% set photo4 = entry.aboutPhoto4.getUrl(transform) %}
+{%  else %}
+	{% set photo4 = '' %}
+{% endif %}
+
+{% if entry.aboutPhoto5.one() %}
+	{% set photo5 = entry.aboutPhoto5.getUrl(transform) %}
+{%  else %}
+	{% set photo5 = '' %}
+{% endif %}
+
+
+
 {% include "/components/gallery.twig" with {
 	items: [
 		{
-			image: "/assets/img/hero.jpg",
+			image: photo1,
 			title: "placeholder"
 		},
 		{
-			image: "/assets/img/hero.jpg",
+			image: photo2,
 			title: "placeholder"
 		},
 		{
-			image: "/assets/img/hero.jpg",
+			image: photo3,
 			title: "placeholder"
 		},
 		{
-			image: "/assets/img/hero.jpg",
+			image: photo4,
 			title: "placeholder"
 		},
 		{
-			image: "/assets/img/hero.jpg",
+			image: photo5,
 			title: "placeholder"
 		}
 	]
