@@ -5,9 +5,9 @@
 {% set plantensoort %}
 	<ul>
 		{% nav plantsoort in plantensoorten %}
-		<li>
-			<a href="#{{ plantsoort.slug }}">{{ plantsoort.title }}</a>
-		</li>
+			<li>
+				<a href="#{{ plantsoort.slug }}">{{ plantsoort.title }}</a>
+			</li>
 		{% endnav %}
 	</ul>
 {% endset %}
