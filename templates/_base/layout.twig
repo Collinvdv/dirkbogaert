@@ -3,6 +3,8 @@
 {# ========================================================================== #}
 {% import "components/header.twig" as header %}
 
+{% set pageCatalogus = craft.entries ({section: 'pageCatalogus',limit: 1}).one() %}
+{% set pageAbout = craft.entries ({section: 'pageAbout',limit: 1}).one() %}
 
 {# ========================================================================== #}
 {# Partial #}
@@ -18,12 +20,12 @@
 		{% include "/components/header.twig" with {
 			items: [
 				{
-					url: "/",
-					text: "Catalogus"
+					url:  pageCatalogus.url,
+					text: pageCatalogus.navTitle
 				},
 				{
-					url: "/",
-					text: "Over ons"
+					url:  pageAbout.url,
+					text: pageAbout.navTitle
 				},
 				{
 					url: "/",

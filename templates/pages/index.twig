@@ -11,6 +11,9 @@
 {% set buttonText = entry.commonLink.getText() ?? null %}
 {% set buttonUrl = entry.commonLink.getUrl() ?? null %}
 
+{% set pageCatalogus = craft.entries ({section: 'pageCatalogus',limit: 1}).one() %}
+{% set pageAbout = craft.entries ({section: 'pageAbout',limit: 1}).one() %}
+
 {# ========================================================================== #}
 {# Content #}
 {# ========================================================================== #}
@@ -25,12 +28,12 @@
 		buttonUrl: buttonUrl,
 		items: [
 			{
-				title: "Over ons",
-				text: "Lorem ipsum doler sit amet, consectetur adipiscing"
+				title: pageAbout.navTitle,
+				text: pageAbout.navIntroduction
 			},
 			{
-				title: "Catalogus",
-				text: "Lorem ipsum doler sit amet, consectetur adipiscing"
+				title: pageCatalogus.navTitle,
+				text: pageCatalogus.navIntroduction
 			},
 			{
 				title: "Een vraag?",
