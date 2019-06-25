@@ -42,11 +42,8 @@ hooks:
   sharedsymlink_before: |
     exit 0
   sharedsymlink_after: |
-    mkdir -p storage
-    mkdir -p vendor
     npm update
     npm run production
-    composer update
     exit 0
 
 # SYMLINK: Set current symlink to newest release

@@ -1,5 +1,5 @@
 let mix = require('laravel-mix');
-require('@stakahashi/laravel-mix-stylelint');
+
 /*
  |--------------------------------------------------------------------------
  | Mix Asset Management
@@ -15,7 +15,6 @@ mix
 	.copy('resources/fonts', 'web/assets/fonts/')
 	.copy('templates/icons', 'web/assets/icons/')
 	.copy('resources/img', 'web/assets/img/')
-	.stylelint()
 	.sass('resources/scss/base.scss', 'web/assets/css/base.css');
 	// .eslint()
 	// .js('resources/js/main.js', 'web/assets/js/main.min.js');

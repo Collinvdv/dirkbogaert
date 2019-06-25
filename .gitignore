@@ -29,6 +29,7 @@
 /public/uploads/**/*
 /web/assets/*
 /web/uploads/**/*
+/web/
 
 
 # IMAGER TRANSFORMS
