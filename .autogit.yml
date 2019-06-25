@@ -42,8 +42,6 @@ hooks:
   sharedsymlink_before: |
     exit 0
   sharedsymlink_after: |
-    npm update
-    npm run production
     exit 0
 
 # SYMLINK: Set current symlink to newest release
