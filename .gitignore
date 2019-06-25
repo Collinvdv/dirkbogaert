@@ -25,9 +25,7 @@
 /storage/*
 
 # ASSETS
-/public/assets/*
 /public/uploads/**/*
-/web/assets/*
 /web/uploads/**/*
 /web/
 
