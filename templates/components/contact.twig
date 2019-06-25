@@ -4,6 +4,7 @@
 {# set variables #}
 {% set title = title ?? NULL %}
 {% set text = text ?? NULL %}
+{% set cantactInfo = cantactInfo ?? NULL %}
 
 {# set classes #}
 {% set classes = classes ?? "" %}
@@ -36,21 +37,9 @@
 			</form>
 		</div>
 
-		<div class="c-contact__info">
-			<h3 class="c-contact__info-title">Contactgegevens</h3>
-
-			<ul class="c-contact__info-list">
-				{% for item in cantactInfo %}
-					<li class="c-contact__info-item">
-						{% include "/components/icon.twig" with {
-							classes: "c-contact__info-icon",
-							icon: item.icon
-						} only %}
-
-						<span class="c-contact__info-text">{{item.text | raw}}</span>
-					</li>
-				{% endfor %}
-			</ul>
-		</div>
+		{% include "components/contact-info.twig" with {
+			classes: "c-contact__info",
+			items: cantactInfo
+		} only %}
 	</div>
 </section>

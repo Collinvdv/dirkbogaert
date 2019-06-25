@@ -1,0 +1,45 @@
+// =============================================================================
+// :: Contact
+// =============================================================================
+.c-contact-info {
+	padding: 5rem;
+	margin-top: 5rem;
+
+	background-color: $primary-color;
+	color: $text-color-white;
+}
+
+// =============================================================================
+// :: Elements
+// =============================================================================
+.c-contact-info__title {
+	color: $text-color-white;
+}
+
+.c-contact-info__list {
+	padding-left: 0;
+	list-style-type: none;
+}
+
+.c-contact-info__item {
+	display: flex;
+	margin-top: 2rem;
+}
+
+.c-contact-info__icon {
+	margin-right: 2rem;
+
+	fill: $white;
+}
+
+.c-contact-info__text a {
+	color: $text-color-white;
+
+	text-decoration: none;
+
+	transition: text-decoration 0.3s ease-in-out;
+
+	&:hover {
+		text-decoration: underline;
+	}
+}
