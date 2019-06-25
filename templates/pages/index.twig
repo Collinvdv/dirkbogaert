@@ -4,16 +4,21 @@
 {% extends "_base/layout" %}
 
 {# ========================================================================== #}
+{# Variables #}
+{# ========================================================================== #}
+{% set contentTitle = entry.commonTitle ?? null %}
+{% set contentText = entry.commonIntroduction ?? null %}
+
+{# ========================================================================== #}
 {# Content #}
 {# ========================================================================== #}
 {% block content %}
-
+	{# #TODO #}
 	{% include "/components/hero.twig" with {
 		classes: "",
 		image: "/assets/img/hero.jpg",
-		contentTitle: "Thibri plants",
-		contentText: "Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-		sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+		contentTitle: contentTitle,
+		contentText: contentTitle,
 		buttonText: "Ontdek de catalogus",
 		items: [
 			{
