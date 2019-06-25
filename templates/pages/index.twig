@@ -13,6 +13,22 @@
 
 {% set pageCatalogus = craft.entries ({section: 'pageCatalogus',limit: 1}).one() %}
 {% set pageAbout = craft.entries ({section: 'pageAbout',limit: 1}).one() %}
+	{% set transform = {
+		mode: 'fit',
+		width: 1280,
+		height: 1280,
+		quality: 100,
+		position: 'center-center'
+	}
+%}
+
+{% set image = entry.commonImage.one() %}
+
+{% if image %}
+	{% set image = image.getUrl(transform) %}
+{%  else %}
+	{% set image = '' %}
+{% endif %}
 
 {# ========================================================================== #}
 {# Content #}
@@ -21,7 +37,7 @@
 	{# #TODO #}
 	{% include "/components/hero.twig" with {
 		classes: "",
-		image: "/assets/img/hero.jpg",
+		image: image,
 		contentTitle: contentTitle,
 		contentText: contentTitle,
 		buttonText: buttonText,
