@@ -2,6 +2,7 @@
 {# :: Imports #}
 {# ========================================================================== #}
 {# set variables #}
+{% set title = title ?? NULL %}
 {% set headers = headers ?? NULL %}
 {% set items = items ?? NULL %}
 
@@ -11,22 +12,28 @@
 {# ========================================================================== #}
 {# :: Component #}
 {# ========================================================================== #}
-<table class="c-table {{classes}}">
-	<thead>
-		<tr>
-			{% for item in headers %}
-				<th>{{item}}</th>
-			{% endfor %}
-		</tr>
-	</thead>
+<div class="c-table {{classes}}">
+	{% if title %}
+		<h3 class="c-table__title">{{title}}</h3>
+	{% endif %}
 
-	<tbody>
-		{% for item in items %}
+	<table>
+		<thead>
 			<tr>
-				{% for data in item %}
-					<td>{{data}}</td>
+				{% for item in headers %}
+					<th>{{item}}</th>
 				{% endfor %}
 			</tr>
-		{% endfor %}
-	</tbody>
-</table>
+		</thead>
+
+		<tbody>
+			{% for item in items %}
+				<tr>
+					{% for data in item %}
+						<td>{{data}}</td>
+					{% endfor %}
+				</tr>
+			{% endfor %}
+		</tbody>
+	</table>
+</div>

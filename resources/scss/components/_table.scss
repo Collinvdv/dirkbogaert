@@ -2,9 +2,46 @@
 // :: Table
 // =============================================================================
 .c-table {
-	width: 100%;
+	margin: 8rem 0;
+
+	table {
+		width: 100%;
+
+		border-collapse: collapse;
+	}
+
+	th {
+		text-align: left;
+
+		font-family: $font-family-primary;
+		font-weight: $font-weight-bold;
+		font-size: $font-size-2x-small;
+		letter-spacing: $letter-spacing-1x-large;
+		text-transform: uppercase;
+
+		color: $text-color-light-grey;
+	}
+
+	thead {
+		border-bottom: $border-bold;
+	}
+
+	th,
+	td {
+		padding: 1.2rem 0;
+	}
+
+	tbody {
+
+		tr {
+			border-bottom: $border-base;
+		}
+	}
 }
 
 // =============================================================================
 // :: Elements
 // =============================================================================
+.c-table__title {
+	margin-bottom: 2rem;
+}
