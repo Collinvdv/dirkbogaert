@@ -4,6 +4,14 @@
 {% set title = entry.homeSpotlightTitle ?? null %}
 {% set description = entry.homeSpotlightDescription ?? null %}
 
+{% set transform = {
+		mode: 'fit',
+		width: 500,
+		height: 500,
+		quality: 90,
+		position: 'center-center'
+	}
+%}
 {# ========================================================================== #}
 {# Highlights #}
 {# ========================================================================== #}
@@ -19,6 +27,12 @@
 			<div class="l-section__item">
 				<div class="l-grid l-grid--with-spacing l-grid--space-between">
 					{% for plant in entry.commonPlants.all() %}
+						{% if plant.commonImage.one() %}
+							{% set image = plant.commonImage.one().getUrl(transform) %}
+						{%  else %}
+							{% set image = '' %}
+						{% endif %}
+
 						{% if loop.first %}
 							{% set plantClass = "l-grid__col l-grid__col--12 l-grid__col--3@desktop l-grid__col--offset-2@desktop" %}
 						{% else %}
@@ -27,7 +41,7 @@
 
 						{% include "/components/article.twig" with {
 							classes: plantClass,
-							image: "/assets/img/placeholder.jpg",
+							image: image,
 							title: plant.title,
 							type: plant.plantsoortCategory.one().title,
 							text: plant.commonIntroduction,
