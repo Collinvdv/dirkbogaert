@@ -9,6 +9,15 @@
 {# set classes #}
 {% set classes = classes ?? "" %}
 
+{% set transform = {
+		mode: 'fit',
+		width: 500,
+		height: 500,
+		quality: 90,
+		position: 'center-center'
+	}
+%}
+
 {# ========================================================================== #}
 {# :: Component #}
 {# ========================================================================== #}
@@ -31,9 +40,16 @@
 					})%}
 
 					{% for plant in planten.all() %}
+
+						{% if plant.commonImage.one() %}
+							{% set image = plant.commonImage.one().getUrl(transform) %}
+						{%  else %}
+							{% set image = '' %}
+						{% endif %}
+
 						{% include "/components/article.twig" with {
 							classes: "l-grid__col l-grid__col--12 l-grid__col--6@tablet l-grid__col--3@desktop",
-							image: "/assets/img/placeholder.jpg",
+							image: image,
 							title: plant.title,
 							type: plant.plantsoortCategory.one().title,
 							text: plant.commonIntroduction,
