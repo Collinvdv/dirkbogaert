@@ -1,12 +1,15 @@
+{% set pageCatalogus = craft.entries ({section: 'pageCatalogus',limit: 1}).one() %}
+{% set pageAbout = craft.entries ({section: 'pageAbout',limit: 1}).one() %}
+
 {% include "components/footer.twig" with {
 	items: [
 		{
-			text: "Catalogus",
-			link: "/"
+			text: pageCatalogus.navTitle,
+			link: pageCatalogus.url
 		},
 		{
-			text: "Over ons",
-			link: "/"
+			text: pageAbout.navTitle,
+			link: pageAbout.url
 		},
 		{
 			text: "Contact",
