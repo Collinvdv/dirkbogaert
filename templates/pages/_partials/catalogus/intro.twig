@@ -1,13 +1,19 @@
+{# Create a category query with the 'group' parameter #}
+{% set plantensoort = craft.categories().group('plantensoort').all() %}
+
+{# Display the navigation #}
+{% set plantensoort %}
+	<ul>
+		{% nav category in plantensoort %}
+		<li>
+			<a href="#{{ category.url }}">{{ category.title }}</a>
+		</li>
+		{% endnav %}
+	</ul>
+{% endset %}
+
 {% include "/components/intro.twig" with {
 	classes: "",
-	contentTitle: "Catalogus",
-	contentText: "<p>Hiermee hebben we het genoegen U onze catalogus voor dit
-	seizoen aan te bieden. In de catalogus staan de planten onderverdeeld in
-	drie groepen:</p>
-	<ul>
-		<li><a href='#haag-conifieren'>Haag conifieren</a></li>
-		<li><a href='#rots-conifieren'>Rots conifieren</a></li>
-		<li><a href='#sier-struiken'>Sier struikenn</a></li>
-	</ul>
-	"
+	contentTitle: entry.commonTitle,
+	contentText: "<p>"~ entry.commonIntroduction ~ "</p>" ~ plantensoort
 } only %}
