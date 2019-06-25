@@ -8,6 +8,8 @@
 {# ========================================================================== #}
 {% set contentTitle = entry.commonTitle ?? null %}
 {% set contentText = entry.commonIntroduction ?? null %}
+{% set buttonText = entry.commonLink.getText() ?? null %}
+{% set buttonUrl = entry.commonLink.getUrl() ?? null %}
 
 {# ========================================================================== #}
 {# Content #}
@@ -19,7 +21,8 @@
 		image: "/assets/img/hero.jpg",
 		contentTitle: contentTitle,
 		contentText: contentTitle,
-		buttonText: "Ontdek de catalogus",
+		buttonText: buttonText,
+		buttonUrl: buttonUrl,
 		items: [
 			{
 				title: "Over ons",

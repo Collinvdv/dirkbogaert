@@ -6,6 +6,7 @@
 {% set contentTitle = contentTitle ?? NULL %}
 {% set contentText = contentText ?? NULL %}
 {% set buttonText = buttonText ?? NULL %}
+{% set buttonLink = buttonLink ?? NULL %}
 {% set activeLanguage = activeLanguage ?? NULL %}
 {% set items = items ?? NULL %}
 
@@ -23,7 +24,8 @@
 			<p class="c-hero__text">{{contentText}}</p>
 
 			{% include "/components/button.twig" with {
-				text: buttonText
+				text: buttonText,
+				link: buttonLink
 			} only %}
 		</div>
 
