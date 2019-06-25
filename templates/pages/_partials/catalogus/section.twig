@@ -24,41 +24,22 @@
 
 			<div class="l-section__item">
 				<div class="l-grid l-grid--with-spacing l-grid--space-between">
-					{% include "/components/article.twig" with {
-						classes: "l-grid__col l-grid__col--12 l-grid__col--6@tablet l-grid__col--3@desktop",
-						image: "/assets/img/placeholder.jpg",
-						title: "Placeholder title",
-						type: "placeholder type",
-						text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor ",
-						link: "/"
-					} only %}
+					{% set planten = craft.entries ({
+						section: 'planten',
+						limit: null,
+						relatedTo: plantensoort
+					})%}
 
-					{% include "/components/article.twig" with {
-						classes: "l-grid__col l-grid__col--12 l-grid__col--6@tablet l-grid__col--3@desktop",
-						image: "/assets/img/placeholder.jpg",
-						title: "Placeholder title",
-						type: "placeholder type",
-						text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor ",
-						link: "/"
-					} only %}
-
-					{% include "/components/article.twig" with {
-						classes: "l-grid__col l-grid__col--12 l-grid__col--6@tablet l-grid__col--3@desktop",
-						image: "/assets/img/placeholder.jpg",
-						title: "Placeholder title",
-						type: "placeholder type",
-						text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor ",
-						link: "/"
-					} only %}
-
-					{% include "/components/article.twig" with {
-						classes: "l-grid__col l-grid__col--12 l-grid__col--6@tablet l-grid__col--3@desktop",
-						image: "/assets/img/placeholder.jpg",
-						title: "Placeholder title",
-						type: "placeholder type",
-						text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor ",
-						link: "/"
-					} only %}
+					{% for plant in planten.all() %}
+						{% include "/components/article.twig" with {
+							classes: "l-grid__col l-grid__col--12 l-grid__col--6@tablet l-grid__col--3@desktop",
+							image: "/assets/img/placeholder.jpg",
+							title: plant.title,
+							type: plant.plantsoortCategory.one().title,
+							text: plant.commonIntroduction,
+							link: plant.url
+						} only %}
+					{% endfor %}
 				</div>
 			</div>
 		</div>

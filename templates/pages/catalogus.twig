@@ -9,8 +9,9 @@
 {% block content %}
 	{% include "/pages/_partials/catalogus/intro.twig" %}
 
-	{% set plantensoorten = craft.categories().group('plantensoort').all() %}
-	{% for plantensoort in plantensoorten %}
+	{% set plantensoorten = craft.categories().group('plantensoort') %}
+
+	{% for plantensoort in plantensoorten.all() %}
 		{% if loop.index is even %}
 			{% set plantClass = "" %}
 		{%  else %}
@@ -21,7 +22,8 @@
 			id: plantensoort.slug,
 			classes: plantClass,
 			contentTitle: plantensoort.title,
-			contentText: plantensoort.commonIntroduction
+			contentText: plantensoort.commonIntroduction,
+			plantensoort: plantensoort
 		}  only %}
 	{% endfor %}
 
