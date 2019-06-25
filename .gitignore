@@ -27,7 +27,7 @@
 # ASSETS
 /public/uploads/**/*
 /web/uploads/**/*
-/web/
+/web/cpresources
 
 yarn.lock
 # IMAGER TRANSFORMS
