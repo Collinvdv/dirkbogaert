@@ -31,7 +31,7 @@
 /web/uploads/**/*
 /web/
 
-
+yarn.lock
 # IMAGER TRANSFORMS
 /public/imager/*
 /web/imager/*
