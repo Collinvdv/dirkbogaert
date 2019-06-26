@@ -28,6 +28,7 @@
 }
 
 .c-contact__info {
+	margin-top: 5rem;
 
 	@include respond-at(get-breakpoint("tablet")) {
 		position: absolute;

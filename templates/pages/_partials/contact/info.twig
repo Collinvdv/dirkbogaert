@@ -1,0 +1,24 @@
+<div class="c-map" style="background-color: grey">
+	map
+</div>
+
+<div class="l-section u-padding-top-none">
+	<div class="l-container">
+		{% include "/components/contact-info.twig" with {
+			items: [
+				{
+					icon: "telephone",
+					text: "<a href='tel: 052 42 43 00'>052 42 43 00</a> </br> <a href='tel: 0475 50 64 84'>0475 50 64 84</a>"
+				},
+				{
+					icon: "mail",
+					text: "<a href='mailto:bogaertdirk.ann@skynet.be'>bogaertdirk.ann@skynet.be</a>"
+				},
+				{
+					icon: "location",
+					text: "<address>Naam straat 45</br>1234 Gemeente</address>"
+				}
+			]
+		} only %}
+	</div>
+</div>

@@ -2,11 +2,15 @@
 // :: Contact
 // =============================================================================
 .c-contact-info {
+	width: 100%;
 	padding: 5rem;
-	margin-top: 5rem;
 
 	background-color: $primary-color;
 	color: $text-color-white;
+
+	@include respond-at(get-breakpoint("tablet")) {
+		width: 50%;
+	}
 }
 
 // =============================================================================
