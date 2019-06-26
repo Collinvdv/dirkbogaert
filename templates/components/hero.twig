@@ -32,11 +32,12 @@
 		<div class="c-hero__info u-outside-padding-right">
 			<ul class="c-hero__list">
 				{% for item in items %}
-					<a class="c-hero__item" href="{{ item.url }}">
+					<li class="c-hero__item">
+						<a class="c-hero__link" href="{{ item.url }}" aria-label="{{item.title}}"></a>
 						<h3 class="c-hero__item-title">{{item.title}}</h3>
 
 						<p class="c-hero__item-text">{{item.text}}</p>
-					</a>
+					</li>
 				{% endfor %}
 			</ul>
 		</div>

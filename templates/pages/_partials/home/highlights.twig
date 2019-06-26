@@ -25,7 +25,7 @@
 				<p class="l-section__text">{{ description }}</p>
 			</div>
 			<div class="l-section__item">
-				<div class="l-grid l-grid--with-spacing l-grid--space-between">
+				<div class="l-grid l-grid--with-spacing">
 					{% for plant in entry.commonPlants.all() %}
 						{% if plant.commonImage.one() %}
 							{% set image = plant.commonImage.one().getUrl(transform) %}
