@@ -42,7 +42,7 @@
 						{% include "/components/article.twig" with {
 							classes: plantClass,
 							image: image,
-							title: plant.title,
+							title: plant.commonTitle,
 							type: plant.plantsoortCategory.one().title,
 							text: plant.commonIntroduction,
 							link: plant.url
