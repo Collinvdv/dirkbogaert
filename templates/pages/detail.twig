@@ -3,6 +3,20 @@
 {# ========================================================================== #}
 {% extends "_base/layout" %}
 
+{% set transform = {
+		mode: 'fit',
+		width: 500,
+		height: 500,
+		quality: 90,
+		position: 'center-center'
+	}
+%}
+
+{% if entry.commonImage.one() %}
+	{% set image = entry.commonImage.one().getUrl(transform) %}
+{%  else %}
+	{% set image = '' %}
+{% endif %}
 {# ========================================================================== #}
 {# Content #}
 {# ========================================================================== #}
@@ -11,7 +25,7 @@
 
 	{% include "/pages/_partials/detail/content.twig" with {
 		classes: "",
-		image: "/assets/img/placeholder.jpg",
+		image: image,
 		contentTitle: entry.title,
 		contentText: entry.commonIntroduction
 	} %}
