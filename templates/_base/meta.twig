@@ -1,0 +1,55 @@
+{# SEO Start #}
+    {# Tip: You can pass the handle of your SEO field - getSeoField('mySeoFieldHandle') #}
+{% set seo = getSeoField('entry.seoPlugin') %}
+
+{% if seo is null or seo.title == '' %}
+	{% set seo = craft.seo.custom(systemName, '', false) %}
+{% endif -%}
+
+{% set locale = craft.app.locale %}
+{% set locales = craft.app.i18n.siteLocaleIds|without(locale) %}
+
+<title>{{ seo.title }}</title>
+<meta name="description" content="{{ seo.description }}" />
+<meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+{% set fb = seo.social.facebook -%}
+<meta property="fb:app_id" content="{{ fb.handle }}">
+<meta property="og:url" content="{{ craft.app.request.absoluteUrl }}" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="{{ fb.title }}" />
+<meta property="og:image" content="{{ craft.seo.facebookImage(fb.image) }}" />
+<meta property="og:description" content="{{ fb.description }}" />
+<meta property="og:site_name" content="{{ systemName }}" />
+<meta property="og:locale" content="{{ locale|replace('-', '_') }}" />
+{% for locale in locales -%}
+	<meta property="og:locale:alternate" content="{{ locale|replace('-', '_') }}" />
+{% endfor %}
+{% set tw = seo.social.twitter -%}
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:site" content="{{ tw.handle }}" />
+<meta name="twitter:url" content="{{ craft.app.request.absoluteUrl }}" />
+<meta name="twitter:title" content="{{ tw.title }}" />
+<meta name="twitter:description" content="{{ tw.description }}" />
+<meta name="twitter:image" content="{{ craft.seo.twitterImage(tw.image) }}" />
+<!-- Google / Search Engine Tags -->
+<meta itemprop="name" content="{{ seo.title }}">
+<meta itemprop="description" content="{{ seo.description }}">
+<meta itemprop="image" content="{{ craft.seo.facebookImage(fb.image) }}">
+{% if seo.keywords is defined %}
+	{% set keywordsGroup = '' %}
+	{% set keywordsArray = [] %}
+	{% for keyword in seo.keywords %}
+		{% set keywordsArray = keywordsArray|merge([keyword.keyword]) %}
+	{% endfor %}
+	{% set keywordsGroup = keywordsArray|join(',') %}
+	<meta itemprop="keywords" content="{{ keywordsGroup }}">
+{% endif %}
+    {% if seo.robots -%}
+		{# <meta name="robots" content="{{ seo.robots }}" /> #}
+	{% endif %}
+    {%- if seo.expiry -%}
+		{# <meta name="robots" content="unavailable_after: {{ seo.expiry }}" /> #}
+	{% endif %}
+<link rel="home" href="{{ siteUrl }}" />
+<link rel="canonical" href="{{ seo.canonical }}">
+{# SEO End #}

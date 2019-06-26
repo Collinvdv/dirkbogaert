@@ -4,6 +4,9 @@
 	<link rel="home" href="{{ craft.app.request.absoluteUrl }}">
 	<link rel="stylesheet" href="/assets/css/base.css">
 
+	<!-- Seo -->
+	{% include "_base/meta" %}
+
 	{% if craft.app.config.env == 'production' %}
 		<!-- Google Tag Manager -->
 		{#<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':#}
