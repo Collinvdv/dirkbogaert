@@ -28,16 +28,16 @@
 				</header>
 
 				<p class="l-section__text">{{ entry.commonIntroduction }} </p>
+				{% set items = [] %}
+				{% for plantitem in entry.plantTable %}
+					{% set items = items|merge( [ [plantitem.plantSoort , plantitem.plantPotmaat, plantitem.plantMaat] ]) %}
+				{% endfor %}
 
 				{% include "/components/table.twig" with {
 					classes: "",
 					title: globalDetail.globalDetailSoorten,
-					headers: ["Aantal", "Soort", "Potmaat", "Maat"],
-					items: [
-						["3", "Lorem ipsum", "10cm", "10cm"],
-						["3", "Lorem ipsum", "10cm", "10cm"],
-						["3", "Lorem ipsum", "10cm", "10cm"]
-					]
+					headers: ["Aantal", "Soort", "Potmaat"],
+					items: items
 				} only %}
 
 				<h3>{{ globalDetail.globalDetailInterested }}</h3>
