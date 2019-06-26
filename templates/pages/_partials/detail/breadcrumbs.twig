@@ -1,13 +1,15 @@
+{% set pageCatalogus = craft.entries ({section: 'pageCatalogus',limit: 1}).one() %}
+
 {% include "/components/breadcrumbs.twig" with {
 	classes: "",
 	items: [
 		{
 			text: "Catalogus",
-			link: ""
+			link: pageCatalogus.url
 		},
 		{
 			text: entry.plantsoortCategory.one().title,
-			link: ""
+			link: pageCatalogus.url ~ '#' ~ entry.plantsoortCategory.one().slug
 		},
 		{
 			text: entry.title,
