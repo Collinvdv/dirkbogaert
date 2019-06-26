@@ -1,0 +1,28 @@
+{# ========================================================================== #}
+{# :: Data #}
+{# ========================================================================== #}
+{# set variables #}
+{% set items = items ?? NULL %}
+
+{# set classes #}
+{% set classes = classes ?? "" %}
+
+{# ========================================================================== #}
+{# :: Element #}
+{# ========================================================================== #}
+<div class="c-contact-info u-outside-padding-left {{classes}}">
+	<h3 class="c-contact-info__title">Contactgegevens</h3>
+
+	<ul class="c-contact-info__list">
+		{% for item in items %}
+			<li class="c-contact-info__item">
+				{% include "/components/icon.twig" with {
+					classes: "c-contact-info__icon",
+					icon: item.icon
+				} only %}
+
+				<span class="c-contact-info__text">{{item.text | raw}}</span>
+			</li>
+		{% endfor %}
+	</ul>
+</div>

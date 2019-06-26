@@ -110,6 +110,7 @@
 	color: $text-color-white;
 
 	+ .c-hero__item {
+		margin-top: 2rem;
 
 		@include respond-at(get-breakpoint("tablet")) {
 			margin-left: 4rem;

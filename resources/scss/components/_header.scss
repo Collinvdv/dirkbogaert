@@ -79,6 +79,8 @@
 .c-header__list-item {
 	margin-top: 3.5rem;
 
+	transition: color 0.3s ease-in-out;
+
 	@include respond-at(get-breakpoint("tablet")) {
 		margin-top: 0;
 		margin-left: 3.5rem;
@@ -93,12 +95,21 @@
 
 		transform: translateY(1rem);
 	}
+
+	&:hover {
+
+		.c-header__item-link {
+			color: $primary-color;
+		}
+	}
 }
 
 .c-header__item-link {
 	color: $text-color-base;
 
 	text-decoration: none;
+
+	transition: color 0.3s ease-in-out;
 }
 
 .c-header__part {
@@ -125,7 +136,7 @@
 }
 
 .c-header__hamburger {
-	display: block;
+	display: flex;
 
 	@include respond-at(get-breakpoint("tablet")) {
 		display: none;
