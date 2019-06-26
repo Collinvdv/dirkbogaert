@@ -1,0 +1,120 @@
+// =============================================================================
+// :: Settings
+// =============================================================================
+$hamburgerWidth: 2.2rem;
+$hamburgerHeight: 1.7rem;
+
+$hamburgerItemSize: 0.3rem;
+
+// =============================================================================
+// :: Hamburger
+// =============================================================================
+.c-hamburger {
+	position: relative;
+
+	display: inline-flex;
+	flex-direction: column;
+	justify-content: space-between;
+
+	width: $hamburgerWidth;
+	height: $hamburgerHeight;
+
+	border: none;
+	background-color: transparent;
+
+	cursor: pointer;
+}
+
+// =============================================================================
+// :: Elements
+// =============================================================================
+.c-hamburger__item {
+	display: block;
+	width: $hamburgerWidth;
+	height: $hamburgerItemSize;
+
+	background-color: $background-color-black;
+}
+
+// =============================================================================
+// :: States
+// =============================================================================
+.c-hamburger {
+
+	&.is-closed {
+
+		.c-hamburger__item {
+			background-color: $background-color-white;
+		}
+
+		.c-hamburger__item--top {
+			animation: itemTop 0.5s ease-in-out;
+			animation-fill-mode: forwards;
+		}
+
+		.c-hamburger__item--middle {
+			animation: itemMiddle 0.5s ease-in-out;
+			animation-fill-mode: forwards;
+		}
+
+		.c-hamburger__item--bottom {
+			animation: itemBottom 0.5s ease-in-out;
+			animation-fill-mode: forwards;
+		}
+	}
+
+	&.is-static {
+
+		.c-hamburger__item {
+			animation: none;
+		}
+	}
+}
+
+// =============================================================================
+// :: Animations
+// =============================================================================
+@keyframes itemTop {
+
+	0% {
+		transform: translateY(0);
+	}
+
+	50% {
+		transform: translateY($hamburgerHeight / 2 - $hamburgerItemSize) scaleY(1.4) scaleX(0.8);
+	}
+
+	100% {
+		transform: translateY($hamburgerHeight / 2 - $hamburgerItemSize) rotate(45deg) scaleY(1.4) scaleX(0.8);
+	}
+}
+
+@keyframes itemMiddle {
+
+	0% {
+		transform: scaleX(1);
+	}
+
+	50% {
+		transform: scaleX(0);
+	}
+
+	100% {
+		transform: scaleX(0);
+	}
+}
+
+@keyframes itemBottom {
+
+	0% {
+		transform: translateY(0);
+	}
+
+	50% {
+		transform: translateY(-$hamburgerHeight / 2) scaleY(1.4) scaleX(0.8);
+	}
+
+	100% {
+		transform: translateY(-$hamburgerHeight / 2) rotate(-45deg) scaleY(1.4) scaleX(0.8);
+	}
+}
