@@ -32,6 +32,10 @@ return [
     'dev' => [
         // Dev Mode (see https://craftcms.com/guides/what-dev-mode-does)
         'devMode' => true,
+
+		'aliases' => [
+			'@baseUrl' => getenv('BASE_URL'),
+		]
     ],
 
     // Staging environment settings

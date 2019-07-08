@@ -26,17 +26,6 @@
 					{% endfor %}
 				</ul>
 			</nav>
-
-			<div class="c-header__search">
-				{% include "/components/search.twig" with {
-					classes: "c-header__search",
-					id: "search-header",
-					inputName: "search-header",
-					inputType: "text",
-					inputPlaceholder: "Zoeken",
-					icon: "search"
-				} only %}
-			</div>
 		</div>
 
 		{% include "/components/language.twig" with {
