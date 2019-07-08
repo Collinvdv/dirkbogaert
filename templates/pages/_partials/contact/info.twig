@@ -1,24 +1,76 @@
 <div class="c-map" style="background-color: grey">
-	map
+	<div id="map" style='width: 100%; height: 100%;'></div>
 </div>
 
 <div class="l-section u-padding-top-none">
 	<div class="l-container">
-		{% include "/components/contact-info.twig" with {
-			items: [
-				{
-					icon: "telephone",
-					text: "<a href='tel: 052 42 43 00'>052 42 43 00</a> </br> <a href='tel: 0475 50 64 84'>0475 50 64 84</a>"
+
+	</div>
+</div>
+
+
+<script>
+	mapboxgl.accessToken = "pk.eyJ1IjoiY29sbGludmR2IiwiYSI6ImNqeHVnYjcxcDB1M2wzYnBqNWxkdXh5YjgifQ.5mJmpWIiU9H8yUEKrdqBVA";
+
+	/* Map: This represents the map on the page. */
+	var map = new mapboxgl.Map({
+		container: "map",
+		style: "mapbox://styles/mapbox/outdoors-v11",
+		zoom: 7.71,
+		center: [3.9995,50.9916]
+	});
+
+	map.on("load", function () {
+		/* Image: An image is loaded and added to the map. */
+		map.loadImage("https://i.imgur.com/MK4NUzI.png", function(error, image) {
+			if (error) throw error;
+			map.addImage("custom-marker", image);
+			/* Style layer: A style layer ties together the source and image and specifies how they are displayed on the map. */
+			map.addLayer({
+				id: "markers",
+				type: "symbol",
+				/* Source: A data source specifies the geographic coordinate where the image marker gets placed. */
+				source: {
+					type: "geojson",
+					data: {
+						type: 'FeatureCollection',
+						features: [
+							{
+								type: 'Feature',
+								properties: {},
+								geometry: {
+									type: "Point",
+									coordinates: [4.0019, 50.9958]
+								}
+							}
+						]
+					}
 				},
-				{
-					icon: "mail",
-					text: "<a href='mailto:bogaertdirk.ann@skynet.be'>bogaertdirk.ann@skynet.be</a>"
-				},
-				{
-					icon: "location",
-					text: "<address>Naam straat 45</br>1234 Gemeente</address>"
+				layout: {
+					"icon-image": "custom-marker",
 				}
-			]
+			});
+		});
+	});
+</script>
+
+<div class="l-section u-padding-top-none">
+	<div class="l-container">
+		{% include "/components/contact-info.twig" with {
+		items: [
+		{
+		icon: "telephone",
+		text: "<a href='tel: 052 42 43 00'>052 42 43 00</a> </br> <a href='tel: 0475 50 64 84'>0475 50 64 84</a>"
+		},
+		{
+		icon: "mail",
+		text: "<a href='mailto:bogaertdirk.ann@skynet.be'>bogaertdirk.ann@skynet.be</a>"
+		},
+		{
+		icon: "location",
+		text: "<address>Naam straat 45</br>1234 Gemeente</address>"
+		}
+		]
 		} only %}
 	</div>
 </div>
