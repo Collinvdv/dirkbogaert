@@ -3192,7 +3192,7 @@ p {
 
 @media screen and (min-width: 720px) {
   .c-contact__form {
-    width: 50rem;
+    width: 40rem;
   }
 }
 
@@ -3424,6 +3424,10 @@ p {
     width: 60%;
     height: 100%;
   }
+}
+
+.mapboxgl-canvas {
+  left: 0;
 }
 
 .c-hamburger {

@@ -23,7 +23,7 @@
 
 .c-contact__form {
 	@include respond-at(get-breakpoint("tablet")) {
-		width: 50rem;
+		width: 40rem;
 	}
 }
 
