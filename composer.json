@@ -1,6 +1,7 @@
 {
   "require": {
     "craftcms/cms": "^3.0.0",
+    "craftcms/contact-form": "2.2.5",
     "craftcms/redactor": "2.3.3.2",
     "ether/seo": "3.5.4",
     "sebastianlenz/linkfield": "1.0.19",

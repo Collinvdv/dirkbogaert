@@ -8,6 +8,7 @@
 {% set globalContactBerichtLabel = globalContact.globalContactBerichtLabel ?? null %}
 {% set globalContactCtaLabel = globalContact.globalContactCtaLabel ?? null %}
 {% set globalContactGsm = globalContact.globalContactGsm ?? null %}
+{% set globalContactGsmAnn = globalContact.globalContactGsmAnn ?? null %}
 {% set globalContactPhone = globalContact.globalContactPhone ?? null %}
 {% set globalContactMail = globalContact.globalContactMail ?? null %}
 {% set globalContactStraat = globalContact.globalContactStraat ?? null %}
@@ -44,7 +45,7 @@
 	cantactInfo: [
 		{
 			icon: "telephone",
-			text: "<a href='tel: " ~ globalContactPhone ~ "'>" ~ globalContactPhone ~ "</a> </br> <a href='tel: " ~ globalContactGsm ~ "'>" ~ globalContactGsm ~ "</a>"
+			text: "<a href='tel: " ~ globalContactPhone ~ "'>" ~ globalContactPhone ~ "</a> </br> <a href='tel: " ~ globalContactGsm ~ "'> Dirk:" ~ globalContactGsm ~ "</a>"  ~  "<br><a href='tel: " ~ globalContactGsmAnn ~ "'> Ann:" ~ globalContactGsmAnn ~ "</a>"
 		},
 		{
 			icon: "mail",
