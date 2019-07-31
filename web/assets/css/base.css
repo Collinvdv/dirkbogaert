@@ -2943,7 +2943,7 @@ template {
 }
 
 .l-section__item + .l-section__item {
-  margin-top: 7rem;
+  margin-top: 3rem;
 }
 
 .l-section__text {
@@ -4276,7 +4276,7 @@ p {
 
 .c-table th,
 .c-table td {
-  padding: 1.2rem 0;
+  font-size: 1.3rem;
 }
 
 .c-table tbody tr {
