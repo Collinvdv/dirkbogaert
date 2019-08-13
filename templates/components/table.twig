@@ -30,7 +30,13 @@
 			{% for item in items %}
 				<tr>
 					{% for data in item %}
-						<td>{{data}}</td>
+						{% if loop.first %}
+							<td>
+								<img src="{{ data }}" style="height: 125px;margin-top: 8px;width: 125px;"/>
+							</td>
+						{% else %}
+							<td>{{data}}</td>
+						{% endif %}
 					{% endfor %}
 				</tr>
 			{% endfor %}

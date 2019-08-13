@@ -30,13 +30,13 @@
 				<p class="l-section__text">{{ entry.commonIntroduction }} </p>
 				{% set items = [] %}
 				{% for plantitem in entry.plantTable %}
-					{% set items = items|merge( [ [plantitem.plantSoort , plantitem.plantPotmaat, plantitem.plantMaat] ]) %}
+					{% set items = items|merge( [ [plantitem.plantImage.one().url ?? null, plantitem.plantSoort , plantitem.plantPotmaat, plantitem.plantMaat] ]) %}
 				{% endfor %}
 
 				{% include "/components/table.twig" with {
 					classes: "",
 					title: globalDetail.globalDetailSoorten,
-					headers: ["Aantal", "Soort", "Potmaat"],
+					headers: ["Afbeelding", "Aantal", "Soort", "Potmaat"],
 					items: items
 				} only %}
 
