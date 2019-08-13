@@ -43,7 +43,7 @@
 							classes: plantClass,
 							image: image,
 							title: plant.commonTitle,
-							type: plant.plantsoortCategory.one().title,
+							type: plant.plantsoortCategory.one().title ?? null,
 							text: plant.commonIntroduction,
 							link: plant.url
 						} only %}
