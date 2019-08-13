@@ -32,7 +32,9 @@
 					{% for data in item %}
 						{% if loop.first %}
 							<td>
-								<img src="{{ data }}" style="height: 125px;margin-top: 8px;width: 125px;"/>
+								{% if data %}
+									<img src="{{ data }}" style="height: 125px;margin-top: 8px;width: 125px;"/>
+								{% endif %}
 							</td>
 						{% else %}
 							<td>{{data}}</td>
