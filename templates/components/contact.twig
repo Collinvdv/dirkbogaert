@@ -63,6 +63,19 @@
 				</div>
 
 				<div class="c-form__item">
+					<div class="c-input ">
+						<label class="c-input__label " for="fromPhone">
+							Phone
+						</label>
+						<div class="c-input__wrapper">
+							<input id="fromPhone" class="c-input__field" type="tel" name="contact-phone" placeholder="" value="{{ message.fromEmail ?? '' }}" required>
+						</div>
+					</div>
+
+					{{ message is defined and message ? errorList(message.getErrors('fromEmail')) }}
+				</div>
+
+				<div class="c-form__item">
 					<div class="c-textarea ">
 						<label class="c-textarea__label " for="message">
 							Contacteer ons
