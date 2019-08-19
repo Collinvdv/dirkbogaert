@@ -785,8 +785,6 @@ template {
           flex-direction: row;
   -webkit-box-pack: start;
           justify-content: flex-start;
-  -webkit-box-align: start;
-          align-items: flex-start;
   margin: 0;
   padding: 0;
   list-style-type: none;
