@@ -17,8 +17,8 @@
 		{% for item in items %}
 			<li class="c-contact-info__item">
 				{% include "/components/icon.twig" with {
-				classes: "c-contact-info__icon",
-				icon: item.icon
+					classes: "c-contact-info__icon",
+					icon: item.icon
 				} only %}
 
 				<span class="c-contact-info__text">{{item.text | raw}}</span>
