@@ -1,0 +1,38 @@
+{# ========================================================================== #}
+{# :: Imports #}
+{# ========================================================================== #}
+{# set variables #}
+{% set image = image ?? NULL %}
+{% set title = title ?? NULL %}
+{% set type = type ?? NULL %}
+{% set text = text ?? NULL %}
+{% set link = link ?? NULL %}
+
+{# set classes #}
+{% set classes = classes ?? "" %}
+
+{# ========================================================================== #}
+{# :: Component #}
+{# ========================================================================== #}
+<article class="c-article c-article--big {{classes}}">
+	<a href="{{link}}" class="c-article__link"></a>
+
+	<div class="c-article__image-container" style="background-image: url('{{image}}');">
+		<img src="{{image}}" alt="{{title}}" class="c-article__image" title="{{title}}" />
+
+		<button class="c-article__button">
+			{% include "/components/icon.twig" with {
+				classes: "c-article__icon",
+				icon: "arrow-right"
+			} only %}
+		</button>
+	</div>
+
+	<div class="c-article__info">
+		<header class="c-article__header">
+			<h3 class="c-article__title">{{title}}</h3>
+			{#<span class="c-article__type">{{type}}</span>#}
+		</header>
+	</div>
+
+</article>

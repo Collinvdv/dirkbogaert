@@ -3,28 +3,53 @@
 {# ========================================================================== #}
 {% extends "_base/layout" %}
 
+{% set transform = {
+		mode: 'fit',
+		width: 500,
+		height: 500,
+		quality: 90,
+		position: 'center-center'
+	}
+%}
+
 {# ========================================================================== #}
 {# Content #}
 {# ========================================================================== #}
 {% block content %}
 	{% include "/pages/_partials/catalogus/intro.twig" %}
 
-	{% set plantensoorten = craft.categories().group('plantensoort') %}
+	<div class="l-section l-section--grey">
+		<div class="l-container">
+			<div class="l-section__content">
 
-	{% for plantensoort in plantensoorten.all() %}
-		{% if loop.index is even %}
-			{% set plantClass = "" %}
-		{%  else %}
-			{% set plantClass = "l-section--grey" %}
-		{% endif %}
+				<div class="l-section__item">
+					<div class="l-grid l-grid--with-spacing">
+						{% set planten = craft.entries ({
+							section: 'planten',
+							limit: null
+						})%}
 
-		{% include "/pages/_partials/catalogus/section.twig" with {
-			id: plantensoort.slug,
-			classes: plantClass,
-			contentTitle: plantensoort.title,
-			contentText: plantensoort.commonIntroduction,
-			plantensoort: plantensoort
-		}  only %}
-	{% endfor %}
+						{% for plant in planten.all() %}
+
+							{% if plant.commonImage.one() %}
+								{% set image = plant.commonImage.one().getUrl(transform) %}
+							{%  else %}
+								{% set image = '' %}
+							{% endif %}
+
+							{% include "/components/article.twig" with {
+							classes: "l-grid__col l-grid__col--12 l-grid__col--6@tablet l-grid__col--4@desktop",
+							image: image,
+							title: plant.title,
+							type: plant.plantsoortCategory.one().title,
+							text: plant.commonIntroduction,
+							link: plant.url
+							} only %}
+						{% endfor %}
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 
 {% endblock %}

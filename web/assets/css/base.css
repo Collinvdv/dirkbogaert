@@ -3353,6 +3353,11 @@ p {
   height: 14rem;
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.c-article--big .c-article__image-container {
+  height: 21rem;
 }
 
 .c-article__image {
