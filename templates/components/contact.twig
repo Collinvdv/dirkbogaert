@@ -31,64 +31,65 @@
 			{% endmacro %}
 
 			{% from _self import errorList %}
+			{% if craft.app.session.hasFlash('notice') %}
+				<p class="message notice">Mail sent</p>
+			{% else %}
+				<form method="post" action="" accept-charset="UTF-8" class="c-contact__form c-form">
+					{{ csrfInput() }}
+					<input type="hidden" name="action" value="contact-form/send">
 
-			<form method="post" action="" accept-charset="UTF-8" class="c-contact__form c-form">
-				{{ csrfInput() }}
-				<input type="hidden" name="action" value="contact-form/send">
+					<div class="c-form__item">
+						<div class="c-input ">
+							<label class="c-input__label " for="fromName">
+								Naam
+							</label>
+							<div class="c-input__wrapper">
+								<input id="fromName" class="c-input__field" type="text" name="fromName" placeholder="" value="{{ message.fromName ?? '' }}">
+							</div>
+						</div>
 
-				<div class="c-form__item">
-					<div class="c-input ">
-						<label class="c-input__label " for="fromName">
-							Naam
-						</label>
-						<div class="c-input__wrapper">
-							<input id="fromName" class="c-input__field" type="text" name="fromName" placeholder="" value="{{ message.fromName ?? '' }}">
+						{{ message is defined and message ? errorList(message.getErrors('fromName')) }}
+					</div>
+
+					<div class="c-form__item">
+						<div class="c-input ">
+							<label class="c-input__label " for="fromEmail">
+								E-mailadres
+							</label>
+							<div class="c-input__wrapper">
+								<input id="fromEmail" class="c-input__field" type="email" name="fromEmail" placeholder="" value="{{ message.fromEmail ?? '' }}" required>
+							</div>
+						</div>
+
+						{{ message is defined and message ? errorList(message.getErrors('fromEmail')) }}
+					</div>
+
+					<div class="c-form__item">
+						<div class="c-input ">
+							<label class="c-input__label " for="fromPhone">
+								Phone
+							</label>
+							<div class="c-input__wrapper">
+								<input id="fromPhone" class="c-input__field" type="tel" name="message[Phone]" placeholder="" value="{{ message.fromEmail ?? '' }}" required>
+							</div>
 						</div>
 					</div>
 
-					{{ message is defined and message ? errorList(message.getErrors('fromName')) }}
-				</div>
-
-				<div class="c-form__item">
-					<div class="c-input ">
-						<label class="c-input__label " for="fromEmail">
-							E-mailadres
-						</label>
-						<div class="c-input__wrapper">
-							<input id="fromEmail" class="c-input__field" type="email" name="contact-email" placeholder="" value="{{ message.fromEmail ?? '' }}" required>
+					<div class="c-form__item">
+						<div class="c-textarea ">
+							<label class="c-textarea__label " for="message">
+								Contacteer ons
+							</label>
+							<div class="c-textarea__wrapper">
+								<textarea id="message" name="message[Body]" class="c-textarea__field" type="textarea" required> {{ message.message.body ?? '' }}</textarea>
+							</div>
 						</div>
+						{{ message is defined and message ? errorList(message.getErrors('message')) }}
 					</div>
 
-					{{ message is defined and message ? errorList(message.getErrors('fromEmail')) }}
-				</div>
-
-				<div class="c-form__item">
-					<div class="c-input ">
-						<label class="c-input__label " for="fromPhone">
-							Phone
-						</label>
-						<div class="c-input__wrapper">
-							<input id="fromPhone" class="c-input__field" type="tel" name="contact-phone" placeholder="" value="{{ message.fromEmail ?? '' }}" required>
-						</div>
-					</div>
-
-					{{ message is defined and message ? errorList(message.getErrors('fromEmail')) }}
-				</div>
-
-				<div class="c-form__item">
-					<div class="c-textarea ">
-						<label class="c-textarea__label " for="message">
-							Contacteer ons
-						</label>
-						<div class="c-textarea__wrapper">
-							<textarea id="message" name="message[Body]" class="c-textarea__field" type="textarea">{{ message.message.body ?? '' }}</textarea>
-						</div>
-					</div>
-					{{ message is defined and message ? errorList(message.getErrors('message')) }}
-				</div>
-
-				<input type="submit" class="c-form__submit c-button" value="Verzenden">
-			</form>
+					<input type="submit" class="c-form__submit c-button" value="Verzenden">
+				</form>
+			{% endif %}
 		</div>
 
 		{% include "components/contact-info.twig" with {
