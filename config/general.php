@@ -48,5 +48,9 @@ return [
     'production' => [
         // Set this to `false` to prevent administrative changes from being made on production
         'allowAdminChanges' => false,
+
+		'aliases' => [
+			'@baseUrl' => getenv('BASE_URL'),
+		]
     ],
 ];
