@@ -1,0 +1,41 @@
+// =============================================================================
+// :: logo
+// =============================================================================
+.c-logo {
+	padding: 30px;
+
+	display: flex;
+	justify-content: center;
+
+	@include respond-to(get-breakpoint("tablet")) {
+		flex-direction: column;
+		align-items: center;
+	}
+}
+
+.c-logo__item {
+	height: 75px;
+}
+
+.c-logo__bogaert {
+	margin-right: 45px;
+
+	@include respond-to(get-breakpoint("tablet")) {
+		margin-bottom: 20px;
+		margin-right: 25px;
+
+	}
+}
+
+.c-logo__thibri {
+	@include respond-at(get-breakpoint("tablet")) {
+		margin-left: 25px;
+	}
+}
+
+// =============================================================================
+// :: Elements
+// =============================================================================
+//@include respond-at(get-breakpoint("tablet")) {
+//	margin-bottom: 15rem;
+//}
