@@ -33,7 +33,9 @@
 						{% if loop.first %}
 							<td>
 								{% if data %}
-									<img src="{{ data }}" style="height: 125px;margin-top: 8px;width: 125px;"/>
+									<a href="{{ data }}" class="glightbox2">
+										<img src="{{ data }}" style="height: 125px;margin-top: 8px;width: 125px;"/>
+									</a>
 								{% endif %}
 							</td>
 						{% else %}
