@@ -3,6 +3,7 @@ fieldLayouts:
   5a5cf9c4-4716-4823-ac59-b45e2c5b84c8:
     tabs:
       -
+        elementCondition: null
         elements:
           -
             autocapitalize: true
@@ -10,7 +11,9 @@ fieldLayouts:
             autocorrect: true
             class: null
             disabled: false
+            elementCondition: null
             id: null
+            inputType: null
             instructions: null
             label: null
             max: null
@@ -25,19 +28,25 @@ fieldLayouts:
             tip: null
             title: null
             type: craft\fieldlayoutelements\TitleField
+            uid: 358f89a7-6089-4b06-819c-22cb854f3665
+            userCondition: null
             warning: null
             width: 100
           -
+            elementCondition: null
             fieldUid: 9e4e55b6-cc7d-4e29-9dd3-2976f356cac6 # Introduction
             instructions: null
             label: null
-            required: '0'
+            required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 0ef71c5d-78c8-41bb-8096-9e748efdb1ae
+            userCondition: null
             warning: null
             width: 100
         name: General
-        sortOrder: 1
+        uid: 7d0e5498-10fc-417f-8744-897af6644ce3
+        userCondition: null
 handle: plantensoort
 name: plantensoort
 siteSettings:

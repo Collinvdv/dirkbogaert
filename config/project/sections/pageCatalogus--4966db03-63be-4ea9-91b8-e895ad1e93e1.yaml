@@ -1,6 +1,10 @@
 defaultPlacement: end
 enableVersioning: true
+entryTypes:
+  -
+    uid: 22de7467-4229-462d-8bfb-53775fbc87be # Catalogus
 handle: pageCatalogus
+maxAuthors: 1
 name: Catalogus
 previewTargets:
   -

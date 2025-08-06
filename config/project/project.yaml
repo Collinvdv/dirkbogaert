@@ -1,4 +1,4 @@
-dateModified: 1754492169
+dateModified: 1754492316
 email:
   fromEmail: collin@littlemissrobot.com
   fromName: bogaertdirk
@@ -34,40 +34,30 @@ meta:
     22de7467-4229-462d-8bfb-53775fbc87be: Catalogus # Catalogus
     29ebcc2a-37bd-4e89-bc3e-428edc5e5b8f: Home # Home
     35c51972-f750-46bd-8331-9d578096d49e: 'Link cta' # Link cta
-    42a20019-2e91-46d3-b5f8-380bad575e1f: Maat # Maat
     44fdd2fb-939a-4c5a-9867-6bf7a15674ab: 'Global other variants' # Global other variants
     48fb4ee4-713e-4d5c-a79c-1ae69a7c6624: 'Home spotlight title' # Home spotlight title
     51b3aa81-c77a-4a9b-8be9-c126091f80ab: Title # Title
     53e95fa5-8359-49b6-a411-fdf991ad8844: 'Contact title us' # Contact title us
     63ff5245-2ab0-4f3c-b8a7-2ed300e11219: 'Contact straat' # Contact straat
-    66e900e2-e7cf-47e4-a7d4-f8362307c4c5: Globals # Globals
     089b433e-278d-4f41-8899-d9c6a0803b27: 'Detail interested' # Detail interested
     95ab273c-55fa-4c0d-8fe4-1c7cbb65de0e: Detail # Detail
     112ab554-bad7-4cb7-a22a-4f00cc2c31cc: imageVolume # imageVolume
-    285d3eef-6222-4498-b7d6-2b65971bccf8: Soort # Soort
     295e67cd-8709-422e-ab9a-b5ee52d61ed8: 'About photo 5' # About photo 5
     473b32ef-0cac-4e8a-a11a-adcc1ab31705: 'About photo 4' # About photo 4
-    505d899e-36b5-47a1-8c00-7880b4ddf0f5: Image # Image
     952b1677-5ade-4e62-b47b-b9936bddcdb6: 'Navigation Titel' # Navigation Titel
     1576dc30-d64b-426b-80d6-f90a17462ffa: About # About
     2556a829-b1a9-40e4-b30e-8c6896197b56: Image # Image
     2834c455-1a02-4864-a60d-f96d1bf8d1d2: 'Contact mail' # Contact mail
     3648fc6c-0f04-4d12-ae5f-15dd545c51bb: Seo # Seo
-    4476a42f-adcd-4434-af71-726edade8d78: Plant # Plant
     4966db03-63be-4ea9-91b8-e895ad1e93e1: Catalogus # Catalogus
-    4998a4f9-283c-4851-b305-47828327574c: Potmaat # Potmaat
     9692be7a-b52c-467c-8a29-4bd16fd03f51: 'Navigation introduction' # Navigation introduction
-    33570d82-e546-4702-939f-eb5ddfb333f2: Nav # Nav
     082060e3-8d13-493b-81e4-0a73983e54ee: Home # Home
     177033ee-3b58-40af-9843-544791e3eb28: 'About photo 3' # About photo 3
     6993150b-68b3-43d0-bfc0-c45fbfd10acf: 'Contact phone' # Contact phone
     20577864-05fd-4fea-8d64-6870369c7459: 'Related plants' # Related plants
     73999626-0544-466f-b139-f66fdb06a4ac: Contact # Contact
-    a04ec161-89d3-4a1d-8c54-eec5076c9d1b: plant # plant
     a27b376f-9c35-4881-9075-44870c708829: 'Samenwerking description' # Samenwerking description
-    ac3c3040-adfa-4e4c-b8a0-06486e5d63c6: About # About
     b1b7b4a1-fdfe-4fb6-9cad-dede76e4b9d8: 'Contact stad' # Contact stad
-    b1c99512-2cc4-4b8e-a95f-d96b1f4aa7ab: Home # Home
     b5b893a3-fda3-44ce-8144-153fa6557a69: 'Detail soorten' # Detail soorten
     b14a91d5-7fcc-48ac-9167-815daa8d1767: 'Contact gsm ann' # Contact gsm ann
     bc35ca7f-b5e4-4cad-9bb0-82192041de0f: 'Global variants description' # Global variants description
@@ -77,7 +67,6 @@ meta:
     d38063c5-b8d6-4d81-89c0-e8847d81e10e: Plantensoort # Plantensoort
     d50193f6-9657-475c-83f0-046a4e073fcf: 'Team description' # Team description
     d5100871-3a04-4c3f-8cc3-950bd4a780fb: 'Contact mail label' # Contact mail label
-    db880872-957b-45a9-9f5e-4f06493015d9: Common # Common
     e0f6a570-4402-4f4e-b8b7-cc7ef7a275e6: plantensoort # plantensoort
     e9d9d161-74ec-467e-b3e4-da284c293cae: 'Contact name label' # Contact name label
     e29b0f53-3e8d-4c61-84ad-11138b8fbdbf: 'Samenwerking title' # Samenwerking title
@@ -108,7 +97,7 @@ system:
   edition: solo
   live: true
   name: bogaertdirk
-  schemaVersion: 4.15.0.0
+  schemaVersion: 5.8.0.3
   timeZone: America/Los_Angeles
 users:
   allowPublicRegistration: false

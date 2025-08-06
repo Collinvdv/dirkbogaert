@@ -1,17 +1,16 @@
 columnSuffix: null
 contentColumnType: text
-fieldGroup: 66e900e2-e7cf-47e4-a7d4-f8362307c4c5 # Globals
 handle: globalDetailInterestedDescription
-instructions: ''
+instructions: null
 name: 'Detail interested description'
 searchable: true
 settings:
   byteLimit: null
   charLimit: null
-  code: ''
+  code: false
   columnType: text
-  initialRows: '4'
-  multiline: ''
+  initialRows: 4
+  multiline: false
   placeholder: null
   uiMode: normal
 translationKeyFormat: null

@@ -2,6 +2,7 @@ fieldLayouts:
   d16fd708-6f47-4238-a248-a5ab34471cd5:
     tabs:
       -
+        elementCondition: null
         elements:
           -
             autocapitalize: true
@@ -9,7 +10,9 @@ fieldLayouts:
             autocorrect: true
             class: null
             disabled: false
+            elementCondition: null
             id: null
+            inputType: null
             instructions: null
             label: null
             max: null
@@ -24,81 +27,109 @@ fieldLayouts:
             tip: null
             title: null
             type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: 7e1ed34c-588d-412a-bf58-89f1e2e12b2c
+            userCondition: null
             warning: null
             width: 100
           -
+            elementCondition: null
             fieldUid: 51b3aa81-c77a-4a9b-8be9-c126091f80ab # Title
             instructions: null
             label: null
-            required: '0'
+            required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 18b9d0c2-1640-4e28-ada4-466b0d54009c
+            userCondition: null
             warning: null
             width: 100
           -
+            elementCondition: null
             fieldUid: d38063c5-b8d6-4d81-89c0-e8847d81e10e # Plantensoort
             instructions: null
             label: null
-            required: '0'
+            required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: f978fbdc-358f-4eac-b499-aba415ee3cdb
+            userCondition: null
             warning: null
             width: 100
           -
+            elementCondition: null
             fieldUid: 2556a829-b1a9-40e4-b30e-8c6896197b56 # Image
             instructions: null
             label: null
-            required: '0'
+            required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 5d52e082-7a53-46c8-8aff-f3926b9bb60b
+            userCondition: null
             warning: null
             width: 100
           -
+            elementCondition: null
             fieldUid: 9e4e55b6-cc7d-4e29-9dd3-2976f356cac6 # Introduction
             instructions: null
             label: null
-            required: '0'
+            required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: e735b7ca-f245-4808-b802-205b3b3419ab
+            userCondition: null
             warning: null
             width: 100
           -
+            elementCondition: null
             fieldUid: bf8f9ed2-2536-4b33-865a-b599e979ae41 # Plant tabel
             instructions: null
             label: null
-            required: '0'
+            required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 14ecb0b3-9b3c-4aee-b68a-99e6d08808c3
+            userCondition: null
             warning: null
             width: 100
           -
+            elementCondition: null
             fieldUid: 20577864-05fd-4fea-8d64-6870369c7459 # Related plants
             instructions: null
             label: null
-            required: '0'
+            required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 71bbdba4-bc32-4574-a08c-1775e8946fdf
+            userCondition: null
             warning: null
             width: 100
         name: General
-        sortOrder: 1
+        uid: a67026cf-33af-4a8a-b091-1e994740b3c1
+        userCondition: null
       -
+        elementCondition: null
         elements:
           -
+            elementCondition: null
             fieldUid: 3648fc6c-0f04-4d12-ae5f-15dd545c51bb # Seo
             instructions: null
             label: null
-            required: '0'
+            required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 6995db38-0515-4e2a-a187-88395092c27c
+            userCondition: null
             warning: null
             width: 100
         name: Seo
-        sortOrder: 2
+        uid: 9765013f-a609-4622-a9d5-76becd22887f
+        userCondition: null
 handle: planten
 hasTitleField: false
 name: planten
-section: 6f51bf6a-c579-46d1-98b1-d8454752b952 # planten
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
 sortOrder: 1
 titleFormat: '{commonTitle}'
 titleTranslationKeyFormat: null

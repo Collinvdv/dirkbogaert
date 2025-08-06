@@ -1,8 +1,7 @@
 columnSuffix: null
-contentColumnType: string
-handle: aboutPhoto1
+handle: plantImage
 instructions: null
-name: 'About photo 1'
+name: 'Plant tabel - plant - Image'
 searchable: true
 settings:
   allowSelfRelations: false
@@ -11,9 +10,9 @@ settings:
   allowedKinds:
     - image
   branchLimit: null
+  defaultPlacement: end
   defaultUploadLocationSource: 'volume:112ab554-bad7-4cb7-a22a-4f00cc2c31cc' # imageVolume
   defaultUploadLocationSubpath: null
-  localizeRelations: false
   maintainHierarchy: false
   maxRelations: 1
   minRelations: null
@@ -24,13 +23,16 @@ settings:
   restrictedLocationSource: 'volume:112ab554-bad7-4cb7-a22a-4f00cc2c31cc' # imageVolume
   restrictedLocationSubpath: null
   selectionLabel: null
+  showCardsInGrid: false
+  showSearchInput: true
   showSiteMenu: true
   showUnpermittedFiles: false
   showUnpermittedVolumes: true
-  sources: '*'
+  sources:
+    - 'volume:112ab554-bad7-4cb7-a22a-4f00cc2c31cc' # imageVolume
   targetSiteId: null
   validateRelatedElements: false
   viewMode: large
 translationKeyFormat: null
-translationMethod: site
+translationMethod: none
 type: craft\fields\Assets

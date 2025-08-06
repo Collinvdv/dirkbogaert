@@ -2,126 +2,167 @@ fieldLayouts:
   2aa943ad-c0eb-439d-beeb-c8fb1de8e307:
     tabs:
       -
+        elementCondition: null
         elements:
           -
+            elementCondition: null
             fieldUid: 53e95fa5-8359-49b6-a411-fdf991ad8844 # Contact title us
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 75701c2d-bcf7-4005-9c00-f45680ad1438
+            userCondition: null
             warning: null
             width: 100
           -
+            elementCondition: null
             fieldUid: 5b8bf9f9-1792-4d72-9915-ff0b0da27122 # Contact description
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: da285247-1eb0-430e-a8e3-974d923a4b4a
+            userCondition: null
             warning: null
             width: 100
           -
+            elementCondition: null
             fieldUid: e9d9d161-74ec-467e-b3e4-da284c293cae # Contact name label
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 0402611f-892d-4c1e-bde7-8fdeba419a99
+            userCondition: null
             warning: null
             width: 100
           -
+            elementCondition: null
             fieldUid: d5100871-3a04-4c3f-8cc3-950bd4a780fb # Contact mail label
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 39715670-5135-4595-b173-e96bf1cb571f
+            userCondition: null
             warning: null
             width: 100
           -
+            elementCondition: null
             fieldUid: d970c6df-bd7c-4ff7-9e92-069dae323455 # Contact bericht label
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 001649cb-2681-4ef3-9b3a-668cc238d2e3
+            userCondition: null
             warning: null
             width: 100
           -
+            elementCondition: null
             fieldUid: 1c8df03f-74fd-444b-a5bf-56ef9259b053 # Contact cta label
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 818bf89f-ae55-43f4-8c0d-99f7080972d9
+            userCondition: null
             warning: null
             width: 100
           -
+            elementCondition: null
             fieldUid: 6feaa6c6-cbc4-4792-8952-95e65d591552 # Contact titel gegevens
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 6d50dfee-badc-411e-8318-8a12c376f544
+            userCondition: null
             warning: null
             width: 100
           -
+            elementCondition: null
             fieldUid: 4f141aa0-39f7-44f5-b512-87ca295158e9 # Contact gsm Dirk
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 31db0693-90d6-49b3-931d-901d8b113693
+            userCondition: null
             warning: null
             width: 100
           -
+            elementCondition: null
             fieldUid: b14a91d5-7fcc-48ac-9167-815daa8d1767 # Contact gsm ann
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 45836249-35a8-422b-ab48-8c923d96ad2d
+            userCondition: null
             warning: null
             width: 100
           -
+            elementCondition: null
             fieldUid: 2834c455-1a02-4864-a60d-f96d1bf8d1d2 # Contact mail
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 093bd56e-e4c0-4b8d-ac95-d31db5d1b6be
+            userCondition: null
             warning: null
             width: 100
           -
+            elementCondition: null
             fieldUid: 6993150b-68b3-43d0-bfc0-c45fbfd10acf # Contact phone
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 92a08f16-7989-48a9-9f73-49899ba0fc7b
+            userCondition: null
             warning: null
             width: 100
           -
+            elementCondition: null
             fieldUid: b1b7b4a1-fdfe-4fb6-9cad-dede76e4b9d8 # Contact stad
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 68208976-be14-481e-a101-68405b3cfa9e
+            userCondition: null
             warning: null
             width: 100
           -
+            elementCondition: null
             fieldUid: 63ff5245-2ab0-4f3c-b8a7-2ed300e11219 # Contact straat
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 0281bcf1-49f6-452e-af20-4e93fb8a317f
+            userCondition: null
             warning: null
             width: 100
         name: Contact
-        sortOrder: 1
+        uid: c752fca1-92ff-4be0-ac7a-78abaf94c879
+        userCondition: null
 handle: globalContact
 name: Contact
 sortOrder: 1

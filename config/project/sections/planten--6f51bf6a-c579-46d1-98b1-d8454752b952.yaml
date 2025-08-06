@@ -1,6 +1,10 @@
 defaultPlacement: end
 enableVersioning: true
+entryTypes:
+  -
+    uid: cc39fa95-64b8-4b7f-87f3-cb2f65b83a85 # planten
 handle: planten
+maxAuthors: 1
 name: planten
 previewTargets:
   -

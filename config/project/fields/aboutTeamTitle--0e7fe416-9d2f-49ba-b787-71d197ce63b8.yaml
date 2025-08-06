@@ -1,17 +1,16 @@
 columnSuffix: null
 contentColumnType: text
-fieldGroup: ac3c3040-adfa-4e4c-b8a0-06486e5d63c6 # About
 handle: aboutTeamTitle
-instructions: ''
+instructions: null
 name: 'Team title'
 searchable: true
 settings:
   byteLimit: null
   charLimit: null
-  code: ''
+  code: false
   columnType: text
-  initialRows: '4'
-  multiline: ''
+  initialRows: 4
+  multiline: false
   placeholder: null
   uiMode: normal
 translationKeyFormat: null

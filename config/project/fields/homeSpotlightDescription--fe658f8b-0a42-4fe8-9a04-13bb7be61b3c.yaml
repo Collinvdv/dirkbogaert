@@ -1,17 +1,16 @@
 columnSuffix: null
 contentColumnType: text
-fieldGroup: b1c99512-2cc4-4b8e-a95f-d96b1f4aa7ab # Home
 handle: homeSpotlightDescription
-instructions: ''
+instructions: null
 name: 'Home spotlight description'
 searchable: true
 settings:
   byteLimit: null
   charLimit: null
-  code: ''
+  code: false
   columnType: text
-  initialRows: '4'
-  multiline: '1'
+  initialRows: 4
+  multiline: true
   placeholder: null
   uiMode: normal
 translationKeyFormat: null

@@ -2,6 +2,7 @@ fieldLayouts:
   faf1f805-ad21-4ad7-b461-a36fbab01862:
     tabs:
       -
+        elementCondition: null
         elements:
           -
             autocapitalize: true
@@ -9,7 +10,9 @@ fieldLayouts:
             autocorrect: true
             class: null
             disabled: false
+            elementCondition: null
             id: null
+            inputType: null
             instructions: null
             label: null
             max: null
@@ -24,112 +27,151 @@ fieldLayouts:
             tip: null
             title: null
             type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: 967514cf-6e6d-4925-bf15-d839568b9fde
+            userCondition: null
             warning: null
             width: 100
           -
+            elementCondition: null
             fieldUid: 51b3aa81-c77a-4a9b-8be9-c126091f80ab # Title
             instructions: null
             label: null
-            required: '0'
+            required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 94d90fb2-4283-49fa-9c97-badee2b19f4a
+            userCondition: null
             warning: null
             width: 100
           -
+            elementCondition: null
             fieldUid: 2556a829-b1a9-40e4-b30e-8c6896197b56 # Image
             instructions: null
             label: null
-            required: '0'
+            required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 668186b9-0922-41f6-aecd-75c406a4f607
+            userCondition: null
             warning: null
             width: 100
           -
+            elementCondition: null
             fieldUid: 9e4e55b6-cc7d-4e29-9dd3-2976f356cac6 # Introduction
             instructions: null
             label: null
-            required: '0'
+            required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 9f049e55-ccf9-4247-8b40-e4cf516836d9
+            userCondition: null
             warning: null
             width: 100
           -
+            elementCondition: null
             fieldUid: 35c51972-f750-46bd-8331-9d578096d49e # Link cta
             instructions: null
             label: null
-            required: '0'
+            required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 47210dc7-4203-4907-89a0-0889e2dba5fa
+            userCondition: null
             warning: null
             width: 100
         name: General
-        sortOrder: 1
+        uid: d2b85dc4-1ee9-4c46-aa7d-e8a12a7bf4d0
+        userCondition: null
       -
+        elementCondition: null
         elements:
           -
+            elementCondition: null
             fieldUid: 48fb4ee4-713e-4d5c-a79c-1ae69a7c6624 # Home spotlight title
             instructions: null
             label: null
-            required: '0'
+            required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: fd851a61-00ac-4da6-b56d-f6a3774e8afd
+            userCondition: null
             warning: null
             width: 100
           -
+            elementCondition: null
             fieldUid: fe658f8b-0a42-4fe8-9a04-13bb7be61b3c # Home spotlight description
             instructions: null
             label: null
-            required: '0'
+            required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 3f10912b-45b5-4ac7-bcd8-c706c31a2602
+            userCondition: null
             warning: null
             width: 100
           -
+            elementCondition: null
             fieldUid: 20577864-05fd-4fea-8d64-6870369c7459 # Related plants
             instructions: null
             label: null
-            required: '0'
+            required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 1ebe01a1-d98f-47f1-9634-22419ac295fc
+            userCondition: null
             warning: null
             width: 100
           -
+            elementCondition: null
             fieldUid: e29b0f53-3e8d-4c61-84ad-11138b8fbdbf # Samenwerking title
             instructions: null
             label: null
-            required: '0'
+            required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 7a6b5ce8-2c3b-4df9-ad07-5a17d1228fcf
+            userCondition: null
             warning: null
             width: 100
           -
+            elementCondition: null
             fieldUid: a27b376f-9c35-4881-9075-44870c708829 # Samenwerking description
             instructions: null
             label: null
-            required: '0'
+            required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: b1a74d04-f2f3-4760-b37b-fc77a11a911e
+            userCondition: null
             warning: null
             width: 100
         name: Content
-        sortOrder: 2
+        uid: 1ef61acb-e76a-4d35-bd4e-b85f09adb020
+        userCondition: null
       -
+        elementCondition: null
         elements:
           -
+            elementCondition: null
             fieldUid: 3648fc6c-0f04-4d12-ae5f-15dd545c51bb # Seo
             instructions: null
             label: null
-            required: '0'
+            required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: c1379e6a-39e2-42a4-89fb-d5e899089ac3
+            userCondition: null
             warning: null
             width: 100
         name: Seo
-        sortOrder: 3
+        uid: 2739cd55-2b60-4395-b26f-8a163d429ecc
+        userCondition: null
 handle: pageHome
 hasTitleField: false
 name: Home
-section: 29ebcc2a-37bd-4e89-bc3e-428edc5e5b8f # Home
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
 sortOrder: 1
 titleFormat: '{section.name|raw}'
 titleTranslationKeyFormat: null

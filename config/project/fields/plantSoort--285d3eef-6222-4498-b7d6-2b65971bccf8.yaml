@@ -1,18 +1,16 @@
 columnSuffix: null
-contentColumnType: text
-handle: globalContactPhone
+handle: plantSoort
 instructions: null
-name: 'Contact phone'
+name: 'Plant tabel - plant - Soort'
 searchable: true
 settings:
   byteLimit: null
   charLimit: null
   code: false
-  columnType: text
   initialRows: 4
   multiline: false
   placeholder: null
   uiMode: normal
 translationKeyFormat: null
-translationMethod: none
+translationMethod: site
 type: craft\fields\PlainText

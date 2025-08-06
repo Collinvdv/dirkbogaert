@@ -1,23 +1,47 @@
 columnSuffix: null
-contentColumnType: text
-fieldGroup: db880872-957b-45a9-9f5e-4f06493015d9 # Common
+contentColumnType: string
 handle: commonSamenwerkingDescription
-instructions: ''
+instructions: null
 name: 'Samenwerking description'
 searchable: true
 settings:
-  availableTransforms: '*'
-  availableVolumes: '*'
-  columnType: text
-  defaultTransform: ''
-  initJs: null
-  purifierConfig: ''
-  purifyHtml: '1'
-  removeEmptyTags: false
-  removeInlineStyles: false
-  removeNbsp: false
-  showUnpermittedFiles: ''
-  showUnpermittedVolumes: ''
+  errorMessage: 'Component class ''craft\ckeditor\Field'' belongs to a disabled plugin (CKEditor).'
+  expectedType: craft\ckeditor\Field
+  settings:
+    __assoc__:
+      0:
+        - availableTransforms
+        - '*'
+      1:
+        - availableVolumes
+        - '*'
+      2:
+        - columnType
+        - text
+      3:
+        - defaultTransform
+        - ''
+      5:
+        - purifierConfig
+        - ''
+      6:
+        - purifyHtml
+        - '1'
+      7:
+        - removeEmptyTags
+        - false
+      8:
+        - removeInlineStyles
+        - false
+      9:
+        - removeNbsp
+        - false
+      10:
+        - showUnpermittedFiles
+        - ''
+      11:
+        - showUnpermittedVolumes
+        - ''
 translationKeyFormat: null
 translationMethod: none
-type: craft\ckeditor\Field
+type: craft\fields\MissingField

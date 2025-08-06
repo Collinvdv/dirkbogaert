@@ -2,6 +2,7 @@ fieldLayouts:
   9fd26978-fb8f-4db0-b213-a581083665d9:
     tabs:
       -
+        elementCondition: null
         elements:
           -
             autocapitalize: true
@@ -9,7 +10,9 @@ fieldLayouts:
             autocorrect: true
             class: null
             disabled: false
+            elementCondition: null
             id: null
+            inputType: null
             instructions: null
             label: null
             max: null
@@ -24,67 +27,91 @@ fieldLayouts:
             tip: null
             title: null
             type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: 832a97ab-a0a0-48f6-a9eb-984bc7ea643b
+            userCondition: null
             warning: null
             width: 100
           -
+            elementCondition: null
             fieldUid: 51b3aa81-c77a-4a9b-8be9-c126091f80ab # Title
             instructions: null
             label: null
-            required: '0'
+            required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 477b6bdb-42bd-4a62-9ca8-8614f47b548c
+            userCondition: null
             warning: null
             width: 100
           -
+            elementCondition: null
             fieldUid: 9e4e55b6-cc7d-4e29-9dd3-2976f356cac6 # Introduction
             instructions: null
             label: null
-            required: '0'
+            required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: e248007b-7183-4eeb-a3e3-e833e09ca403
+            userCondition: null
             warning: null
             width: 100
         name: General
-        sortOrder: 1
+        uid: 6f8d3d0a-ceba-43ab-ad33-83f16dc8f7e1
+        userCondition: null
       -
+        elementCondition: null
         elements:
           -
+            elementCondition: null
             fieldUid: 952b1677-5ade-4e62-b47b-b9936bddcdb6 # Navigation Titel
             instructions: null
             label: null
-            required: '0'
+            required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 487893c6-ff45-4bda-a6bf-6f5ed321c7c6
+            userCondition: null
             warning: null
             width: 100
           -
+            elementCondition: null
             fieldUid: 9692be7a-b52c-467c-8a29-4bd16fd03f51 # Navigation introduction
             instructions: null
             label: null
-            required: '0'
+            required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: a5ae254f-6547-4660-a023-10d277484b4b
+            userCondition: null
             warning: null
             width: 100
         name: Nav
-        sortOrder: 2
+        uid: 4d240f7d-ffe2-4b11-a632-a3bf72b5ebab
+        userCondition: null
       -
+        elementCondition: null
         elements:
           -
+            elementCondition: null
             fieldUid: 3648fc6c-0f04-4d12-ae5f-15dd545c51bb # Seo
             instructions: null
             label: null
-            required: '0'
+            required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: f7c9a69a-f4eb-4df6-86da-3ddc8d711f37
+            userCondition: null
             warning: null
             width: 100
         name: Seo
-        sortOrder: 3
+        uid: 221277bb-28ae-4b8b-afba-7b0dc93f27fc
+        userCondition: null
 handle: pageCatalogus
 hasTitleField: false
 name: Catalogus
-section: 4966db03-63be-4ea9-91b8-e895ad1e93e1 # Catalogus
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
 sortOrder: 1
 titleFormat: '{section.name|raw}'
 titleTranslationKeyFormat: null

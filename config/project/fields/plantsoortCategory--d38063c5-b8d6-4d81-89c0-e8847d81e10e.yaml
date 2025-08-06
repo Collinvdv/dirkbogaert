@@ -1,21 +1,19 @@
 columnSuffix: null
 contentColumnType: string
-fieldGroup: 4476a42f-adcd-4434-af71-726edade8d78 # Plant
 handle: plantsoortCategory
-instructions: ''
+instructions: null
 name: Plantensoort
 searchable: true
 settings:
-  allowLimit: false
-  allowMultipleSources: false
   allowSelfRelations: false
-  branchLimit: '1'
-  limit: null
+  branchLimit: 1
   localizeRelations: false
-  selectionLabel: ''
+  maintainHierarchy: true
+  maxRelations: null
+  minRelations: null
+  selectionLabel: null
   showSiteMenu: true
   source: 'group:e0f6a570-4402-4f4e-b8b7-cc7ef7a275e6' # plantensoort
-  sources: '*'
   targetSiteId: null
   validateRelatedElements: false
   viewMode: null

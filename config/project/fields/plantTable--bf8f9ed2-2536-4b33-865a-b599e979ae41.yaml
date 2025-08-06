@@ -1,16 +1,18 @@
 columnSuffix: null
 contentColumnType: string
-fieldGroup: 4476a42f-adcd-4434-af71-726edade8d78 # Plant
 handle: plantTable
-instructions: ''
+instructions: null
 name: 'Plant tabel'
 searchable: true
 settings:
-  contentTable: '{{%matrixcontent_planttable}}'
-  maxBlocks: ''
-  minBlocks: ''
+  entryTypes:
+    -
+      uid: a04ec161-89d3-4a1d-8c54-eec5076c9d1b
+  maxEntries: null
+  minEntries: null
   propagationKeyFormat: null
   propagationMethod: all
+  viewMode: blocks
 translationKeyFormat: null
 translationMethod: site
 type: craft\fields\Matrix

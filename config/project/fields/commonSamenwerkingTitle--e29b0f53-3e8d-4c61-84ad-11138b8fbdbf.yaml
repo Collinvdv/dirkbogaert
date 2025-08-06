@@ -1,17 +1,16 @@
 columnSuffix: null
 contentColumnType: text
-fieldGroup: db880872-957b-45a9-9f5e-4f06493015d9 # Common
 handle: commonSamenwerkingTitle
-instructions: ''
+instructions: null
 name: 'Samenwerking title'
 searchable: true
 settings:
   byteLimit: null
   charLimit: null
-  code: ''
+  code: false
   columnType: text
-  initialRows: '4'
-  multiline: ''
+  initialRows: 4
+  multiline: false
   placeholder: null
   uiMode: normal
 translationKeyFormat: null

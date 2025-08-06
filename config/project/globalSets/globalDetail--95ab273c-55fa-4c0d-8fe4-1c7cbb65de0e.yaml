@@ -2,63 +2,83 @@ fieldLayouts:
   89536c75-5b37-479a-b342-d60cde13fc0c:
     tabs:
       -
+        elementCondition: null
         elements:
           -
+            elementCondition: null
             fieldUid: b5b893a3-fda3-44ce-8144-153fa6557a69 # Detail soorten
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 8dba9898-2917-486f-9b2d-29bed17b13ef
+            userCondition: null
             warning: null
             width: 100
           -
+            elementCondition: null
             fieldUid: 089b433e-278d-4f41-8899-d9c6a0803b27 # Detail interested
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: df28008f-8d8c-4e9a-8a4d-a8bd611eb58e
+            userCondition: null
             warning: null
             width: 100
           -
+            elementCondition: null
             fieldUid: edd52b93-0d86-48b0-ae22-4dac7d77cd9a # Detail interested description
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 96af4c3a-08cc-418b-856a-2050a2ffd865
+            userCondition: null
             warning: null
             width: 100
           -
+            elementCondition: null
             fieldUid: 7a9e020d-adca-4048-afc9-5094dc7726b9 # Detail cta
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 9f51aa6c-7ea3-44f9-99e1-ab1c237d31f4
+            userCondition: null
             warning: null
             width: 100
           -
+            elementCondition: null
             fieldUid: 44fdd2fb-939a-4c5a-9867-6bf7a15674ab # Global other variants
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: d27abfaa-a6b7-4aef-a360-52b3e57654b9
+            userCondition: null
             warning: null
             width: 100
           -
+            elementCondition: null
             fieldUid: bc35ca7f-b5e4-4cad-9bb0-82192041de0f # Global variants description
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 43fbac00-d994-430e-9d0c-8898a6d960bf
+            userCondition: null
             warning: null
             width: 100
         name: 'Tab 1'
-        sortOrder: 1
+        uid: 8950a605-d4fd-49cc-9c57-4f536bd06d25
+        userCondition: null
 handle: globalDetail
 name: Detail
 sortOrder: 2

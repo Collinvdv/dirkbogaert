@@ -1,0 +1,91 @@
+color: null
+description: null
+fieldLayouts:
+  c10d467a-5eb1-4243-8645-c72d79d1c586:
+    cardThumbAlignment: end
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: null
+            editCondition: null
+            elementCondition: null
+            fieldUid: 285d3eef-6222-4498-b7d6-2b65971bccf8
+            handle: null
+            includeInCards: true
+            instructions: null
+            label: Soort
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: fc8b32d8-34ec-4d49-b1c4-017ea3034e70
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: null
+            editCondition: null
+            elementCondition: null
+            fieldUid: 4998a4f9-283c-4851-b305-47828327574c
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: Potmaat
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 758ea87e-51aa-486b-8db3-2f381c6697fe
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: null
+            editCondition: null
+            elementCondition: null
+            fieldUid: 42a20019-2e91-46d3-b5f8-380bad575e1f
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: Maat
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 74c60e06-26d1-4be4-9bcf-c69dd87f4ebd
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: null
+            editCondition: null
+            elementCondition: null
+            fieldUid: 505d899e-36b5-47a1-8c00-7880b4ddf0f5
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: Image
+            providesThumbs: true
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: db5fd061-489f-434d-9bdf-268a9b45335f
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 746a2324-df1c-4b0f-8156-639fbdfa1a51
+        userCondition: null
+handle: plant
+hasTitleField: false
+icon: null
+name: plant
+showSlugField: false
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site
