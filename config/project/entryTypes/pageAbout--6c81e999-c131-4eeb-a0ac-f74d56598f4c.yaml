@@ -165,7 +165,7 @@ fieldLayouts:
 handle: pageAbout
 hasTitleField: false
 name: About
-section: 1576dc30-d64b-426b-80d6-f90a17462ffa # About
+section: 1576dc30-d64b-426b-80d6-f90a17462ffa
 sortOrder: 1
 titleFormat: '{section.name|raw}'
 titleTranslationKeyFormat: null

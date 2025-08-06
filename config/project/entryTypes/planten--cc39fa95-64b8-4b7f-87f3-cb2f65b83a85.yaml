@@ -98,7 +98,7 @@ fieldLayouts:
 handle: planten
 hasTitleField: false
 name: planten
-section: 6f51bf6a-c579-46d1-98b1-d8454752b952 # planten
+section: 6f51bf6a-c579-46d1-98b1-d8454752b952
 sortOrder: 1
 titleFormat: '{commonTitle}'
 titleTranslationKeyFormat: null

@@ -5,7 +5,7 @@ fieldLayouts:
       -
         elements:
           -
-            fieldUid: 285d3eef-6222-4498-b7d6-2b65971bccf8 # Soort
+            fieldUid: 285d3eef-6222-4498-b7d6-2b65971bccf8
             instructions: null
             label: null
             required: '0'
@@ -14,7 +14,7 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            fieldUid: 4998a4f9-283c-4851-b305-47828327574c # Potmaat
+            fieldUid: 4998a4f9-283c-4851-b305-47828327574c
             instructions: null
             label: null
             required: '0'
@@ -23,7 +23,7 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            fieldUid: 42a20019-2e91-46d3-b5f8-380bad575e1f # Maat
+            fieldUid: 42a20019-2e91-46d3-b5f8-380bad575e1f
             instructions: null
             label: null
             required: '0'
@@ -32,7 +32,7 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            fieldUid: 505d899e-36b5-47a1-8c00-7880b4ddf0f5 # Image
+            fieldUid: 505d899e-36b5-47a1-8c00-7880b4ddf0f5
             instructions: null
             label: null
             required: '0'
@@ -43,7 +43,7 @@ fieldLayouts:
         name: Content
         sortOrder: 1
 fields:
-  42a20019-2e91-46d3-b5f8-380bad575e1f: # Maat
+  42a20019-2e91-46d3-b5f8-380bad575e1f:
     columnSuffix: null
     contentColumnType: text
     fieldGroup: null
@@ -63,7 +63,7 @@ fields:
     translationKeyFormat: null
     translationMethod: none
     type: craft\fields\PlainText
-  285d3eef-6222-4498-b7d6-2b65971bccf8: # Soort
+  285d3eef-6222-4498-b7d6-2b65971bccf8:
     columnSuffix: null
     contentColumnType: text
     fieldGroup: null
@@ -83,7 +83,7 @@ fields:
     translationKeyFormat: null
     translationMethod: site
     type: craft\fields\PlainText
-  505d899e-36b5-47a1-8c00-7880b4ddf0f5: # Image
+  505d899e-36b5-47a1-8c00-7880b4ddf0f5:
     columnSuffix: null
     contentColumnType: string
     fieldGroup: null
@@ -118,7 +118,7 @@ fields:
     translationKeyFormat: null
     translationMethod: site
     type: craft\fields\Assets
-  4998a4f9-283c-4851-b305-47828327574c: # Potmaat
+  4998a4f9-283c-4851-b305-47828327574c:
     columnSuffix: null
     contentColumnType: text
     fieldGroup: null

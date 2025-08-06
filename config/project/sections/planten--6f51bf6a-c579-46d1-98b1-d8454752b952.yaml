@@ -13,12 +13,12 @@ previewTargets:
         - '{url}'
 propagationMethod: all
 siteSettings:
-  8e3d2eda-3b81-45e3-81c0-9a27b66343c7: # bogaertdirk
+  8e3d2eda-3b81-45e3-81c0-9a27b66343c7:
     enabledByDefault: true
     hasUrls: true
     template: /pages/detail
     uriFormat: 'planten/{slug}'
-  ee6d1941-f937-4f7f-8001-726d9d82afb3: # fr
+  ee6d1941-f937-4f7f-8001-726d9d82afb3:
     enabledByDefault: true
     hasUrls: true
     template: /pages/detail

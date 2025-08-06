@@ -129,7 +129,7 @@ fieldLayouts:
 handle: pageHome
 hasTitleField: false
 name: Home
-section: 29ebcc2a-37bd-4e89-bc3e-428edc5e5b8f # Home
+section: 29ebcc2a-37bd-4e89-bc3e-428edc5e5b8f
 sortOrder: 1
 titleFormat: '{section.name|raw}'
 titleTranslationKeyFormat: null
