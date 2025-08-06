@@ -1,0 +1,81 @@
+fieldLayouts:
+  34a39c04-3a7a-4016-b528-d5de1088adbc:
+    tabs:
+      -
+        elements:
+          -
+            instructions: null
+            label: Title
+            type: craft\fieldlayoutelements\EntryTitleField
+          -
+            fieldUid: 51b3aa81-c77a-4a9b-8be9-c126091f80ab # Title
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+          -
+            fieldUid: 9e4e55b6-cc7d-4e29-9dd3-2976f356cac6 # Introduction
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+          -
+            fieldUid: fd7a7f9c-e1f4-45c0-9c8c-c2c13b1c2250 # About photo 1
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+          -
+            fieldUid: 0c58095e-dc53-4cc1-bc3a-afed77de981b # About photo 2
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+          -
+            fieldUid: 177033ee-3b58-40af-9843-544791e3eb28 # About photo 3
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+          -
+            fieldUid: 473b32ef-0cac-4e8a-a11a-adcc1ab31705 # About photo 4
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+          -
+            fieldUid: 295e67cd-8709-422e-ab9a-b5ee52d61ed8 # About photo 5
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+          -
+            fieldUid: 0e7fe416-9d2f-49ba-b787-71d197ce63b8 # Team title
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+          -
+            fieldUid: d50193f6-9657-475c-83f0-046a4e073fcf # Team description
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+          -
+            fieldUid: e29b0f53-3e8d-4c61-84ad-11138b8fbdbf # Samenwerking title
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+          -
+            fieldUid: a27b376f-9c35-4881-9075-44870c708829 # Samenwerking description
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+        name: General
+        sortOrder: 1
+      -
+        elements:
+          -
+            fieldUid: 952b1677-5ade-4e62-b47b-b9936bddcdb6 # Navigation Titel
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+          -
+            fieldUid: 9692be7a-b52c-467c-8a29-4bd16fd03f51 # Navigation introduction
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+        name: Nav
+        sortOrder: 2
+      -
+        elements:
+          -
+            fieldUid: 3648fc6c-0f04-4d12-ae5f-15dd545c51bb # Seo
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+        name: Seo
+        sortOrder: 3
+handle: pageAbout
+hasTitleField: false
+name: About
+section: 1576dc30-d64b-426b-80d6-f90a17462ffa
+sortOrder: 1
+titleFormat: '{section.name|raw}'

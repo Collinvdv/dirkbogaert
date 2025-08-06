@@ -1,0 +1,16 @@
+contentColumnType: text
+fieldGroup: 66e900e2-e7cf-47e4-a7d4-f8362307c4c5 # Globals
+handle: globalContactNameLabel
+instructions: ''
+name: 'Contact name label'
+searchable: true
+settings:
+  charLimit: ''
+  code: ''
+  columnType: text
+  initialRows: '4'
+  multiline: ''
+  placeholder: ''
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\PlainText

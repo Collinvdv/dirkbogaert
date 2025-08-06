@@ -1,0 +1,8 @@
+handle: imageVolume
+hasUrls: true
+name: imageVolume
+settings:
+  path: /data/sites/web/collinvandervorstbe/subsites/bogaertdirk.be/web/uploads
+sortOrder: 1
+type: craft\volumes\Local
+url: /uploads

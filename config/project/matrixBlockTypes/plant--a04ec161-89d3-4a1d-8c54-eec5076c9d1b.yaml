@@ -1,0 +1,102 @@
+field: bf8f9ed2-2536-4b33-865a-b599e979ae41 # Plant tabel
+fieldLayouts:
+  c10d467a-5eb1-4243-8645-c72d79d1c586:
+    tabs:
+      -
+        fields:
+          42a20019-2e91-46d3-b5f8-380bad575e1f:
+            required: false
+            sortOrder: 3
+          285d3eef-6222-4498-b7d6-2b65971bccf8:
+            required: false
+            sortOrder: 1
+          505d899e-36b5-47a1-8c00-7880b4ddf0f5:
+            required: false
+            sortOrder: 4
+          4998a4f9-283c-4851-b305-47828327574c:
+            required: false
+            sortOrder: 2
+        name: Content
+        sortOrder: 1
+fields:
+  42a20019-2e91-46d3-b5f8-380bad575e1f:
+    contentColumnType: text
+    fieldGroup: null
+    handle: plantMaat
+    instructions: ''
+    name: Maat
+    searchable: true
+    settings:
+      charLimit: ''
+      code: ''
+      columnType: text
+      initialRows: '4'
+      multiline: ''
+      placeholder: ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  285d3eef-6222-4498-b7d6-2b65971bccf8:
+    contentColumnType: text
+    fieldGroup: null
+    handle: plantSoort
+    instructions: ''
+    name: Soort
+    searchable: true
+    settings:
+      charLimit: ''
+      code: ''
+      columnType: text
+      initialRows: '4'
+      multiline: ''
+      placeholder: ''
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\PlainText
+  505d899e-36b5-47a1-8c00-7880b4ddf0f5:
+    contentColumnType: string
+    fieldGroup: null
+    handle: plantImage
+    instructions: ''
+    name: Image
+    searchable: true
+    settings:
+      allowedKinds:
+        - image
+      defaultUploadLocationSource: 'volume:112ab554-bad7-4cb7-a22a-4f00cc2c31cc' # imageVolume
+      defaultUploadLocationSubpath: ''
+      limit: '1'
+      localizeRelations: ''
+      restrictFiles: '1'
+      selectionLabel: ''
+      singleUploadLocationSource: 'volume:112ab554-bad7-4cb7-a22a-4f00cc2c31cc' # imageVolume
+      singleUploadLocationSubpath: ''
+      source: null
+      sources:
+        - 'volume:112ab554-bad7-4cb7-a22a-4f00cc2c31cc' # imageVolume
+      targetSiteId: null
+      useSingleFolder: '1'
+      viewMode: large
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Assets
+  4998a4f9-283c-4851-b305-47828327574c:
+    contentColumnType: text
+    fieldGroup: null
+    handle: plantPotmaat
+    instructions: ''
+    name: Potmaat
+    searchable: true
+    settings:
+      charLimit: ''
+      code: ''
+      columnType: text
+      initialRows: '4'
+      multiline: ''
+      placeholder: ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+handle: plant
+name: plant
+sortOrder: 1

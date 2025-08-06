@@ -1,0 +1,25 @@
+contentColumnType: string
+fieldGroup: ac3c3040-adfa-4e4c-b8a0-06486e5d63c6 # About
+handle: aboutPhoto2
+instructions: ''
+name: 'About photo 2'
+searchable: true
+settings:
+  allowedKinds:
+    - image
+  defaultUploadLocationSource: 'volume:112ab554-bad7-4cb7-a22a-4f00cc2c31cc' # imageVolume
+  defaultUploadLocationSubpath: ''
+  limit: '1'
+  localizeRelations: false
+  restrictFiles: '1'
+  selectionLabel: ''
+  singleUploadLocationSource: 'volume:112ab554-bad7-4cb7-a22a-4f00cc2c31cc' # imageVolume
+  singleUploadLocationSubpath: ''
+  source: null
+  sources: '*'
+  targetSiteId: null
+  useSingleFolder: '1'
+  viewMode: large
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Assets

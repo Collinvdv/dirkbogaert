@@ -1,0 +1,16 @@
+contentColumnType: text
+fieldGroup: ac3c3040-adfa-4e4c-b8a0-06486e5d63c6 # About
+handle: aboutTeamDescription
+instructions: ''
+name: 'Team description'
+searchable: true
+settings:
+  charLimit: ''
+  code: ''
+  columnType: text
+  initialRows: '4'
+  multiline: '1'
+  placeholder: ''
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\PlainText

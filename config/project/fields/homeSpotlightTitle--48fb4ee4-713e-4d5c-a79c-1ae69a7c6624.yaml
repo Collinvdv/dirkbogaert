@@ -1,0 +1,16 @@
+contentColumnType: text
+fieldGroup: b1c99512-2cc4-4b8e-a95f-d96b1f4aa7ab # Home
+handle: homeSpotlightTitle
+instructions: ''
+name: 'Home spotlight title'
+searchable: true
+settings:
+  charLimit: ''
+  code: ''
+  columnType: text
+  initialRows: '4'
+  multiline: ''
+  placeholder: ''
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\PlainText

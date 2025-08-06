@@ -1,0 +1,20 @@
+fieldLayouts:
+  5a5cf9c4-4716-4823-ac59-b45e2c5b84c8:
+    tabs:
+      -
+        fields:
+          9e4e55b6-cc7d-4e29-9dd3-2976f356cac6: # Introduction
+            required: false
+            sortOrder: 1
+        name: General
+        sortOrder: 1
+handle: plantensoort
+name: plantensoort
+siteSettings:
+  8e3d2eda-3b81-45e3-81c0-9a27b66343c7:
+    hasUrls: true
+    template: ''
+    uriFormat: 'plantensoort/{slug}'
+structure:
+  maxLevels: null
+  uid: 76038e7f-bc98-474f-94a8-14902dbf7f0c

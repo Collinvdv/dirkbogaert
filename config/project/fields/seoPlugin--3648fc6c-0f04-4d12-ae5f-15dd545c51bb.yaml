@@ -1,0 +1,45 @@
+contentColumnType: text
+fieldGroup: db880872-957b-45a9-9f5e-4f06493015d9 # Common
+handle: seoPlugin
+instructions: ''
+name: Seo
+searchable: true
+settings:
+  description: '{commonIntroduction}'
+  hideSocial: ''
+  robots:
+    - ''
+    - ''
+    - ''
+    - ''
+    - ''
+    - ''
+  socialImage: ''
+  suffixAsPrefix: null
+  title:
+    -
+      __assoc__:
+        -
+          - key
+          - '1'
+        -
+          - locked
+          - '0'
+        -
+          - template
+          - '{commonTitle}'
+    -
+      __assoc__:
+        -
+          - key
+          - '2'
+        -
+          - locked
+          - '1'
+        -
+          - template
+          - ' - {{ siteName }}'
+  titleSuffix: null
+translationKeyFormat: null
+translationMethod: none
+type: ether\seo\fields\SeoField

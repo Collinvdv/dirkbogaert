@@ -1,0 +1,49 @@
+fieldLayouts:
+  d16fd708-6f47-4238-a248-a5ab34471cd5:
+    tabs:
+      -
+        elements:
+          -
+            instructions: null
+            label: Title
+            type: craft\fieldlayoutelements\EntryTitleField
+          -
+            fieldUid: 51b3aa81-c77a-4a9b-8be9-c126091f80ab # Title
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+          -
+            fieldUid: d38063c5-b8d6-4d81-89c0-e8847d81e10e # Plantensoort
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+          -
+            fieldUid: 2556a829-b1a9-40e4-b30e-8c6896197b56 # Image
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+          -
+            fieldUid: 9e4e55b6-cc7d-4e29-9dd3-2976f356cac6 # Introduction
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+          -
+            fieldUid: bf8f9ed2-2536-4b33-865a-b599e979ae41 # Plant tabel
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+          -
+            fieldUid: 20577864-05fd-4fea-8d64-6870369c7459 # Related plants
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+        name: General
+        sortOrder: 1
+      -
+        elements:
+          -
+            fieldUid: 3648fc6c-0f04-4d12-ae5f-15dd545c51bb # Seo
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+        name: Seo
+        sortOrder: 2
+handle: planten
+hasTitleField: false
+name: planten
+section: 6f51bf6a-c579-46d1-98b1-d8454752b952
+sortOrder: 1
+titleFormat: '{commonTitle}'

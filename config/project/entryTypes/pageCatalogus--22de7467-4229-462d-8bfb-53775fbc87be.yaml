@@ -1,0 +1,45 @@
+fieldLayouts:
+  9fd26978-fb8f-4db0-b213-a581083665d9:
+    tabs:
+      -
+        elements:
+          -
+            instructions: null
+            label: ''
+            type: craft\fieldlayoutelements\EntryTitleField
+          -
+            fieldUid: 51b3aa81-c77a-4a9b-8be9-c126091f80ab # Title
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+          -
+            fieldUid: 9e4e55b6-cc7d-4e29-9dd3-2976f356cac6 # Introduction
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+        name: General
+        sortOrder: 1
+      -
+        elements:
+          -
+            fieldUid: 952b1677-5ade-4e62-b47b-b9936bddcdb6 # Navigation Titel
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+          -
+            fieldUid: 9692be7a-b52c-467c-8a29-4bd16fd03f51 # Navigation introduction
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+        name: Nav
+        sortOrder: 2
+      -
+        elements:
+          -
+            fieldUid: 3648fc6c-0f04-4d12-ae5f-15dd545c51bb # Seo
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+        name: Seo
+        sortOrder: 3
+handle: pageCatalogus
+hasTitleField: false
+name: Catalogus
+section: 4966db03-63be-4ea9-91b8-e895ad1e93e1
+sortOrder: 1
+titleFormat: '{section.name|raw}'

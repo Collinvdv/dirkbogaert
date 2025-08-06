@@ -1,0 +1,16 @@
+contentColumnType: text
+fieldGroup: 33570d82-e546-4702-939f-eb5ddfb333f2 # Nav
+handle: navTitle
+instructions: ''
+name: 'Navigation Titel'
+searchable: true
+settings:
+  charLimit: ''
+  code: ''
+  columnType: text
+  initialRows: '4'
+  multiline: ''
+  placeholder: ''
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\PlainText

@@ -1,0 +1,11 @@
+contentColumnType: string
+fieldGroup: 66e900e2-e7cf-47e4-a7d4-f8362307c4c5 # Globals
+handle: globalContactMail
+instructions: ''
+name: 'Contact mail'
+searchable: true
+settings:
+  placeholder: ''
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Email
