@@ -1,3 +1,4 @@
+columnSuffix: null
 contentColumnType: string
 fieldGroup: 4476a42f-adcd-4434-af71-726edade8d78 # Plant
 handle: plantTable
@@ -6,9 +7,10 @@ name: 'Plant tabel'
 searchable: true
 settings:
   contentTable: '{{%matrixcontent_planttable}}'
-  localizeBlocks: ''
   maxBlocks: ''
   minBlocks: ''
+  propagationKeyFormat: null
+  propagationMethod: all
 translationKeyFormat: null
 translationMethod: site
 type: craft\fields\Matrix

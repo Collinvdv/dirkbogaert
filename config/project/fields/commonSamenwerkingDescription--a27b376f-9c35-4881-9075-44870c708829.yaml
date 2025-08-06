@@ -1,3 +1,4 @@
+columnSuffix: null
 contentColumnType: text
 fieldGroup: db880872-957b-45a9-9f5e-4f06493015d9 # Common
 handle: commonSamenwerkingDescription
@@ -7,14 +8,16 @@ searchable: true
 settings:
   availableTransforms: '*'
   availableVolumes: '*'
-  cleanupHtml: true
   columnType: text
+  defaultTransform: ''
+  initJs: null
   purifierConfig: ''
   purifyHtml: '1'
-  redactorConfig: ''
-  removeEmptyTags: '1'
-  removeInlineStyles: '1'
-  removeNbsp: '1'
+  removeEmptyTags: false
+  removeInlineStyles: false
+  removeNbsp: false
+  showUnpermittedFiles: ''
+  showUnpermittedVolumes: ''
 translationKeyFormat: null
-translationMethod: site
-type: craft\redactor\Field
+translationMethod: none
+type: craft\ckeditor\Field

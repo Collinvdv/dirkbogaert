@@ -1,3 +1,4 @@
+columnSuffix: null
 contentColumnType: string
 fieldGroup: db880872-957b-45a9-9f5e-4f06493015d9 # Common
 handle: commonImage
@@ -5,20 +6,27 @@ instructions: ''
 name: Image
 searchable: true
 settings:
+  allowSelfRelations: false
+  allowUploads: true
   allowedKinds:
     - image
   defaultUploadLocationSource: 'volume:112ab554-bad7-4cb7-a22a-4f00cc2c31cc' # imageVolume
   defaultUploadLocationSubpath: ''
   limit: '1'
   localizeRelations: false
+  previewMode: full
   restrictFiles: '1'
   selectionLabel: ''
+  showSiteMenu: true
+  showUnpermittedFiles: false
+  showUnpermittedVolumes: true
   singleUploadLocationSource: 'volume:112ab554-bad7-4cb7-a22a-4f00cc2c31cc' # imageVolume
   singleUploadLocationSubpath: ''
   source: null
   sources: '*'
   targetSiteId: null
-  useSingleFolder: '1'
+  useSingleFolder: true
+  validateRelatedElements: false
   viewMode: list
 translationKeyFormat: null
 translationMethod: site

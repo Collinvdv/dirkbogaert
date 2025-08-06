@@ -4,42 +4,88 @@ fieldLayouts:
       -
         elements:
           -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            id: null
             instructions: null
-            label: ''
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
             type: craft\fieldlayoutelements\EntryTitleField
+            warning: null
+            width: 100
           -
             fieldUid: 51b3aa81-c77a-4a9b-8be9-c126091f80ab # Title
-            required: false
+            instructions: null
+            label: null
+            required: '0'
+            tip: null
             type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
           -
             fieldUid: 9e4e55b6-cc7d-4e29-9dd3-2976f356cac6 # Introduction
-            required: false
+            instructions: null
+            label: null
+            required: '0'
+            tip: null
             type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
         name: General
         sortOrder: 1
       -
         elements:
           -
             fieldUid: 952b1677-5ade-4e62-b47b-b9936bddcdb6 # Navigation Titel
-            required: false
+            instructions: null
+            label: null
+            required: '0'
+            tip: null
             type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
           -
             fieldUid: 9692be7a-b52c-467c-8a29-4bd16fd03f51 # Navigation introduction
-            required: false
+            instructions: null
+            label: null
+            required: '0'
+            tip: null
             type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
         name: Nav
         sortOrder: 2
       -
         elements:
           -
             fieldUid: 3648fc6c-0f04-4d12-ae5f-15dd545c51bb # Seo
-            required: false
+            instructions: null
+            label: null
+            required: '0'
+            tip: null
             type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
         name: Seo
         sortOrder: 3
 handle: pageCatalogus
 hasTitleField: false
 name: Catalogus
-section: 4966db03-63be-4ea9-91b8-e895ad1e93e1
+section: 4966db03-63be-4ea9-91b8-e895ad1e93e1 # Catalogus
 sortOrder: 1
 titleFormat: '{section.name|raw}'
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

@@ -1,3 +1,4 @@
+columnSuffix: null
 contentColumnType: string
 fieldGroup: db880872-957b-45a9-9f5e-4f06493015d9 # Common
 handle: commonPlants
@@ -5,13 +6,16 @@ instructions: ''
 name: 'Related plants'
 searchable: true
 settings:
+  allowSelfRelations: false
   limit: ''
   localizeRelations: false
   selectionLabel: ''
+  showSiteMenu: true
   source: null
   sources:
-    - 'section:6f51bf6a-c579-46d1-98b1-d8454752b952'
+    - 'section:6f51bf6a-c579-46d1-98b1-d8454752b952' # planten
   targetSiteId: null
+  validateRelatedElements: false
   viewMode: null
 translationKeyFormat: null
 translationMethod: site

@@ -2,25 +2,61 @@ fieldLayouts:
   89536c75-5b37-479a-b342-d60cde13fc0c:
     tabs:
       -
-        fields:
-          7a9e020d-adca-4048-afc9-5094dc7726b9: # Detail cta
+        elements:
+          -
+            fieldUid: b5b893a3-fda3-44ce-8144-153fa6557a69 # Detail soorten
+            instructions: null
+            label: null
             required: false
-            sortOrder: 4
-          44fdd2fb-939a-4c5a-9867-6bf7a15674ab: # Global other variants
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 089b433e-278d-4f41-8899-d9c6a0803b27 # Detail interested
+            instructions: null
+            label: null
             required: false
-            sortOrder: 5
-          089b433e-278d-4f41-8899-d9c6a0803b27: # Detail interested
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: edd52b93-0d86-48b0-ae22-4dac7d77cd9a # Detail interested description
+            instructions: null
+            label: null
             required: false
-            sortOrder: 2
-          b5b893a3-fda3-44ce-8144-153fa6557a69: # Detail soorten
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 7a9e020d-adca-4048-afc9-5094dc7726b9 # Detail cta
+            instructions: null
+            label: null
             required: false
-            sortOrder: 1
-          bc35ca7f-b5e4-4cad-9bb0-82192041de0f: # Global variants description
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 44fdd2fb-939a-4c5a-9867-6bf7a15674ab # Global other variants
+            instructions: null
+            label: null
             required: false
-            sortOrder: 6
-          edd52b93-0d86-48b0-ae22-4dac7d77cd9a: # Detail interested description
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: bc35ca7f-b5e4-4cad-9bb0-82192041de0f # Global variants description
+            instructions: null
+            label: null
             required: false
-            sortOrder: 3
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
         name: 'Tab 1'
         sortOrder: 1
 handle: globalDetail

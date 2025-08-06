@@ -1,3 +1,4 @@
+columnSuffix: null
 contentColumnType: text
 fieldGroup: ac3c3040-adfa-4e4c-b8a0-06486e5d63c6 # About
 handle: aboutTeamDescription
@@ -5,12 +6,14 @@ instructions: ''
 name: 'Team description'
 searchable: true
 settings:
-  charLimit: ''
+  byteLimit: null
+  charLimit: null
   code: ''
   columnType: text
   initialRows: '4'
   multiline: '1'
-  placeholder: ''
+  placeholder: null
+  uiMode: normal
 translationKeyFormat: null
 translationMethod: site
 type: craft\fields\PlainText

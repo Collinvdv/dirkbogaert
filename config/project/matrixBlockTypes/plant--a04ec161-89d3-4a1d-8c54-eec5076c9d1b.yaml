@@ -3,23 +3,48 @@ fieldLayouts:
   c10d467a-5eb1-4243-8645-c72d79d1c586:
     tabs:
       -
-        fields:
-          42a20019-2e91-46d3-b5f8-380bad575e1f:
-            required: false
-            sortOrder: 3
-          285d3eef-6222-4498-b7d6-2b65971bccf8:
-            required: false
-            sortOrder: 1
-          505d899e-36b5-47a1-8c00-7880b4ddf0f5:
-            required: false
-            sortOrder: 4
-          4998a4f9-283c-4851-b305-47828327574c:
-            required: false
-            sortOrder: 2
+        elements:
+          -
+            fieldUid: 285d3eef-6222-4498-b7d6-2b65971bccf8 # Soort
+            instructions: null
+            label: null
+            required: '0'
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 4998a4f9-283c-4851-b305-47828327574c # Potmaat
+            instructions: null
+            label: null
+            required: '0'
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 42a20019-2e91-46d3-b5f8-380bad575e1f # Maat
+            instructions: null
+            label: null
+            required: '0'
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 505d899e-36b5-47a1-8c00-7880b4ddf0f5 # Image
+            instructions: null
+            label: null
+            required: '0'
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
         name: Content
         sortOrder: 1
 fields:
-  42a20019-2e91-46d3-b5f8-380bad575e1f:
+  42a20019-2e91-46d3-b5f8-380bad575e1f: # Maat
+    columnSuffix: null
     contentColumnType: text
     fieldGroup: null
     handle: plantMaat
@@ -27,16 +52,19 @@ fields:
     name: Maat
     searchable: true
     settings:
-      charLimit: ''
+      byteLimit: null
+      charLimit: null
       code: ''
       columnType: text
       initialRows: '4'
       multiline: ''
-      placeholder: ''
+      placeholder: null
+      uiMode: normal
     translationKeyFormat: null
     translationMethod: none
     type: craft\fields\PlainText
-  285d3eef-6222-4498-b7d6-2b65971bccf8:
+  285d3eef-6222-4498-b7d6-2b65971bccf8: # Soort
+    columnSuffix: null
     contentColumnType: text
     fieldGroup: null
     handle: plantSoort
@@ -44,16 +72,19 @@ fields:
     name: Soort
     searchable: true
     settings:
-      charLimit: ''
+      byteLimit: null
+      charLimit: null
       code: ''
       columnType: text
       initialRows: '4'
       multiline: ''
-      placeholder: ''
+      placeholder: null
+      uiMode: normal
     translationKeyFormat: null
     translationMethod: site
     type: craft\fields\PlainText
-  505d899e-36b5-47a1-8c00-7880b4ddf0f5:
+  505d899e-36b5-47a1-8c00-7880b4ddf0f5: # Image
+    columnSuffix: null
     contentColumnType: string
     fieldGroup: null
     handle: plantImage
@@ -61,26 +92,34 @@ fields:
     name: Image
     searchable: true
     settings:
+      allowSelfRelations: false
+      allowUploads: true
       allowedKinds:
         - image
       defaultUploadLocationSource: 'volume:112ab554-bad7-4cb7-a22a-4f00cc2c31cc' # imageVolume
       defaultUploadLocationSubpath: ''
       limit: '1'
-      localizeRelations: ''
+      localizeRelations: false
+      previewMode: full
       restrictFiles: '1'
       selectionLabel: ''
+      showSiteMenu: true
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: true
       singleUploadLocationSource: 'volume:112ab554-bad7-4cb7-a22a-4f00cc2c31cc' # imageVolume
       singleUploadLocationSubpath: ''
       source: null
       sources:
         - 'volume:112ab554-bad7-4cb7-a22a-4f00cc2c31cc' # imageVolume
       targetSiteId: null
-      useSingleFolder: '1'
+      useSingleFolder: true
+      validateRelatedElements: false
       viewMode: large
     translationKeyFormat: null
     translationMethod: site
     type: craft\fields\Assets
-  4998a4f9-283c-4851-b305-47828327574c:
+  4998a4f9-283c-4851-b305-47828327574c: # Potmaat
+    columnSuffix: null
     contentColumnType: text
     fieldGroup: null
     handle: plantPotmaat
@@ -88,12 +127,14 @@ fields:
     name: Potmaat
     searchable: true
     settings:
-      charLimit: ''
+      byteLimit: null
+      charLimit: null
       code: ''
       columnType: text
       initialRows: '4'
       multiline: ''
-      placeholder: ''
+      placeholder: null
+      uiMode: normal
     translationKeyFormat: null
     translationMethod: none
     type: craft\fields\PlainText

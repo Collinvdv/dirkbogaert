@@ -1,19 +1,53 @@
+defaultPlacement: end
 fieldLayouts:
   5a5cf9c4-4716-4823-ac59-b45e2c5b84c8:
     tabs:
       -
-        fields:
-          9e4e55b6-cc7d-4e29-9dd3-2976f356cac6: # Introduction
-            required: false
-            sortOrder: 1
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            id: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\TitleField
+            warning: null
+            width: 100
+          -
+            fieldUid: 9e4e55b6-cc7d-4e29-9dd3-2976f356cac6 # Introduction
+            instructions: null
+            label: null
+            required: '0'
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
         name: General
         sortOrder: 1
 handle: plantensoort
 name: plantensoort
 siteSettings:
-  8e3d2eda-3b81-45e3-81c0-9a27b66343c7:
+  8e3d2eda-3b81-45e3-81c0-9a27b66343c7: # bogaertdirk
     hasUrls: true
-    template: ''
+    template: null
+    uriFormat: 'plantensoort/{slug}'
+  ee6d1941-f937-4f7f-8001-726d9d82afb3: # fr
+    hasUrls: true
+    template: null
     uriFormat: 'plantensoort/{slug}'
 structure:
   maxLevels: null

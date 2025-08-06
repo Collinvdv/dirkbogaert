@@ -2,46 +2,124 @@ fieldLayouts:
   2aa943ad-c0eb-439d-beeb-c8fb1de8e307:
     tabs:
       -
-        fields:
-          1c8df03f-74fd-444b-a5bf-56ef9259b053: # Contact cta label
+        elements:
+          -
+            fieldUid: 53e95fa5-8359-49b6-a411-fdf991ad8844 # Contact title us
+            instructions: null
+            label: null
             required: false
-            sortOrder: 6
-          4f141aa0-39f7-44f5-b512-87ca295158e9: # Contact gsm Dirk
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 5b8bf9f9-1792-4d72-9915-ff0b0da27122 # Contact description
+            instructions: null
+            label: null
             required: false
-            sortOrder: 8
-          5b8bf9f9-1792-4d72-9915-ff0b0da27122: # Contact description
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: e9d9d161-74ec-467e-b3e4-da284c293cae # Contact name label
+            instructions: null
+            label: null
             required: false
-            sortOrder: 2
-          6feaa6c6-cbc4-4792-8952-95e65d591552: # Contact titel gegevens
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: d5100871-3a04-4c3f-8cc3-950bd4a780fb # Contact mail label
+            instructions: null
+            label: null
             required: false
-            sortOrder: 7
-          53e95fa5-8359-49b6-a411-fdf991ad8844: # Contact title us
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: d970c6df-bd7c-4ff7-9e92-069dae323455 # Contact bericht label
+            instructions: null
+            label: null
             required: false
-            sortOrder: 1
-          63ff5245-2ab0-4f3c-b8a7-2ed300e11219: # Contact straat
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 1c8df03f-74fd-444b-a5bf-56ef9259b053 # Contact cta label
+            instructions: null
+            label: null
             required: false
-            sortOrder: 13
-          2834c455-1a02-4864-a60d-f96d1bf8d1d2: # Contact mail
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 6feaa6c6-cbc4-4792-8952-95e65d591552 # Contact titel gegevens
+            instructions: null
+            label: null
             required: false
-            sortOrder: 10
-          6993150b-68b3-43d0-bfc0-c45fbfd10acf: # Contact phone
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 4f141aa0-39f7-44f5-b512-87ca295158e9 # Contact gsm Dirk
+            instructions: null
+            label: null
             required: false
-            sortOrder: 11
-          b1b7b4a1-fdfe-4fb6-9cad-dede76e4b9d8: # Contact stad
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: b14a91d5-7fcc-48ac-9167-815daa8d1767 # Contact gsm ann
+            instructions: null
+            label: null
             required: false
-            sortOrder: 12
-          b14a91d5-7fcc-48ac-9167-815daa8d1767: # Contact gsm ann
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 2834c455-1a02-4864-a60d-f96d1bf8d1d2 # Contact mail
+            instructions: null
+            label: null
             required: false
-            sortOrder: 9
-          d970c6df-bd7c-4ff7-9e92-069dae323455: # Contact bericht label
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 6993150b-68b3-43d0-bfc0-c45fbfd10acf # Contact phone
+            instructions: null
+            label: null
             required: false
-            sortOrder: 5
-          d5100871-3a04-4c3f-8cc3-950bd4a780fb: # Contact mail label
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: b1b7b4a1-fdfe-4fb6-9cad-dede76e4b9d8 # Contact stad
+            instructions: null
+            label: null
             required: false
-            sortOrder: 4
-          e9d9d161-74ec-467e-b3e4-da284c293cae: # Contact name label
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 63ff5245-2ab0-4f3c-b8a7-2ed300e11219 # Contact straat
+            instructions: null
+            label: null
             required: false
-            sortOrder: 3
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
         name: Contact
         sortOrder: 1
 handle: globalContact
