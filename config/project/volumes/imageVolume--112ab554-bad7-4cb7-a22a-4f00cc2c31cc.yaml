@@ -1,5 +1,5 @@
 fieldLayouts:
-  b6d0f5f8-2919-497d-872e-5b8ddf228529:
+  77e81dbc-01db-4b2e-9e24-592323b4ff35:
     tabs:
       -
         elements:
@@ -23,18 +23,16 @@ fieldLayouts:
             step: null
             tip: null
             title: null
-            type: craft\fieldlayoutelements\AssetTitleField
+            type: craft\fieldlayoutelements\assets\AssetTitleField
             warning: null
             width: 100
         name: Content
         sortOrder: 1
+fs: imageVolume
 handle: imageVolume
 hasUrls: true
 name: imageVolume
-settings:
-  path: $BASE_PATH
 sortOrder: 1
 titleTranslationKeyFormat: null
 titleTranslationMethod: site
-type: craft\volumes\Local
 url: /uploads

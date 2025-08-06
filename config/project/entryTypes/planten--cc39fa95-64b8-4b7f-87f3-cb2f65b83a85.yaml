@@ -23,7 +23,7 @@ fieldLayouts:
             step: null
             tip: null
             title: null
-            type: craft\fieldlayoutelements\EntryTitleField
+            type: craft\fieldlayoutelements\entries\EntryTitleField
             warning: null
             width: 100
           -
@@ -98,7 +98,7 @@ fieldLayouts:
 handle: planten
 hasTitleField: false
 name: planten
-section: 6f51bf6a-c579-46d1-98b1-d8454752b952
+section: 6f51bf6a-c579-46d1-98b1-d8454752b952 # planten
 sortOrder: 1
 titleFormat: '{commonTitle}'
 titleTranslationKeyFormat: null

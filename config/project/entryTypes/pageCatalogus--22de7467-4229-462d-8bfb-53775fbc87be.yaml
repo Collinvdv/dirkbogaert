@@ -23,7 +23,7 @@ fieldLayouts:
             step: null
             tip: null
             title: null
-            type: craft\fieldlayoutelements\EntryTitleField
+            type: craft\fieldlayoutelements\entries\EntryTitleField
             warning: null
             width: 100
           -
@@ -84,7 +84,7 @@ fieldLayouts:
 handle: pageCatalogus
 hasTitleField: false
 name: Catalogus
-section: 4966db03-63be-4ea9-91b8-e895ad1e93e1
+section: 4966db03-63be-4ea9-91b8-e895ad1e93e1 # Catalogus
 sortOrder: 1
 titleFormat: '{section.name|raw}'
 titleTranslationKeyFormat: null

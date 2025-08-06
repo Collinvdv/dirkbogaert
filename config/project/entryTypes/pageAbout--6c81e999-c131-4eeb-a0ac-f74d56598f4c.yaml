@@ -23,7 +23,7 @@ fieldLayouts:
             step: null
             tip: null
             title: null
-            type: craft\fieldlayoutelements\EntryTitleField
+            type: craft\fieldlayoutelements\entries\EntryTitleField
             warning: null
             width: 100
           -
@@ -165,7 +165,7 @@ fieldLayouts:
 handle: pageAbout
 hasTitleField: false
 name: About
-section: 1576dc30-d64b-426b-80d6-f90a17462ffa
+section: 1576dc30-d64b-426b-80d6-f90a17462ffa # About
 sortOrder: 1
 titleFormat: '{section.name|raw}'
 titleTranslationKeyFormat: null
