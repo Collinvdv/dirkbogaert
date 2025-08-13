@@ -62,3 +62,6 @@ prepros-6.config
 package-lock.json
 composer.lock
 config/license.key
+
+yarn.lock
+config/license.key.1
